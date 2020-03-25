@@ -2,52 +2,51 @@
 <div class="navbar__wrapper">
     <nav class="navbar is-fixed-top" role="navigation" aria-label="dropdown navigation">
         <div class="navbar-brand">
-          
-    <a class="navbar-item" href="https://bulma.io">
-      <img class="navbar__logo" src="../assets/img/doctor-square.png">
+    
+    <img class="navbar-item navbar__logo" src="../assets/img/doctor-square.png">
+
+    <a class="navbar-item" href="https://healthbuddy.info/index.html">
       <h1 class="navbar__title"> HealthBuddy </h1>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span><i class="mdi-earth" /></span>
     </a>
     
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-</a>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
 
   <div class="navbar-end">
 
     <div class="navbar-menu">
         <div class="navbar-start">
-      <a class="navbar-item">
-        Home
+      <a 
+      v-for="item in items" 
+      :key="item.id" 
+      class="navbar-item">
+        {{ item.title }}
       </a>
 
-      <a class="navbar-item">
-        How it works
-      </a>
-
-            <a class="navbar-item">
-        About
-      </a>
-
-            <a class="navbar-item">
-        Informative Videos
-      </a>
-       </div>
-    </div>
-      </div>
-      
-      <!-- <div :class="['navbar-item has-dropdown', dropdownActive ? 'is-active' : '']">
-        <a @click="triggerDrodown" class="navbar-link dropdown-trigger" >
-          More
+                <div :class="['navbar-item dropdown', dropdownActive ? 'is-active' : '']">
+        <a @click="triggerDrodown" class="icon dropdown-trigger" >
+          <i class="mdi-earth" />
         </a>
 
-        <div class="navbar-dropdown">
+        <div class="dropdown-menu">
           <a v-for="(language, index) in languages"
-          :key="index" class="navbar-item"
+          :key="index" class="dropdown-item"
           @click="didClickLanguage(language)">
             {{ language }}
           </a>
         </div>
-    </div> -->
+    </div>
+       </div>
+    </div>
+      </div>
     </nav>
     </div>
 </template>
@@ -55,6 +54,11 @@
 <script>
 export default {
     name: 'Navbar',
+    props: {
+      items: {
+        type: Array,
+      },
+    },
     data() {
       return {
         dropdownActive: false,
@@ -80,18 +84,23 @@ export default {
 <style lang="scss" scoped>
   .navbar {
 
-    .navbar-item {
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: #374EA2;
+
+    &-item, .dropdown-trigger {
       color: white;
       font-weight: 400;
       line-height: 1.5;
       text-align: left;
     }
 
-    max-width: 1140px;
-    margin: 0 auto;
-    background-color: #374EA2;
+    &-item:hover, &-burger:hover, .dropdown-trigger:hover {
+      background-color: transparent;
+      color: white;
+    }
 
-    &-burguer {
+    &-burger {
       color: white;
     }
 
@@ -101,7 +110,7 @@ export default {
       right: 0;
       z-index: 29;
       background-color: #374EA2;
-      height: 72px;
+      height: 74px;
       top: 0;
     }
 
@@ -116,7 +125,7 @@ export default {
     }
 
     &__logo {
-      margin-top: -1vh;
+      margin-top: 1vh;
       max-height: 7vh;
       border-style: none;
     }

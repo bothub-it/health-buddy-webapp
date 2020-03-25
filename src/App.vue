@@ -19,5 +19,6 @@ export default {
 </script>
 
 <style lang="scss">
+  @import '~@mdi/font/css/materialdesignicons.css';
   @import "~bulma/css/bulma.css"
 </style>

@@ -1,7 +1,8 @@
 /* eslint-disable vue/valid-template-root */
 <template>
 <div class="home">
-  <Navbar />
+  <Navbar 
+    :items="navbarItems"/>
   <Hero class="home__section" />
   <Section 
           class="home__section"
@@ -11,7 +12,7 @@
           :text="section.text"/>
 
   <FeatureList class="home__section" :list="features" />
-
+  <div id="webchat"/>
   <div class="home__section__wrapper">
     <div class="home__section">
       <h1 class="home__section__title"> 
@@ -29,7 +30,9 @@ import Hero from '../components/Hero';
 import Section from '../components/Section';
 import FeatureList from '../components/FeatureList';
 import Navbar from '../components/Navbar';
-import InfoVideoList from '../components/InfoVideoList'
+import InfoVideoList from '../components/InfoVideoList';
+import * as WebChat from '../assets/js/bot.js';
+
 export default {
     name: 'Home',
     components: {
@@ -72,9 +75,56 @@ export default {
           "https://www.youtube.com/embed/JKpVMivbTfg",
           "https://www.youtube.com/embed/ujWFj_6FaMY",
           "https://www.youtube.com/embed/mOV1aBVYKGA",
+        ],
+        navbarItems: [
+          {
+            id: "home",
+            title: "Home",
+          },
+          {
+            id: "gallery",
+            title: "How it works",
+          },
+          {
+            id: "about",
+            title: "About",
+          },
+          {
+            id: "testimonials",
+            title: "Informative Videos",
+          },
         ]
       };
-    }
+    },
+    computed: {
+      userLang() { return 'en'; },
+      initialPayload() { return `hello ${this.userLang}`; }
+    },
+    mounted() {
+      WebChat.default.init({
+        selector: '#webchat',
+        initPayload: this.initPayload,
+        tooltipPayload: this.initPayload,
+        channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
+        host: 'https://rapidpro.ilhasoft.mobi',
+        title: 'HealthBuddy',
+        inputTextFieldHint: "Type a message...",
+        profileAvatar: '../assets/img/doctor-darker.png',
+        openLauncherImage: '../assets/img/doctor-square.png',
+        docViewer: true,
+        showFullScreenButton: true,
+        hideWhenNotConnected: true,
+        params: {
+          images: {
+            dims: {
+              width: 712,
+              height: 844,
+            }
+        },
+        storage: "local",
+       }
+      });
+    },
 }
 </script>
 

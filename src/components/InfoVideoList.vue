@@ -1,27 +1,32 @@
 <template>
-<div class="info-video-list columns is-multiline">
-    <InfoVideoItem
-    v-for="(url, index) in urls"
-    class="column is-half"
-    :key="index"
-    :url="url"/>
+<div class="info-video-list">
+    <carousel
+    :items="1"
+    :nav="false">
+        <InfoVideoItem
+            v-for="(url, index) in urls"
+            :key="index"
+            :url="url"/>
+    </carousel>
 </div>
 </template>
 
 <script>
-import InfoVideoItem from './InfoVideoItem.vue'
+import InfoVideoItem from './InfoVideoItem.vue';
+import carousel from 'vue-owl-carousel';
+
 export default {
     name: 'InfoVideoList',
     components: { 
-        InfoVideoItem
+        InfoVideoItem,
+        carousel,
     },
     props: {
         urls: {
             type: Array,
         },
     },
-    
-}
+};
 </script>
 
 <style lang="scss" scoped>
