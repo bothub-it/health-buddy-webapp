@@ -12,8 +12,10 @@
                 <h1 class="hero__title">HealthBuddy</h1>
                 <p class="hero__subtitle">Your very own buddy for info about COVID-19.</p>
                 <p class="hero__subtitle">Just a text message away!</p>
+                <div class="hero__logos">
                   <img class="hero__img hero__img-unicef" src="../assets/img/unicef-horizontal.png"/>
                   <img class="hero__img hero__img-who" src="../assets/img/who-logo.png"/>
+                </div>
             </div>
         </div>
       </div>
@@ -59,8 +61,11 @@ export default {
       color: #212529;
       text-align: left;
 
-      &__content {
+      &__logos {
+        margin-top: 7vh;
+      }
 
+      &__content {
         text-align: left;
 
         @media only screen and (max-width: 760px) {
@@ -103,8 +108,8 @@ export default {
 
         &-doctor {
           width: 26vh;
-          margin-top: 7vh;
-          margin-left: 8vh;
+          margin: 0 auto 7vh;
+          display: block;
         }
     }
   }

@@ -203,13 +203,12 @@ export default {
         }
 
         &__title {
-          font-size: 32px;
-          font-weight: 400;
-          margin-bottom: 20px;
-          padding-bottom: 0;
+          margin: 11vh 0 2vh 0;
+          font-size: 38px;
+          font-weight: 500;
+          line-height: 56px;
           color: #1CABE2;
           font-family: "Poppins", sans-serif;
-          line-height: 1.2;
         }
       }
     }
