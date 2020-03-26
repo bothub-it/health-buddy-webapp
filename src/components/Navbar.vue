@@ -49,15 +49,14 @@
           <i class="navbar__icon mdi mdi-earth" /><i class="mdi mdi-menu-down" />
         </a>
 
-        <div class="dropdown-menu"
-        @blur="dropdownActive=false">
+        <div class="dropdown-menu">
           <a v-for="(language, index) in languages"
           :key="index" class="dropdown-item"
           @click="didClickLanguage(language.id)">
             {{ language.name }}
           </a>
         </div>
-    </div>
+        </div>
        </div>
     </div>
       </div>
@@ -145,6 +144,7 @@ export default {
     }
 
     &-item, .dropdown-trigger {
+      font-size: 14px;
       color: white;
       font-weight: 400;
       line-height: 1.5;

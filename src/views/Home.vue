@@ -4,7 +4,7 @@
   <div id="webchat"/>
   <Navbar 
     :items="navbarItems"/>
-  <Hero id="home" class="home__section" />
+  <Hero id="home"/>
 
   <text-section 
     id="how" 
@@ -41,9 +41,9 @@
          slot="content" 
         :urls="videoUrls"/>
     <FeatureList :list="features" />
-    <div class="home__info-images">
-      <img src="../assets/img/unicef-horizontal.png" />
-      <img src="../assets/img/who-logo.png" />
+    <div slot="content" class="home__info-images">
+      <img class="home__info-images__unicef" src="../assets/img/unicef-horizontal.png" />
+      <img class="home__info-images__who" src="../assets/img/who-logo.png" />
     </div>
   </text-section>
   </div>
@@ -160,8 +160,32 @@ export default {
 
 <style lang="scss" scoped>
   @import '../assets/css/webchat.css';
+
+  $home-margin: 74px;
     .home {
-      margin: 72px + 16px 0;
+      margin: $home-margin 0 0;
+
+      &__info-images{
+        margin-top: 15vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &__unicef {
+          max-width:100%;
+          height: auto;
+          width: 38vh;
+          margin-right: 3vh;
+        }
+
+        &__who {
+          max-width:100%;
+          height: auto;
+          width: 28vh;
+          margin-right: 3vh;
+        }
+      }
 
       &__section {
 

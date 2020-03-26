@@ -2,25 +2,23 @@
 <template>
     <div class="hero">
 
-        <div class="hero__container">
-        <div class="row">
-            <div class="column" data-aos="fade-up">
-            <div>
+        <div class="columns animated animatedFadeInUp fadeInUp">
+          <div class="column is-two-fifths is-centered">
+            <img class="hero__img-doctor" src="../assets/img/doctor-circle.png"/>
+          </div>
+          <div>
+            <div class="column">
+              <div class="hero__content">
                 <h1 class="hero__title">HealthBuddy</h1>
-                <h2 class="hero__subtitle">Your very own buddy for info about COVID-19. Just a text message away!</h2>
-                <div>
-                <img class="hero__img hero__img-unicef" src="../assets/img/unicef-horizontal.png"/>
-                <img class="hero__img hero__img-who" src="../assets/img/who-logo.png"/>
-                </div>
-            </div>
-
-            </div>
-            <div class="" data-aos="fade-up">
-            <img class="hero__img-doctor" src="../assets/img/doctor-square.png"/>
+                <p class="hero__subtitle">Your very own buddy for info about COVID-19.</p>
+                <p class="hero__subtitle">Just a text message away!</p>
+                  <img class="hero__img hero__img-unicef" src="../assets/img/unicef-horizontal.png"/>
+                  <img class="hero__img hero__img-who" src="../assets/img/who-logo.png"/>
             </div>
         </div>
-        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -31,24 +29,24 @@ export default {
 
 <style lang="scss" scoped>
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+  .hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 10vh 0 0 0;
+    min-height: 52vh;
   }
 
-  .column {
-    flex-direction: column-reverse !important;
-    align-items: stretch !important;
-    justify-content: center !important;
-    display: flex !important;
-    flex: 0 0 50%;
-    max-width: 50%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+  .hero::before {
+    content: '';
+    position: absolute;
+    right: -100%;
+    top: 20%;
+    width: 230%;
+    height: 200%;
+    z-index: -1;
+    background-color: rgba(28,171,226,0.2);
+    transform: skewY(145deg);
   }
 
   .hero {
@@ -61,13 +59,14 @@ export default {
       color: #212529;
       text-align: left;
 
-      &__container {
-        max-width: 960px;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+      &__content {
+
+        text-align: left;
+
+        @media only screen and (max-width: 760px) {
+          max-width: 720px;
+          text-align: center;
+        }
       }
 
       &__title {
@@ -82,7 +81,7 @@ export default {
 
       &__subtitle {
         color: #777779;
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: .5rem;
         font-weight: 500;
         line-height: 1.2;
@@ -103,9 +102,52 @@ export default {
         }
 
         &-doctor {
-          width: 35vh;
+          width: 26vh;
+          margin-top: 7vh;
+          margin-left: 8vh;
         }
     }
   }
+
+  /* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
 
 </style>
