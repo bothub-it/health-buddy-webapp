@@ -12,7 +12,7 @@
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
             <div :class="['dropdown', dropdownActive ? 'is-active' : '']">
         <a @click="triggerDrodown" class="dropdown-trigger" >
-          <i class="mdi mdi-earth" /><i class="mdi mdi-menu-down" />
+          <i class="navbar__icon mdi mdi-earth" /><i class="mdi mdi-menu-down" />
         </a>
 
         <div class="dropdown-menu">
@@ -36,16 +36,17 @@
 
     <div class="navbar-menu">
         <div class="navbar-start">
-      <a 
+      <a
       v-for="item in items" 
-      :key="item.id" 
+      :key="item.id"
+      :href="`#${item.id}`"
       class="navbar-item animatable">
         {{ item.title }}
       </a>
 
       <div :class="['navbar-item dropdown', dropdownActive ? 'is-active' : '']">
         <a @click="triggerDrodown" class="icon dropdown-trigger" >
-          <i class="mdi mdi-earth" /><i class="mdi mdi-menu-down" />
+          <i class="navbar__icon mdi mdi-earth" /><i class="mdi mdi-menu-down" />
         </a>
 
         <div class="dropdown-menu"
@@ -138,6 +139,10 @@ export default {
     max-width: 1140px;
     margin: 0 auto;
     background-color: #374EA2;
+
+    &__icon {
+      font-size: 25px;
+    }
 
     &-item, .dropdown-trigger {
       color: white;

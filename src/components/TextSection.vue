@@ -1,23 +1,22 @@
 <template>
     <div class="section">
-          <h2 id="title_about">{{ title }}</h2>
-          <p id="info_about">{{ text }}</p>
+        <div class="section__title">
+            <slot name="title" />
+        </div>
+
+        <div class="section__text">
+            <slot name="text" />
+        </div>
+
+        <div class="section__content">
+            <slot name="content" />
+        </div>
  </div>
 </template>
 
 <script>
 export default {
-    name: 'Section',
-    props: {
-        title: {
-            type: String,
-            default: '',
-        },
-        text: {
-            type: String,
-            default: '',
-        }
-    }
+    name: 'TextSection'
 }
 </script>
 
@@ -32,7 +31,15 @@ export default {
         color: #1CABE2;
         font-family: "Poppins", sans-serif;
 
-        h2 {
+        p {
+            margin-bottom: 20px;
+        }
+
+        strong {
+            color: inherit;
+        }
+
+        &__title {
             font-size: 32px;
             margin-top: 0;
             font-family: "Poppins", sans-serif;

@@ -28,13 +28,6 @@ export default {
 
 <style lang="scss" scoped>
     .feature-item {
-        // margin-top: 25px;
-        // flex: 0 0 50%;
-        // max-width: 50%;
-        // position: relative;
-        // width: 100%;
-        // padding-right: 15px;
-        // padding-left: 15px;
 
         &__icon {
             font-size: 48px;

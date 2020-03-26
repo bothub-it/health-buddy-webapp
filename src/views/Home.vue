@@ -1,33 +1,58 @@
 /* eslint-disable vue/valid-template-root */
 <template>
 <div class="home">
+  <div id="webchat"/>
   <Navbar 
     :items="navbarItems"/>
-  <Hero class="home__section" />
-  <Section 
-          class="home__section"
-          v-for="(section, index) in info" 
-          :key="index" 
-          :title="section.title" 
-          :text="section.text"/>
+  <Hero id="home" class="home__section" />
 
-  <FeatureList class="home__section" :list="features" />
-  <div id="webchat"/>
-  <div class="home__section__wrapper">
-    <div class="home__section">
-      <h1 class="home__section__title"> 
-    Informative Videos
-  </h1>
-    <InfoVideoList 
+  <text-section 
+    id="how" 
+    class="home__section">
+    <p slot="title"> Ask me about COVID-19 </p>
+    <div slot="text"> 
+      <p>Hi, I’m your HealthBuddy. Just contact me via the chat window and I will give you information about the novel coronavirus disease (COVID-19). Ask anything about the virus, the disease and the pandemic and I will find the information for you, from the trusted sources of WHO and UNICEF. Before you start, here are the different options you have for talking to me:
+        </p>
+      <p><strong>1. Select your language:</strong> I’ll detect the language setting of your browser and, if available, will automatically speak in that language. You can also change the chat language from the language dropdown menu at the top of this web page.
+      </p>
+      <p><strong>2. Select from the list of common questions:</strong> To get a quick answer, you can select from the list of common questions that I display in the chat window.
+      </p>
+      <p><strong>3. Send me your questions in natural language:</strong> Type in your question(s) in the chat window. Remember to write as if you are talking to your friend so I can understand and answer better. 
+      </p>
+    </div>
+  </text-section>
+
+  <text-section
+    id="about"
+    class="home__section">
+    <p slot="title"> What is HealthBuddy </p>
+    <p slot="text"> 
+      HealthBuddy is a joint initiative of the WHO Regional Office for Europe and UNICEF’s Europe and Central Asia Regional Office. It is available on multiple social media and instant messaging platforms for users around the world to provide them with scientific and evidence-based advice. There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important to be careful where you look for information and advice.  
+    </p>
+    <FeatureList slot="content" class="home__section" :list="features" />
+  </text-section>
+
+  <div 
+    id="info"
+    class="home__section__wrapper">
+    <text-section class="home__section">
+    <p slot="title"> Informative Videos </p>
+    <InfoVideoList
+         slot="content" 
         :urls="videoUrls"/>
-        </div>
+    <FeatureList :list="features" />
+    <div class="home__info-images">
+      <img src="../assets/img/unicef-horizontal.png" />
+      <img src="../assets/img/who-logo.png" />
+    </div>
+  </text-section>
   </div>
 </div>
 </template>
 
 <script>
 import Hero from '../components/Hero';
-import Section from '../components/Section';
+import TextSection from '../components/TextSection';
 import FeatureList from '../components/FeatureList';
 import Navbar from '../components/Navbar';
 import InfoVideoList from '../components/InfoVideoList';
@@ -39,19 +64,12 @@ export default {
     components: {
         Navbar,
         Hero,
-        Section,
+        TextSection,
         FeatureList,
         InfoVideoList,
     },
     data() {
       return {
-        info: [{
-          title: "How it works",
-          text: "You can start the conversation by asking questions naturally in the chat window or select one of the questions from the list, the HealthBuddy will give you information about Covid-19 and respond to any other question related to it. You can also report Rumors and send any question which will be answered by our experts and published on this portal."
-        },{
-          title: "What is HealthBuddy",
-          text: "HealthBuddy is a powerful artificial intelligence tool that can help you learn about the new Coronavirus (COVID-19) and how to protect yourself and others from it as per the latest evidence. There are a lot of myths and misinformation about the new Coronavirus disseminated on internet and social media. This is why it’s important to be careful where you look for information and advice! This virtual health advisor will provide you with useful information on COVID-19 and tips on how to protect yourself and others and how reduce the risk of infection."
-        }],
 
         features: [
           {
@@ -87,7 +105,7 @@ export default {
             title: "Home",
           },
           {
-            id: "gallery",
+            id: "how",
             title: "How it works",
           },
           {
@@ -95,7 +113,7 @@ export default {
             title: "About",
           },
           {
-            id: "testimonials",
+            id: "info",
             title: "Informative Videos",
           },
         ]
@@ -147,18 +165,18 @@ export default {
 
       &__section {
 
-          max-width: 1140px;
-          padding: 60px 0;
-          margin: 0 auto;
+        @media only screen and (max-width: 1150px) {
+          max-width: 720px;
+        }
 
-          @media only screen and (max-width: 1024x) {
-            max-width: 720px;
-          }
+        max-width: 1140px;
+        padding: 60px 0;
+        margin: 0 auto;
 
-          &__wrapper {
-            width: 100%;
-            background-color: #f2f5fa;
-          }
+        &__wrapper {
+          width: 100%;
+          background-color: #f2f5fa;
+        }
 
         &__title {
           font-size: 32px;
