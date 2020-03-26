@@ -3,6 +3,7 @@
         <FeatureItem 
         v-for="(feature, index) in list"
         :key="index"
+        :iconName="feature.iconName"
         :title="feature.title"
         :text="feature.text" />
     </div>

@@ -32,6 +32,7 @@ import FeatureList from '../components/FeatureList';
 import Navbar from '../components/Navbar';
 import InfoVideoList from '../components/InfoVideoList';
 import * as WebChat from '../assets/js/bot.js';
+import { mapGetters } from 'vuex';
 
 export default {
     name: 'Home',
@@ -54,18 +55,22 @@ export default {
 
         features: [
           {
+            iconName: "mdi mdi-comment-check-outline",
             title: "Multi-channel support",
             text: "Integrate with social network, instant messengers, SMS, voice calls and more",
           },
-                    {
+          {
+            iconName: "mdi mdi-earth",
             title: "Multi-language support",
             text: "HealthBuddy will automatically detect the language of your page and, if supported, will automatically speak in that language.",
           },
-                    {
-            title: "Easily integratable with other platforms",
-            text: "See how people are rating the HealthBuddy across all channels it is available",
+          {
+            iconName: "mdi mdi-vector-intersection",
+            title: "Ask the COVID-19 expert",
+            text: "Your virtual health advisor, HealthBuddy, supported by experts from WHO and UNICEF, will provide you with useful and accurate information on COVID-19: for example, tips on how to protect yourself and others, and how to reduce the risk of infection. Find answers to your questions here and share with your friends, colleagues and families.",
           },
-                    {
+          {
+            iconName: "mdi mdi-book-open-variant",
             title: "Report fake news (coming soon)",
             text: "Report rumors or fake statements you’re seeing around your region to keep others informed and see a detailed explanation here",
           },
@@ -97,20 +102,27 @@ export default {
       };
     },
     computed: {
-      userLang() { return 'en'; },
-      initialPayload() { return `hello ${this.userLang}`; }
+      ...mapGetters([
+        'getLanguage',
+      ]),
+      initialPayload() { return `hello ${this.getLanguage}`; }
+    },
+    watch: {
+      getLanguage() {
+        WebChat.send(this.initialPayload);
+      },
     },
     mounted() {
       WebChat.default.init({
         selector: '#webchat',
-        initPayload: this.initPayload,
-        tooltipPayload: this.initPayload,
+        initPayload: this.initialPayload,
+        tooltipPayload: this.initialPayload,
         channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
         host: 'https://rapidpro.ilhasoft.mobi',
         title: 'HealthBuddy',
         inputTextFieldHint: "Type a message...",
-        profileAvatar: '../assets/img/doctor-darker.png',
-        openLauncherImage: '../assets/img/doctor-square.png',
+        profileAvatar: require('@/assets/img/doctor-darker.png'),
+        openLauncherImage: require('@/assets/img/doctor-square.png'),
         docViewer: true,
         showFullScreenButton: true,
         hideWhenNotConnected: true,
@@ -129,6 +141,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../assets/css/webchat.css';
     .home {
       margin: 72px + 16px 0;
 

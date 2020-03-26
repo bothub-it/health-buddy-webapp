@@ -10,7 +10,19 @@
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span><i class="mdi-earth" /></span>
+            <div :class="['dropdown', dropdownActive ? 'is-active' : '']">
+        <a @click="triggerDrodown" class="dropdown-trigger" >
+          <i class="mdi mdi-earth" /><i class="mdi mdi-menu-down" />
+        </a>
+
+        <div class="dropdown-menu">
+          <a v-for="(language, index) in languages"
+          :key="index" class="dropdown-item"
+          @click="didClickLanguage(language.id)">
+            {{ language.name }}
+          </a>
+        </div>
+    </div>
     </a>
     
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -27,20 +39,21 @@
       <a 
       v-for="item in items" 
       :key="item.id" 
-      class="navbar-item">
+      class="navbar-item animatable">
         {{ item.title }}
       </a>
 
-                <div :class="['navbar-item dropdown', dropdownActive ? 'is-active' : '']">
+      <div :class="['navbar-item dropdown', dropdownActive ? 'is-active' : '']">
         <a @click="triggerDrodown" class="icon dropdown-trigger" >
-          <i class="mdi-earth" />
+          <i class="mdi mdi-earth" /><i class="mdi mdi-menu-down" />
         </a>
 
-        <div class="dropdown-menu">
+        <div class="dropdown-menu"
+        @blur="dropdownActive=false">
           <a v-for="(language, index) in languages"
           :key="index" class="dropdown-item"
-          @click="didClickLanguage(language)">
-            {{ language }}
+          @click="didClickLanguage(language.id)">
+            {{ language.name }}
           </a>
         </div>
     </div>
@@ -52,6 +65,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 export default {
     name: 'Navbar',
     props: {
@@ -63,18 +77,30 @@ export default {
       return {
         dropdownActive: false,
         languages: [
-          "Portuguese",
-          "English",
-          "Russian",
+          {
+            id: 'pt',
+            name: 'Portuguese'
+          },
+          {
+            id: 'en',
+            name: 'English',
+          },
+          {
+            id: 'ru',
+            name: 'Russian',
+          }
         ]
       } 
     },
     methods: {
+      ...mapActions([
+        'setLanguage',
+      ]),
       triggerDrodown() {
         this.dropdownActive = !this.dropdownActive
       },
       didClickLanguage(language) {
-        console.log(language);
+        this.setLanguage(language);
         this.dropdownActive = false;
       }
     }
@@ -82,6 +108,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+  .dropdown {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &-menu {
+      background-color: white;
+      border: 1px solid rgba(0,0,0,.15);
+      border-radius: .25rem;
+      position: absolute;
+      left: -20% !important;
+    }
+  }
+
+  .animatable {
+    transition: all .1s;
+  }
+
+  .animatable:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+
   .navbar {
 
     max-width: 1140px;

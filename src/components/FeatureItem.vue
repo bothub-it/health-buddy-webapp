@@ -1,6 +1,6 @@
 <template>
     <div class="feature-item column is-half">
-        <i class="feature-item__icon"></i>
+        <i :class="['feature-item__icon', iconName]"></i>
             <h4 class="feature-item__title"> {{ title }}</h4>
             <p class="feature-item__text"> {{ text }} </p>
     </div>
