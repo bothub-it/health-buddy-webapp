@@ -1,11 +1,9 @@
 /* eslint-disable vue/valid-template-root */
 <template>
 <div class="home">
-  <div id="webchat"/>
-  <Navbar 
-    :items="navbarItems"/>
+  <Chat 
+    :is-open.sync="isOpen"/>
   <Hero id="home"/>
-
   <text-section 
     id="how" 
     class="home__section">
@@ -41,36 +39,30 @@
          slot="content" 
         :urls="videoUrls"/>
     <FeatureList :list="features" />
-    <div slot="content" class="home__info-images">
-      <img class="home__info-images__unicef" src="../assets/img/unicef-horizontal.png" />
-      <img class="home__info-images__who" src="../assets/img/who-logo.png" />
-    </div>
   </text-section>
   </div>
 </div>
 </template>
 
 <script>
-import Hero from '../components/Hero';
-import TextSection from '../components/TextSection';
-import FeatureList from '../components/FeatureList';
-import Navbar from '../components/Navbar';
-import InfoVideoList from '../components/InfoVideoList';
-import * as WebChat from '../assets/js/bot.js';
-import { mapGetters } from 'vuex';
+import Hero from '@/components/Hero';
+import TextSection from '@/components/TextSection';
+import FeatureList from '@/components/FeatureList';
+import InfoVideoList from '@/components/InfoVideoList';
+import Chat from '@/components/Chat'
 
 export default {
     name: 'Home',
     components: {
-        Navbar,
         Hero,
         TextSection,
         FeatureList,
         InfoVideoList,
+        Chat,
     },
     data() {
       return {
-
+        isOpen: false,
         features: [
           {
             iconName: "mdi mdi-comment-check-outline",
@@ -99,61 +91,7 @@ export default {
           "https://www.youtube.com/embed/ujWFj_6FaMY",
           "https://www.youtube.com/embed/mOV1aBVYKGA",
         ],
-        navbarItems: [
-          {
-            id: "home",
-            title: "Home",
-          },
-          {
-            id: "how",
-            title: "How it works",
-          },
-          {
-            id: "about",
-            title: "About",
-          },
-          {
-            id: "info",
-            title: "Informative Videos",
-          },
-        ]
       };
-    },
-    computed: {
-      ...mapGetters([
-        'getLanguage',
-      ]),
-      initialPayload() { return `hello ${this.getLanguage}`; }
-    },
-    watch: {
-      getLanguage() {
-        WebChat.send(this.initialPayload);
-      },
-    },
-    mounted() {
-      WebChat.default.init({
-        selector: '#webchat',
-        initPayload: this.initialPayload,
-        tooltipPayload: this.initialPayload,
-        channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
-        host: 'https://rapidpro.ilhasoft.mobi',
-        title: 'HealthBuddy',
-        inputTextFieldHint: "Type a message...",
-        profileAvatar: require('@/assets/img/doctor-darker.png'),
-        openLauncherImage: require('@/assets/img/doctor-square.png'),
-        docViewer: true,
-        showFullScreenButton: true,
-        hideWhenNotConnected: true,
-        params: {
-          images: {
-            dims: {
-              width: 712,
-              height: 844,
-            }
-        },
-        storage: "local",
-       }
-      });
     },
 }
 </script>
@@ -164,28 +102,6 @@ export default {
   $home-margin: 74px;
     .home {
       margin: $home-margin 0 0;
-
-      &__info-images{
-        margin-top: 15vh;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-
-        &__unicef {
-          max-width:100%;
-          height: auto;
-          width: 38vh;
-          margin-right: 3vh;
-        }
-
-        &__who {
-          max-width:100%;
-          height: auto;
-          width: 28vh;
-          margin-right: 3vh;
-        }
-      }
 
       &__section {
 

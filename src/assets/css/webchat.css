@@ -57,6 +57,12 @@
   min-height: 75vh;
 }
 
+@media only screen and (max-height: 500px) {
+  .messages-container {
+    min-height: 20vh;
+  }
+}
+
 .conversation-container {
   max-height: 90vh;
 }
@@ -78,10 +84,23 @@
   flex-wrap:wrap;
 }
 
-.message.with-avatar {
-  background-color: transparent;
+.new-message {
+  font-weight: bolder;
 }
 
-.title.with-avatar {
-  color: white;
+.send-icon {
+  filter: brightness(50%);
+}
+
+.replies {
+  justify-content: center;
+}
+
+.conversation-container .reply {
+  width: 55%;
+  min-width: 280px;
+}
+
+.avatar {
+  min-width: 17px;
 }

@@ -2,10 +2,17 @@
 
     <div class="footer">
         <div class="footer__wrapper">
-        <a href="https://www.ilhasoft.com/"> 
-HealthBuddy is powered by Bothub © 2020 All rights reserved.
- </a>
-     <a href="https://healthbuddy.info/policy.html"> Privacy Policy </a>
+
+            <div class="footer__info-images">
+                <a href="https://www.unicef.org/eca/"><img class="footer__info-images__unicef" src="../assets/img/unicef-eu-asia.png" /></a>
+                <a href="http://www.euro.who.int/en/home"><img class="footer__info-images__who" src="../assets/img/who-europe-white.png" /></a>
+            </div>
+            <div class="footer__links">
+                <a href="https://bothub.it/"> 
+                    HealthBuddy is powered by Bothub © 2020 All rights reserved.
+                </a>
+                <router-link :to="'privacy'">Privacy Policy</router-link> 
+            </div>
      </div>
     </div>
 
@@ -23,11 +30,40 @@ export default {
         color: #47536e;
         font-size: 14px;
         background: white;
-        padding: 2rem;
+        padding: 0;
+
+    &__links {
+        margin: 3vh;
+    }
+
+    &__info-images{
+        padding: 3vh;
+        background-color: #1CABE2;
+        margin-top: 15vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        &__unicef {
+          max-width:100%;
+          height: auto;
+          width: 18vh;
+          margin-right: 3vh;
+        }
+
+        &__who {
+          max-width:100%;
+          height: auto;
+          width: 28vh;
+          margin-right: 3vh;
+        }
+      }
 
         &__wrapper {
             margin: 0 auto;
-            max-width: 1140px;
+            width: 100%;
             display: flex;
             column-gap: 50px;
             flex-wrap: wrap;

@@ -12,7 +12,7 @@
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
             <div :class="['dropdown', dropdownActive ? 'is-active' : '']">
         <a @click="triggerDrodown" class="dropdown-trigger" >
-          <i class="navbar__icon mdi mdi-earth" /><i class="mdi mdi-menu-down" />
+          Language<i class="mdi mdi-menu-down" />
         </a>
 
         <div class="dropdown-menu">
@@ -45,8 +45,8 @@
       </a>
 
       <div :class="['navbar-item dropdown', dropdownActive ? 'is-active' : '']">
-        <a @click="triggerDrodown" class="icon dropdown-trigger" >
-          <i class="navbar__icon mdi mdi-earth" /><i class="mdi mdi-menu-down" />
+        <a @click="triggerDrodown" class="dropdown-trigger animatable" >
+          Language<i class="mdi mdi-menu-down" />
         </a>
 
         <div class="dropdown-menu">
@@ -68,11 +68,6 @@
 import { mapActions } from 'vuex';
 export default {
     name: 'Navbar',
-    props: {
-      items: {
-        type: Array,
-      },
-    },
     data() {
       return {
         dropdownActive: false,
@@ -89,7 +84,21 @@ export default {
             id: 'ru',
             name: 'Russian',
           }
-        ]
+        ],
+        items: [
+          {
+            id: "home",
+            title: "Home",
+          },
+          {
+            id: "about",
+            title: "About",
+          },
+          {
+            id: "info",
+            title: "Informative Videos",
+          },
+        ],
       } 
     },
     methods: {
@@ -144,11 +153,14 @@ export default {
     }
 
     &-item, .dropdown-trigger {
+      font-family: "Open Sans", sans-serif;
       font-size: 14px;
       color: white;
       font-weight: 400;
       line-height: 1.5;
       text-align: left;
+      display: flex;
+      align-content: center;
     }
 
     &-item:hover, &-burger:hover, .dropdown-trigger:hover {

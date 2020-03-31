@@ -97,7 +97,7 @@ export default {
         vertical-align: middle;
 
         &-unicef {
-          width: 30vh;
+          width: 18vh;
           margin-right: 3vh;
         }
 
