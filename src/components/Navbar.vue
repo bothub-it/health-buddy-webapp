@@ -60,14 +60,14 @@
       <div class="navbar-end">
         <div class="navbar-menu">
           <div class="navbar-start">
-            <a
+            <router-link
               v-for="item in items" 
               :key="item.id"
-              :href="`#${item.id}`"
+              :to="`index#${item.id}`"
               class="navbar-item animatable"
             >
               {{ item.title }}
-            </a>
+            </router-link>
 
             <div :class="['navbar-item dropdown', dropdownActive ? 'is-active' : '']">
               <a

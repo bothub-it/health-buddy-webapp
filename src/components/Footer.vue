@@ -39,6 +39,10 @@ export default {
 
     &__links {
         margin: 3vh;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        justify-content: flex-start;
     }
 
     &__info-images{
