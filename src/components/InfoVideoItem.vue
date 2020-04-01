@@ -1,8 +1,12 @@
 <template>
-<div class="info-video-item">
-  <div class="info-video-item__wrapper">
-    <div class="info-video-item__content">
-        <iframe class="info-video-item__item" :src="url" allowfullscreen></iframe>
+  <div class="info-video-item">
+    <div class="info-video-item__wrapper">
+      <div class="info-video-item__content">
+        <iframe
+          class="info-video-item__item"
+          :src="url"
+          allowfullscreen
+        />
       </div>
     </div>
   </div>

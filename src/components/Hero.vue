@@ -1,22 +1,36 @@
 /* eslint-disable vue/valid-template-root */
 <template>
-    <div class="hero">
-
-        <div class="columns animated animatedFadeInUp fadeInUp">
-          <div class="column is-two-fifths is-centered">
-            <img class="hero__img-doctor" src="../assets/img/doctor-circle.png"/>
-          </div>
-          <div>
-            <div class="column">
-              <div class="hero__content">
-                <h1 class="hero__title">HealthBuddy</h1>
-                <p class="hero__subtitle">Your very own buddy for info about COVID-19.</p>
-                <p class="hero__subtitle">Just a text message away!</p>
-                <div class="hero__logos">
-                  <img class="hero__img hero__img-unicef" src="../assets/img/unicef-horizontal.png"/>
-                  <img class="hero__img hero__img-who" src="../assets/img/who-logo.png"/>
-                </div>
+  <div class="hero">
+    <div class="columns animated animatedFadeInUp fadeInUp">
+      <div class="column is-two-fifths is-centered">
+        <img
+          class="hero__img-doctor"
+          src="../assets/img/doctor-circle.png"
+        >
+      </div>
+      <div>
+        <div class="column">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              HealthBuddy
+            </h1>
+            <p class="hero__subtitle">
+              Your very own buddy for info about COVID-19.
+            </p>
+            <p class="hero__subtitle">
+              Just a text message away!
+            </p>
+            <div class="hero__logos">
+              <img
+                class="hero__img hero__img-unicef"
+                src="../assets/img/unicef-horizontal.png"
+              >
+              <img
+                class="hero__img hero__img-who"
+                src="../assets/img/who-logo.png"
+              >
             </div>
+          </div>
         </div>
       </div>
     </div>

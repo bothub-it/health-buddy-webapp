@@ -1,14 +1,16 @@
 <template>
-<div class="info-video-list">
+  <div class="info-video-list">
     <carousel
-    :items="1"
-    :nav="false">
-        <InfoVideoItem
-            v-for="(url, index) in urls"
-            :key="index"
-            :url="url"/>
+      :items="1"
+      :nav="false"
+    >
+      <InfoVideoItem
+        v-for="(url, index) in urls"
+        :key="index"
+        :url="url"
+      />
     </carousel>
-</div>
+  </div>
 </template>
 
 <script>

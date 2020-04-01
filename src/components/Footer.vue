@@ -1,21 +1,26 @@
 <template>
-
-    <div class="footer">
-        <div class="footer__wrapper">
-
-            <div class="footer__info-images">
-                <a href="https://www.unicef.org/eca/"><img class="footer__info-images__unicef" src="../assets/img/unicef-eu-asia.png" /></a>
-                <a href="http://www.euro.who.int/en/home"><img class="footer__info-images__who" src="../assets/img/who-europe-white.png" /></a>
-            </div>
-            <div class="footer__links">
-                <a href="https://bothub.it/"> 
-                    HealthBuddy is powered by Bothub © 2020 All rights reserved.
-                </a>
-                <router-link :to="'privacy'">Privacy Policy</router-link> 
-            </div>
-     </div>
+  <div class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__info-images">
+        <a href="https://www.unicef.org/eca/"><img
+          class="footer__info-images__unicef"
+          src="../assets/img/unicef-eu-asia.png"
+        ></a>
+        <a href="http://www.euro.who.int/en/home"><img
+          class="footer__info-images__who"
+          src="../assets/img/who-europe-white.png"
+        ></a>
+      </div>
+      <div class="footer__links">
+        <a href="https://bothub.it/"> 
+          HealthBuddy is powered by Bothub © 2020 All rights reserved.
+        </a>
+        <router-link :to="'privacy'">
+          Privacy Policy
+        </router-link> 
+      </div>
     </div>
-
+  </div>
 </template>
 
 <script>

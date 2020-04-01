@@ -1,12 +1,13 @@
 <template>
-    <div class="feature-list columns is-multiline">
-        <FeatureItem 
-        v-for="(feature, index) in list"
-        :key="index"
-        :iconName="feature.iconName"
-        :title="feature.title"
-        :text="feature.text" />
-    </div>
+  <div class="feature-list columns is-multiline">
+    <FeatureItem 
+      v-for="(feature, index) in list"
+      :key="index"
+      :icon-name="feature.iconName"
+      :title="feature.title"
+      :text="feature.text"
+    />
+  </div>
 </template>
 
 <script>

@@ -1,67 +1,98 @@
 <template>
-<div class="navbar__wrapper">
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="dropdown navigation">
-        <div class="navbar-brand">
-    
-    <img class="navbar-item navbar__logo" src="../assets/img/doctor-square.png">
+  <div class="navbar__wrapper">
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="dropdown navigation"
+    >
+      <div class="navbar-brand">
+        <img
+          class="navbar-item navbar__logo"
+          src="../assets/img/doctor-square.png"
+        >
 
-    <a class="navbar-item" href="https://healthbuddy.info/index.html">
-      <h1 class="navbar__title"> HealthBuddy </h1>
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <div :class="['dropdown', dropdownActive ? 'is-active' : '']">
-        <a @click="triggerDrodown" class="dropdown-trigger" >
-          Language<i class="mdi mdi-menu-down" />
+        <a
+          class="navbar-item"
+          href="https://healthbuddy.info/index.html"
+        >
+          <h1 class="navbar__title"> HealthBuddy </h1>
         </a>
 
-        <div class="dropdown-menu">
-          <a v-for="(language, index) in languages"
-          :key="index" class="dropdown-item"
-          @click="didClickLanguage(language.id)">
-            {{ language.name }}
-          </a>
-        </div>
-    </div>
-    </a>
-    
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <div :class="['dropdown', dropdownActive ? 'is-active' : '']">
+            <a
+              class="dropdown-trigger"
+              @click="triggerDrodown"
+            >
+              Language<i class="mdi mdi-menu-down" />
+            </a>
 
-  <div class="navbar-end">
-
-    <div class="navbar-menu">
-        <div class="navbar-start">
-      <a
-      v-for="item in items" 
-      :key="item.id"
-      :href="`#${item.id}`"
-      class="navbar-item animatable">
-        {{ item.title }}
-      </a>
-
-      <div :class="['navbar-item dropdown', dropdownActive ? 'is-active' : '']">
-        <a @click="triggerDrodown" class="dropdown-trigger animatable" >
-          Language<i class="mdi mdi-menu-down" />
+            <div class="dropdown-menu">
+              <a
+                v-for="(language, index) in languages"
+                :key="index"
+                class="dropdown-item"
+                @click="didClickLanguage(language.id)"
+              >
+                {{ language.name }}
+              </a>
+            </div>
+          </div>
         </a>
+    
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+        </a>
+      </div>
 
-        <div class="dropdown-menu">
-          <a v-for="(language, index) in languages"
-          :key="index" class="dropdown-item"
-          @click="didClickLanguage(language.id)">
-            {{ language.name }}
-          </a>
+      <div class="navbar-end">
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a
+              v-for="item in items" 
+              :key="item.id"
+              :href="`#${item.id}`"
+              class="navbar-item animatable"
+            >
+              {{ item.title }}
+            </a>
+
+            <div :class="['navbar-item dropdown', dropdownActive ? 'is-active' : '']">
+              <a
+                class="dropdown-trigger animatable"
+                @click="triggerDrodown"
+              >
+                Language<i class="mdi mdi-menu-down" />
+              </a>
+
+              <div class="dropdown-menu">
+                <a
+                  v-for="(language, index) in languages"
+                  :key="index"
+                  class="dropdown-item"
+                  @click="didClickLanguage(language.id)"
+                >
+                  {{ language.name }}
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-       </div>
-    </div>
       </div>
     </nav>
-    </div>
+  </div>
 </template>
 
 <script>
