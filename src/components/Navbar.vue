@@ -29,7 +29,7 @@
               class="dropdown-trigger"
               @click="triggerDrodown"
             >
-              Language<i class="mdi mdi-menu-down" />
+              {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
             </a>
 
             <div class="dropdown-menu">
@@ -74,7 +74,7 @@
                 class="dropdown-trigger animatable"
                 @click="triggerDrodown"
               >
-                Language<i class="mdi mdi-menu-down" />
+                {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
               </a>
 
               <div class="dropdown-menu">
@@ -96,7 +96,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
+import { mapActions, mapGetters } from 'vuex';
 export default {
     name: 'Navbar',
     data() {
@@ -116,21 +116,33 @@ export default {
             name: 'Russian',
           }
         ],
-        items: [
+      } 
+    },
+    computed: {
+      ...mapGetters([
+        'getLanguage',
+      ]),
+      items() {
+        return [
           {
             id: "home",
-            title: "Home",
+            title: this.$t('navbar.home'),
           },
           {
             id: "about",
-            title: "About",
+            title: this.$t('navbar.about'),
           },
           {
             id: "info",
-            title: "Informative Videos",
+            title: this.$t('navbar.videos'),
           },
-        ],
-      } 
+        ];
+      },
+    },
+    watch: {
+      getLanguage() {
+        this.$i18n.locale = this.getLanguage;
+      },
     },
     methods: {
       ...mapActions([

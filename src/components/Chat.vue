@@ -8,8 +8,11 @@
 </template>
 
 <script>
-import * as WebChat from '../assets/js/bot.js';
+// import * as WebChat from '';
 import { mapGetters } from 'vuex';
+
+var WebChat = require('@/assets/js/bot.js');
+
 export default {
   props: {
     isOpen: {
@@ -25,7 +28,6 @@ export default {
     },
     watch: {
       getLanguage() {
-        console.log(this.getLanguage);
         this.sendInitial();
       },
     },
@@ -35,7 +37,12 @@ export default {
     },
     methods: {
       isMobile() {
-        return false;
+          try{ 
+            document.createEvent("TouchEvent"); 
+            return true; 
+          } catch(e){ 
+            return false; 
+          }
       },
       sendInitial() {
         WebChat.send(this.initialPayload);
@@ -43,7 +50,7 @@ export default {
       updateOpenStatus() {
         setTimeout(() => {  
           if (WebChat.isOpen() === this.isOpen) return;
-          this.$emit('update:isOpen', WebChat.isOpen()); 
+          this.$emit('update:isOpen', WebChat.isOpen());
         }, 100);
       },
       setupChat() {
@@ -70,6 +77,7 @@ export default {
             storage: "session"
           }
       });
+      this.sendInitial();
     }
   }
 }

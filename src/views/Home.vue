@@ -10,20 +10,22 @@
       :class="['home__section', isOpen ? 'home__section__open' : '']"
     >
       <p slot="title">
-        Ask me about COVID-19
+        {{ $t('about.title') }}
       </p>
       <div slot="text"> 
         <p>
-          Hi, I’m your HealthBuddy. Just contact me via the chat window and I will give you information about the novel coronavirus disease (COVID-19). Ask anything about the virus, the disease and the pandemic and I will find the information for you, from the trusted sources of WHO and UNICEF. Before you start, here are the different options you have for talking to me:
+          {{ $t('about.about_1') }}
+          <br>
+          {{ $t('about.about_2') }}
         </p>
         <p>
-          <strong>1. Select your language:</strong> I’ll detect the language setting of your browser and, if available, will automatically speak in that language. You can also change the chat language from the language dropdown menu at the top of this web page.
+          <strong>{{ $t('about.about_3.emphasis_1') }}</strong> {{ $t('about.about_3.text_1') }}
         </p>
         <p>
-          <strong>2. Select from the list of common questions:</strong> To get a quick answer, you can select from the list of common questions that I display in the chat window.
+          <strong>{{ $t('about.about_3.emphasis_2') }}</strong> {{ $t('about.about_3.text_2') }}
         </p>
         <p>
-          <strong>3. Send me your questions in natural language:</strong> Type in your question(s) in the chat window. Remember to write as if you are talking to your friend so I can understand and answer better. 
+          <strong>{{ $t('about.about_3.emphasis_3') }}</strong> {{ $t('about.about_3.text_3') }}
         </p>
       </div>
     </text-section>
@@ -33,10 +35,7 @@
       :class="['home__section', isOpen ? 'home__section__open' : '']"
     >
       <p slot="title">
-        What is HealthBuddy
-      </p>
-      <p slot="text"> 
-        HealthBuddy is a joint initiative of the WHO Regional Office for Europe and UNICEF’s Europe and Central Asia Regional Office. It is available on multiple social media and instant messaging platforms for users around the world to provide them with scientific and evidence-based advice. There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important to be careful where you look for information and advice.  
+        {{ $t('features.title') }}
       </p>
       <FeatureList
         slot="content"
@@ -51,7 +50,7 @@
     >
       <text-section class="home__section">
         <p slot="title">
-          Informative Videos
+          {{ $t('videos.title') }}
         </p>
         <InfoVideoList
           slot="content" 
@@ -83,28 +82,6 @@ export default {
     data() {
       return {
         isOpen: false,
-        features: [
-          {
-            iconName: "mdi mdi-comment-check-outline",
-            title: "Multi-channel support",
-            text: "Integrate with social network, instant messengers, SMS, voice calls and more",
-          },
-          {
-            iconName: "mdi mdi-earth",
-            title: "Multi-language support",
-            text: "HealthBuddy will automatically detect the language of your page and, if supported, will automatically speak in that language.",
-          },
-          {
-            iconName: "mdi mdi-vector-intersection",
-            title: "Ask the COVID-19 expert",
-            text: "Your virtual health advisor, HealthBuddy, supported by experts from WHO and UNICEF, will provide you with useful and accurate information on COVID-19: for example, tips on how to protect yourself and others, and how to reduce the risk of infection. Find answers to your questions here and share with your friends, colleagues and families.",
-          },
-          {
-            iconName: "mdi mdi-book-open-variant",
-            title: "Report fake news (coming soon)",
-            text: "Report rumors or fake statements you’re seeing around your region to keep others informed and see a detailed explanation here",
-          },
-        ],
         videoUrls: [
           "https://www.youtube.com/embed/QYxzo3-qZRc",
           "https://www.youtube.com/embed/JKpVMivbTfg",
@@ -117,6 +94,30 @@ export default {
       ...mapGetters([
         'getLanguage',
       ]),
+      features(){
+        return [
+          {
+            iconName: "mdi mdi-comment-check-outline",
+            title: this.$t( 'features.feature_1_title'),
+            text: this.$t( 'features.feature_1_text'),
+          },
+          {
+            iconName: "mdi mdi-earth",
+            title: this.$t( 'features.feature_2_title'),
+            text: this.$t( 'features.feature_2_text'),
+          },
+          {
+            iconName: "mdi mdi-vector-intersection",
+            title: this.$t( 'features.feature_3_title'),
+            text: this.$t( 'features.feature_3_text'),
+          },
+          {
+            iconName: "mdi mdi-book-open-variant",
+            title: this.$t( 'features.feature_4_title'),
+            text: this.$t( 'features.feature_4_text'),
+          },
+        ];
+      },
     },
 }
 </script>

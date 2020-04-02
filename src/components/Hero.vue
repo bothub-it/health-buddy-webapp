@@ -15,19 +15,19 @@
               HealthBuddy
             </h1>
             <p class="hero__subtitle">
-              Your very own buddy for info about COVID-19.
+              {{ $t('hero.title') }}
             </p>
             <p class="hero__subtitle">
-              Just a text message away!
+              {{ $t('hero.subtitle') }}
             </p>
             <div class="hero__logos">
               <img
                 class="hero__img hero__img-unicef"
-                src="../assets/img/unicef-horizontal.png"
+                :src="unicefLogo"
               >
               <img
                 class="hero__img hero__img-who"
-                src="../assets/img/who-logo.png"
+                :src="whoLogo"
               >
             </div>
           </div>
@@ -38,8 +38,21 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
     name: 'Hero',
+    computed: {
+      ...mapGetters([
+        'getLanguage',
+      ]),
+      unicefLogo() {
+        return require(this.getLanguage === 'ru' ? 
+          "@/assets/img/unicef-russian.png" : "../assets/img/unicef-horizontal.png");
+      },
+      whoLogo() {
+        return require("@/assets/img/who-logo.png");
+      },
+    },
 }
 </script>
 
@@ -76,7 +89,7 @@ export default {
       text-align: left;
 
       &__logos {
-        margin-top: 7vh;
+        margin: 7vh 0 2vh;
       }
 
       &__content {
