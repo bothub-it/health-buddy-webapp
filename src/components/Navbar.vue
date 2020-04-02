@@ -8,7 +8,7 @@
       <div class="navbar-brand">
         <img
           class="navbar-item navbar__logo"
-          src="../assets/img/doctor-square.png"
+          src="@/assets/img/doctor-square.png"
         >
 
         <a

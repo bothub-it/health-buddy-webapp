@@ -16,7 +16,9 @@
         <p>
           {{ $t('about.about_1') }}
           <br>
+          <br>
           {{ $t('about.about_2') }}
+          <br>
         </p>
         <p>
           <strong>{{ $t('about.about_3.emphasis_1') }}</strong> {{ $t('about.about_3.text_1') }}

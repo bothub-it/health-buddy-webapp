@@ -5,7 +5,7 @@
       <div class="column is-two-fifths is-centered">
         <img
           class="hero__img-doctor"
-          src="../assets/img/doctor-circle.png"
+          src="@/assets/img/doctor-circle.png"
         >
       </div>
       <div>
@@ -47,7 +47,7 @@ export default {
       ]),
       unicefLogo() {
         return require(this.getLanguage === 'ru' ? 
-          "@/assets/img/unicef-russian.png" : "../assets/img/unicef-horizontal.png");
+          "@/assets/img/unicef-russian.png" : "@/assets/img/unicef-horizontal.png");
       },
       whoLogo() {
         return require("@/assets/img/who-logo.png");

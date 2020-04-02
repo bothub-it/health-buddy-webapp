@@ -61,7 +61,6 @@ export default {
     &__info-images{
         padding: 3vh;
         background-color: #1CABE2;
-        margin-top: 15vh;
         width: 100%;
         display: flex;
         flex-wrap: wrap;

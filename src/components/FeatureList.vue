@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import FeatureItem from "./FeatureItem"
+import FeatureItem from "@/components/FeatureItem"
 export default {
     name: 'FeatureList',
     components: {
