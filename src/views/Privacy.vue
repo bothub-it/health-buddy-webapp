@@ -7,11 +7,23 @@
     />
     <text-section>
       <p slot="title">
-        Policy
+        {{ $t('policy.title') }}
       </p>
-      <p slot="text">
-        Content
-      </p>
+      <div slot="text">
+        <div v-for="index in 7" :key="index">
+          <strong>
+            {{ $t(`policy.section_${index}_title`) }}
+          </strong>
+          <p>
+            {{ $t(`policy.section_${index}_text`) }}
+          </p>
+          <br>
+        </div>
+        <br>
+        <p>
+            {{ $t(`policy.updated`) }}
+          </p>
+      </div>
     </text-section>
   </div>
 </template>

@@ -104,7 +104,7 @@ export default {
         dropdownActive: false,
         languages: [
           {
-            id: 'pt',
+            id: 'pt-BR',
             name: 'Portuguese'
           },
           {
