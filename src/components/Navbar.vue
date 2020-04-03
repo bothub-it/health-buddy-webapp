@@ -1,5 +1,17 @@
 <template>
   <div class="navbar__wrapper">
+    <modal 
+      :active.sync="modalActive">
+      <router-link
+              v-for="item in items"
+              class="modal-item"
+              :key="item.id"
+              :to="`index#${item.id}`"
+              @click="modalActive=false"
+            >
+              {{ item.title }}
+            </router-link>
+    </modal>
     <nav
       class="navbar is-fixed-top"
       role="navigation"
@@ -28,7 +40,6 @@
               <a
                 class="dropdown-trigger animatable"
                 slot="trigger"
-                @click="triggerDrodown"
               >
                 {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
               </a>
@@ -47,16 +58,18 @@
               </div>
             </dropdown>
         </a>
-    
+
         <a
           role="button"
           class="navbar-burger"
           aria-label="menu"
           aria-expanded="false"
+          @click="modalActive=true"
         >
           <span aria-hidden="true" />
           <span aria-hidden="true" />
           <span aria-hidden="true" />
+          
         </a>
       </div>
 
@@ -76,7 +89,6 @@
               <a
                 class="dropdown-trigger animatable"
                 slot="trigger"
-                @click="triggerDrodown"
               >
                 {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
               </a>
@@ -104,13 +116,17 @@
 <script>
 import { mapActions, mapGetters } from 'vuex';
 import Dropdown from '@/components/Dropdown';
+import Modal from '@/components/Modal';
+
 export default {
     name: 'Navbar',
     components: {
       Dropdown,
+      Modal,
     },
     data() {
       return {
+        modalActive: false,
         languages: [
           {
             id: 'pt-BR',
@@ -157,18 +173,19 @@ export default {
       ...mapActions([
         'setLanguage',
       ]),
-      triggerDrodown() {
-        this.dropdownActive = !this.dropdownActive
-      },
       didClickLanguage(language) {
         this.setLanguage(language);
-        this.dropdownActive = false;
-      }
+      },
     }
 }
 </script>
 
 <style lang="scss" scoped>
+
+  .modal-item {
+    display: block;
+    margin: 0.75rem;
+  }
 
   .dropdown {
     width: 100%;
@@ -242,6 +259,10 @@ export default {
       font-weight: 400;
       letter-spacing: 2px;
       font-family: "Raleway", sans-serif;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
     }
 
     &__logo {

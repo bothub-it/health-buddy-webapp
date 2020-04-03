@@ -109,6 +109,10 @@ export default {
         color: #1CABE2;
         font-family: "Poppins", sans-serif;
         margin-bottom: .5rem;
+
+        @media (max-width: 768px) {
+          font-size: 30px;
+        }
       }
 
       &__subtitle {
@@ -117,6 +121,10 @@ export default {
         margin-bottom: .5rem;
         font-weight: 500;
         line-height: 1.2;
+
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
       }
 
       &__img {
