@@ -24,25 +24,28 @@
           aria-label="menu"
           aria-expanded="false"
         >
-          <div :class="['dropdown', dropdownActive ? 'is-active' : '']">
-            <a
-              class="dropdown-trigger"
-              @click="triggerDrodown"
-            >
-              {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
-            </a>
-
-            <div class="dropdown-menu">
+          <dropdown class="navbar-item">
               <a
-                v-for="(language, index) in languages"
-                :key="index"
-                class="dropdown-item"
-                @click="didClickLanguage(language.id)"
+                class="dropdown-trigger animatable"
+                slot="trigger"
+                @click="triggerDrodown"
               >
-                {{ language.name }}
+                {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
               </a>
-            </div>
-          </div>
+
+              <div 
+                class="dropdown-menu"
+                slot="options">
+                <a
+                  v-for="(language, index) in languages"
+                  :key="index"
+                  class="dropdown-item"
+                  @click="didClickLanguage(language.id)"
+                >
+                  {{ language.name }}
+                </a>
+              </div>
+            </dropdown>
         </a>
     
         <a
@@ -69,15 +72,18 @@
               {{ item.title }}
             </router-link>
 
-            <div :class="['navbar-item dropdown', dropdownActive ? 'is-active' : '']">
+            <dropdown class="navbar-item">
               <a
                 class="dropdown-trigger animatable"
+                slot="trigger"
                 @click="triggerDrodown"
               >
                 {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
               </a>
 
-              <div class="dropdown-menu">
+              <div 
+                class="dropdown-menu"
+                slot="options">
                 <a
                   v-for="(language, index) in languages"
                   :key="index"
@@ -87,7 +93,7 @@
                   {{ language.name }}
                 </a>
               </div>
-            </div>
+            </dropdown>
           </div>
         </div>
       </div>
@@ -97,11 +103,14 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
+import Dropdown from '@/components/Dropdown';
 export default {
     name: 'Navbar',
+    components: {
+      Dropdown,
+    },
     data() {
       return {
-        dropdownActive: false,
         languages: [
           {
             id: 'pt-BR',
