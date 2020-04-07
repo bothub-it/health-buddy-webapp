@@ -1,29 +1,24 @@
-/* eslint-disable vue/valid-template-root */
 <template>
-  <div class="hero">
-    <div class="columns animated animatedFadeInUp fadeInUp">
-      <div class="column is-two-fifths is-centered">
-        <img
-          class="hero__img-doctor"
-          src="@/assets/img/doctor-circle.png"
-        >
-      </div>
-      <div>
-        <div class="column">
-          <div class="hero__content">
-            <h1 class="hero__title">
+  <div class="banner">
+      <div class="banner__columns animated animatedFadeInUp fadeInUp">
+        <div class="banner__columns__column">
+          <img class="banner__img-doctor"
+               src="@/assets/img/doctor-circle.png">
+        </div>
+        <div class="banner__columns__column">
+          <div class="banner__content">
+            <h1 class="banner__title">
               HealthBuddy
             </h1>
-            <p class="hero__subtitle">
+            <p class="banner__subtitle">
               {{ $t('hero.title') }}
             </p>
-            <p class="hero__subtitle">
+            <p class="banner__subtitle">
               {{ $t('hero.subtitle') }}
             </p>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </template>
 
@@ -48,119 +43,133 @@ export default {
 
 <style lang="scss" scoped>
 
-  .hero {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    padding: 10vh 0 0 0;
-    min-height: 52vh;
-  }
+.banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 10vh 0 0 0;
+  min-height: 52vh;
+}
 
-  .hero::before {
-    content: '';
-    position: absolute;
-    right: -100%;
-    top: 20%;
-    width: 230%;
-    height: 200%;
-    z-index: -1;
-    background-color: rgba(28,171,226,0.2);
-    transform: skewY(145deg);
-  }
+.banner::before {
+  content: '';
+  position: absolute;
+  right: -100%;
+  top: 20%;
+  width: 230%;
+  height: 200%;
+  z-index: -1;
+  background-color: rgba(28,171,226,0.2);
+  transform: skewY(145deg);
+}
 
-  .hero {
+.banner {
+  font-family: "Open Sans", sans-serif;
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
 
-      font-family: "Open Sans", sans-serif;
-      color: #585a61;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-      color: #212529;
-      text-align: left;
-
-      &__logos {
-        margin: 7vh 0 2vh;
+  &__columns {
+    margin: 9vh auto .5rem auto;
+    display: flex;
+    max-width: 1150px;
+    align-items: center;
+    &__column {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0;
       }
+    }
 
-      &__content {
-        text-align: left;
-
-        @media only screen and (max-width: 760px) {
-          max-width: 720px;
-          text-align: center;
-        }
-      }
-
-      &__title {
-        margin: 9vh 0 0 0;
-        font-size: 48px;
-        font-weight: 500;
-        line-height: 56px;
-        color: #1CABE2;
-        font-family: "Poppins", sans-serif;
-        margin-bottom: .5rem;
-
-        @media (max-width: 768px) {
-          font-size: 30px;
-        }
-      }
-
-      &__subtitle {
-        color: #777779;
-        font-size: 18px;
-        margin-bottom: .5rem;
-        font-weight: 500;
-        line-height: 1.2;
-
-        @media (max-width: 768px) {
-          font-size: 20px;
-        }
-      }
-
-      &__img {
-
-        vertical-align: middle;
-
-        &-unicef {
-          width: 18vh;
-          margin-right: 3vh;
-        }
-
-        &-who {
-          width: 18vh;
-          margin-right: 3vh;
-        }
-
-        &-doctor {
-          width: 26vh;
-          margin: 0 auto 7vh;
-          display: block;
-        }
+    @media (max-width: 1150px) {
+      flex-direction: column;
+      justify-content: center;
     }
   }
+
+  &__logos {
+    margin: 7vh 0 2vh;
+  }
+
+  &__content {
+    text-align: left;
+
+    @media only screen and (max-width: 760px) {
+      max-width: 720px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    color: #1CABE2;
+    font-family: "Poppins", sans-serif;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  &__subtitle {
+    color: #777779;
+    font-size: 18px;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__img {
+
+    vertical-align: middle;
+
+    &-unicef {
+      width: 18vh;
+      margin-right: 3vh;
+    }
+
+    &-who {
+      width: 18vh;
+      margin-right: 3vh;
+    }
+
+    &-doctor {
+      width: 26vh;
+      display: block;
+    }
+  }
+}
 
   /* Animation */
 
 @keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
+  from {
+    transform: translate3d(0,40px,0)
+  }
 
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
 }
 
 @-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  from {
+    transform: translate3d(0,40px,0)
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
 }
 
 .animated {
