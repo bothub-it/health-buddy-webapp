@@ -20,16 +20,6 @@
             <p class="hero__subtitle">
               {{ $t('hero.subtitle') }}
             </p>
-            <div class="hero__logos">
-              <img
-                class="hero__img hero__img-unicef"
-                :src="unicefLogo"
-              >
-              <img
-                class="hero__img hero__img-who"
-                :src="whoLogo"
-              >
-            </div>
           </div>
         </div>
       </div>
@@ -46,7 +36,7 @@ export default {
         'getLanguage',
       ]),
       unicefLogo() {
-        return require(this.getLanguage === 'ru' ? 
+        return require(this.getLanguage === 'ru' ?
           "@/assets/img/unicef-russian.png" : "@/assets/img/unicef-horizontal.png");
       },
       whoLogo() {
