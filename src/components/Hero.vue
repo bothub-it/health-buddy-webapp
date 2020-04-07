@@ -49,27 +49,24 @@ export default {
   overflow: hidden;
   padding: 10vh 0 0 0;
   min-height: 52vh;
-}
-
-.banner::before {
-  content: '';
-  position: absolute;
-  right: -100%;
-  top: 20%;
-  width: 230%;
-  height: 200%;
-  z-index: -1;
-  background-color: rgba(28,171,226,0.2);
-  transform: skewY(145deg);
-}
-
-.banner {
   font-family: "Open Sans", sans-serif;
   color: #212529;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: -100%;
+    top: 20%;
+    width: 230%;
+    height: 200%;
+    z-index: -1;
+    background-color: rgba(28,171,226,0.2);
+    transform: skewY(145deg);
+  }
 
   &__columns {
     margin: 9vh auto .5rem auto;
