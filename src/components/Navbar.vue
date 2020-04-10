@@ -54,32 +54,31 @@
         </a>
       </div>
 
-      <div class="navbar-end">
-        <div class="navbar-menu">
-          <div class="navbar-start">
-            <router-link v-for="item in items"
-                         :key="item.id"
-                         :to="`index#${item.id}`"
-                         class="navbar-item animatable">
-              {{ item.title }}
-            </router-link>
 
-            <dropdown class="navbar-item">
-              <a class="dropdown-trigger animatable"
-                 slot="trigger">
-                {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
-              </a>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <router-link v-for="item in items"
+                       :key="item.id"
+                       :to="`index#${item.id}`"
+                       class="navbar-item animatable">
+            {{ item.title }}
+          </router-link>
 
-              <a v-for="(language, index) in languages"
-                 :key="index"
-                 @click="didClickLanguage(language.id)"
-                 slot="options"
-                 class="dropdown-item">
-                {{ language.name }}
-              </a>
+          <dropdown class="navbar-item">
+            <a class="dropdown-trigger animatable"
+               slot="trigger">
+              {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
+            </a>
 
-            </dropdown>
-          </div>
+            <a v-for="(language, index) in languages"
+               :key="index"
+               @click="didClickLanguage(language.id)"
+               slot="options"
+               class="dropdown-item">
+              {{ language.name }}
+            </a>
+
+          </dropdown>
         </div>
       </div>
     </nav>
