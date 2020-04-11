@@ -27,4 +27,7 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+button {
+  cursor: pointer;
+}
 </style>
