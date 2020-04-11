@@ -21,23 +21,20 @@
           <h1 class="navbar__title"> HealthBuddy </h1>
         </a>
 
-        <a role="button"
-           class="navbar-burger"
-           aria-label="menu"
-           aria-expanded="false">
-          <LanguageDropdown @selectedLanguage="didClickLanguage($event)" />
-        </a>
-
-        <a @click="modalActive=true"
-           role="button"
-           class="navbar-burger"
-           aria-label="menu"
-           aria-expanded="false">
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-
-        </a>
+        <div class="navbar-burger">
+          <div class="navbar-item">
+            <LanguageDropdown @selectedLanguage="didClickLanguage($event)" />
+            <a @click="modalActive=true"
+               class="navbar-item"
+               role="button"
+               aria-label="menu"
+               aria-expanded="false">
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
+            </a>
+          </div>
+        </div>
       </div>
 
 
@@ -172,6 +169,10 @@ export default {
 
   &-burger {
     color: white;
+    width: inherit;
+    > .navbar-item {
+      padding-left: 0;
+    }
   }
 
   &__wrapper {
@@ -195,12 +196,21 @@ export default {
     @media (max-width: 768px) {
       font-size: 20px;
     }
+    @media (max-width: 350px) {
+      font-size: 15px;
+    }
+    @media (max-width: 310px) {
+      font-size: 12px;
+    }
   }
 
   &__logo {
-    margin-top: 1vh;
-    max-height: 7vh;
+    max-height: 50px;
+    padding: 2px;
     border-style: none;
+    @media (max-width: 350px) {
+      max-height: 40px;
+    }
   }
 }
 </style>
