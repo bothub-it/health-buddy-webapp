@@ -3,7 +3,8 @@
       <div class="banner__columns animated animatedFadeInUp fadeInUp">
         <div class="banner__columns__column">
           <img class="banner__img-doctor"
-               src="@/assets/img/doctor-circle.png">
+               src="@/assets/img/doctor-circle.png"
+               alt="">
         </div>
         <div class="banner__columns__column">
           <div class="banner__content">
@@ -44,11 +45,8 @@ export default {
 <style lang="scss" scoped>
 
 .banner {
-  width: 100%;
   position: relative;
   overflow: hidden;
-  padding: 10vh 0 0 0;
-  min-height: 52vh;
   font-family: "Open Sans", sans-serif;
   color: #212529;
   font-size: 1rem;
@@ -69,7 +67,8 @@ export default {
   }
 
   &__columns {
-    margin: 9vh auto .5rem auto;
+    padding: 50px 10px;
+    margin: 3.5em auto .5em auto;
     display: flex;
     max-width: 1150px;
     align-items: center;
@@ -102,11 +101,12 @@ export default {
   }
 
   &__title {
+    margin-bottom: 25px;
+    font-family: "Poppins", sans-serif;
     font-size: 48px;
     font-weight: 500;
     line-height: 56px;
     color: #1CABE2;
-    font-family: "Poppins", sans-serif;
 
     @media (max-width: 768px) {
       font-size: 30px;
