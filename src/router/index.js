@@ -11,9 +11,9 @@ export default new Router({
   // eslint-disable-next-line no-unused-vars
   scrollBehavior: function (to, from, savedPosition) {
     if (to.hash) {
-      return {selector: to.hash}
+      return { selector: to.hash }
     } else {
-      return {x: 0, y: 0}
+      return { x: 0, y: 0 }
     }
   },
   routes: [

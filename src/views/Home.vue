@@ -1,14 +1,11 @@
 /* eslint-disable vue/valid-template-root */
 <template>
   <div class="home">
-    <Chat
-      :is-open.sync="isOpen"
-    />
+    <Chat :is-open.sync="isOpen" />
     <Hero id="home" />
-    <text-section
-      id="how"
-      :class="['home__section', isOpen ? 'home__section__open' : '']"
-    >
+    <text-section id="how"
+                  class="home__section"
+                  :class="{'home__section__open': isOpen }">
       <p slot="title">
         {{ $t('about.title') }}
       </p>
@@ -32,10 +29,9 @@
       </div>
     </text-section>
 
-    <text-section
-      id="about"
-      :class="['home__section', isOpen ? 'home__section__open' : '']"
-    >
+    <text-section id="about"
+                  class="home__section"
+                  :class="{ 'home__section__open': isOpen }">
       <p slot="title">
         {{ $t('features.title') }}
       </p>
@@ -46,10 +42,8 @@
       />
     </text-section>
 
-    <div
-      id="info"
-      class="home__section__wrapper"
-    >
+    <div id="info"
+         class="home__section__wrapper">
       <text-section class="home__section">
         <p slot="title">
           {{ $t('videos.title') }}
