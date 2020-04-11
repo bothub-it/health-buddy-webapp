@@ -2,22 +2,14 @@
   <div class="footer">
     <div class="footer__wrapper">
       <div class="footer__info-images">
-        <a href="https://www.unicef.org/eca/"><img
-          class="footer__info-images__unicef"
-          :src="unicefLogo"
-        ></a>
-        <a href="http://www.euro.who.int/en/home"><img
-          class="footer__info-images__who"
-          :src="whoLogo"
-        ></a>
       </div>
       <div class="footer__links">
-        <a href="https://bothub.it/"> 
+        <a href="https://bothub.it/">
           {{ $t('footer.bothub') }}
         </a>
         <router-link :to="'privacy'">
           {{ $t('footer.policy') }}
-        </router-link> 
+        </router-link>
       </div>
     </div>
   </div>
@@ -32,7 +24,7 @@ export default {
         'getLanguage',
       ]),
       unicefLogo() {
-        return require(this.getLanguage !== 'ru' ? 
+        return require(this.getLanguage !== 'ru' ?
           "@/assets/img/unicef-eu-asia.png" : "@/assets/img/unicef-russian-white.png");
       },
       whoLogo() {

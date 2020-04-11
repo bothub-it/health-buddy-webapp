@@ -1,18 +1,15 @@
 /* eslint-disable vue/valid-template-root */
 <template>
   <div class="home">
-    <Chat
-      :is-open.sync="isOpen"
-    />
+    <Chat :is-open.sync="isOpen" />
     <Hero id="home" />
-    <text-section 
-      id="how" 
-      :class="['home__section', isOpen ? 'home__section__open' : '']"
-    >
-      <p slot="title">
+    <text-section id="how"
+                  class="home__section"
+                  :class="{'home__section__open': isOpen }">
+      <h2 slot="title">
         {{ $t('about.title') }}
-      </p>
-      <div slot="text"> 
+      </h2>
+      <div slot="text">
         <p>
           {{ $t('about.about_1') }}
           <br>
@@ -32,33 +29,33 @@
       </div>
     </text-section>
 
-    <text-section
-      id="about"
-      :class="['home__section', isOpen ? 'home__section__open' : '']"
-    >
-      <p slot="title">
+    <text-section id="about"
+                  class="home__section"
+                  :class="{ 'home__section__open': isOpen }">
+      <h2 slot="title">
         {{ $t('features.title') }}
-      </p>
-      <FeatureList
-        slot="content"
-        class="home__section"
-        :list="features"
-      />
+      </h2>
+      <div slot="text">
+        <p>
+          {{ $t('features.text') }}
+        </p>
+      </div>
+      <FeatureList :list="features"
+                   slot="content"
+                   class="home__section"/>
     </text-section>
 
-    <div 
-      id="info"
-      class="home__section__wrapper"
-    >
+    <div id="info"
+         class="home__section__wrapper">
       <text-section class="home__section">
-        <p slot="title">
+        <h2 slot="title">
           {{ $t('videos.title') }}
-        </p>
+        </h2>
         <InfoVideoList
-          slot="content" 
+          slot="content"
           :urls="videoUrls"
         />
-        <FeatureList :list="features" />
+        <FeatureList :list="features"/>
       </text-section>
     </div>
   </div>
@@ -126,39 +123,35 @@ export default {
 
 <style lang="scss" scoped>
 
-  $home-margin: 74px;
-    .home {
-      margin: $home-margin 0 0;
-
-      &__section {
-
-        @media only screen and (max-width: 1150px) {
-          max-width: 720px;
-        }
-
-        max-width: 1140px;
-        padding: 60px 0;
-        margin: 0 auto;
-
-        &__open {
-          max-width: 60%;
-          margin: 1.5rem;
-        }
-
-        &__wrapper {
-          width: 100%;
-          background-color: #f2f5fa;
-        }
-
-        &__title {
-          margin: 11vh 0 2vh 0;
-          font-size: 38px;
-          font-weight: 500;
-          line-height: 56px;
-          color: #1CABE2;
-          font-family: "Poppins", sans-serif;
-        }
-      }
+.home {
+  &__section {
+    @media only screen and (max-width: 1150px) {
+      max-width: 720px;
     }
+
+    max-width: 1140px;
+    padding: 20px 20px;
+    margin: 0 auto;
+
+    &__open {
+      max-width: 60%;
+      margin: 1.5rem;
+    }
+
+    &__wrapper {
+      width: 100%;
+      background-color: #f2f5fa;
+    }
+
+    &__title {
+      margin: 11vh 0 2vh 0;
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 56px;
+      color: #1CABE2;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}
 
 </style>

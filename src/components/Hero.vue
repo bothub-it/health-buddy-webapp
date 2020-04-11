@@ -1,39 +1,25 @@
-/* eslint-disable vue/valid-template-root */
 <template>
-  <div class="hero">
-    <div class="columns animated animatedFadeInUp fadeInUp">
-      <div class="column is-two-fifths is-centered">
-        <img
-          class="hero__img-doctor"
-          src="@/assets/img/doctor-circle.png"
-        >
-      </div>
-      <div>
-        <div class="column">
-          <div class="hero__content">
-            <h1 class="hero__title">
+  <div class="banner">
+      <div class="banner__columns animated animatedFadeInUp fadeInUp">
+        <div class="banner__columns__column">
+          <img class="banner__img-doctor"
+               src="@/assets/img/doctor-circle.png"
+               alt="">
+        </div>
+        <div class="banner__columns__column">
+          <div class="banner__content">
+            <h1 class="banner__title">
               HealthBuddy
             </h1>
-            <p class="hero__subtitle">
+            <p class="banner__subtitle">
               {{ $t('hero.title') }}
             </p>
-            <p class="hero__subtitle">
+            <p class="banner__subtitle">
               {{ $t('hero.subtitle') }}
             </p>
-            <div class="hero__logos">
-              <img
-                class="hero__img hero__img-unicef"
-                :src="unicefLogo"
-              >
-              <img
-                class="hero__img hero__img-who"
-                :src="whoLogo"
-              >
-            </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </template>
 
@@ -46,7 +32,7 @@ export default {
         'getLanguage',
       ]),
       unicefLogo() {
-        return require(this.getLanguage === 'ru' ? 
+        return require(this.getLanguage === 'ru' ?
           "@/assets/img/unicef-russian.png" : "@/assets/img/unicef-horizontal.png");
       },
       whoLogo() {
@@ -58,15 +44,17 @@ export default {
 
 <style lang="scss" scoped>
 
-  .hero {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    padding: 10vh 0 0 0;
-    min-height: 52vh;
-  }
+.banner {
+  position: relative;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
 
-  .hero::before {
+  &::before {
     content: '';
     position: absolute;
     right: -100%;
@@ -78,99 +66,107 @@ export default {
     transform: skewY(145deg);
   }
 
-  .hero {
-
-      font-family: "Open Sans", sans-serif;
-      color: #585a61;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-      color: #212529;
-      text-align: left;
-
-      &__logos {
-        margin: 7vh 0 2vh;
+  &__columns {
+    padding: 50px 10px;
+    margin: 3.5em auto .5em auto;
+    display: flex;
+    max-width: 1150px;
+    align-items: center;
+    &__column {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0;
       }
+    }
 
-      &__content {
-        text-align: left;
-
-        @media only screen and (max-width: 760px) {
-          max-width: 720px;
-          text-align: center;
-        }
-      }
-
-      &__title {
-        margin: 9vh 0 0 0;
-        font-size: 48px;
-        font-weight: 500;
-        line-height: 56px;
-        color: #1CABE2;
-        font-family: "Poppins", sans-serif;
-        margin-bottom: .5rem;
-
-        @media (max-width: 768px) {
-          font-size: 30px;
-        }
-      }
-
-      &__subtitle {
-        color: #777779;
-        font-size: 18px;
-        margin-bottom: .5rem;
-        font-weight: 500;
-        line-height: 1.2;
-
-        @media (max-width: 768px) {
-          font-size: 20px;
-        }
-      }
-
-      &__img {
-
-        vertical-align: middle;
-
-        &-unicef {
-          width: 18vh;
-          margin-right: 3vh;
-        }
-
-        &-who {
-          width: 18vh;
-          margin-right: 3vh;
-        }
-
-        &-doctor {
-          width: 26vh;
-          margin: 0 auto 7vh;
-          display: block;
-        }
+    @media (max-width: 1150px) {
+      flex-direction: column;
+      justify-content: center;
     }
   }
+
+  &__logos {
+    margin: 7vh 0 2vh;
+  }
+
+  &__content {
+    text-align: left;
+
+    @media only screen and (max-width: 760px) {
+      max-width: 720px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    color: #1CABE2;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  &__subtitle {
+    color: #777779;
+    font-size: 18px;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__img {
+
+    vertical-align: middle;
+
+    &-unicef {
+      width: 18vh;
+      margin-right: 3vh;
+    }
+
+    &-who {
+      width: 18vh;
+      margin-right: 3vh;
+    }
+
+    &-doctor {
+      width: 26vh;
+      display: block;
+    }
+  }
+}
 
   /* Animation */
 
 @keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
+  from {
+    transform: translate3d(0,40px,0)
+  }
 
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
 }
 
 @-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  from {
+    transform: translate3d(0,40px,0)
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
 }
 
 .animated {

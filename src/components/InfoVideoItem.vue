@@ -31,8 +31,10 @@ export default {
     max-width: 55%;
 
     &__wrapper {
+      display: flex;
+      align-items: center;
       box-sizing: content-box;
-      padding: 30px 30px 30px 60px;
+      padding: 30px 30px 30px 30px;
       margin: 30px 15px;
       min-height: 200px;
       box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
@@ -65,5 +67,5 @@ export default {
       border: 0;
     }
   }
-  
+
 </style>

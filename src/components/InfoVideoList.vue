@@ -1,14 +1,10 @@
 <template>
   <div class="info-video-list">
-    <carousel
-      :items="1"
-      :nav="false"
-    >
-      <InfoVideoItem
-        v-for="(url, index) in urls"
-        :key="index"
-        :url="url"
-      />
+    <carousel :items="1"
+              :nav="false">
+      <InfoVideoItem v-for="(url, index) in urls"
+                     :key="index"
+                     :url="url"/>
     </carousel>
   </div>
 </template>
@@ -19,7 +15,7 @@ import carousel from 'vue-owl-carousel';
 
 export default {
     name: 'InfoVideoList',
-    components: { 
+    components: {
         InfoVideoItem,
         carousel,
     },

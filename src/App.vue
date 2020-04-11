@@ -20,7 +20,14 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '~@mdi/font/css/materialdesignicons.css';
-  @import '~@mdi/font/css/materialdesignicons.min.css';
-  @import "~bulma/css/bulma.css"
+@import '~@mdi/font/css/materialdesignicons.css';
+@import '~@mdi/font/css/materialdesignicons.min.css';
+@import "~bulma/css/bulma.css";
+
+html {
+  scroll-behavior: smooth;
+}
+button {
+  cursor: pointer;
+}
 </style>
