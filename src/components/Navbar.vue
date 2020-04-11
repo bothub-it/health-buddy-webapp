@@ -14,7 +14,8 @@
          aria-label="dropdown navigation">
       <div class="navbar-brand">
         <img class="navbar-item navbar__logo"
-             src="@/assets/img/doctor-square.png">
+             src="@/assets/img/doctor-square.png"
+             alt="HealthBuddy logo">
 
         <a class="navbar-item"
            href="https://healthbuddy.info/index.html">
@@ -43,6 +44,7 @@
           <router-link v-for="item in items"
                        :key="item.id"
                        :to="`index#${item.id}`"
+                       :title="item.title"
                        class="navbar-item animatable">
             {{ item.title }}
           </router-link>

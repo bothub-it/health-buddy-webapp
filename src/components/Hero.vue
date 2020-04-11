@@ -3,7 +3,8 @@
       <div class="banner__columns animated animatedFadeInUp fadeInUp">
         <div class="banner__columns__column">
           <img class="banner__img-doctor"
-               src="@/assets/img/doctor-circle.png">
+               src="@/assets/img/doctor-circle.png"
+               alt="">
         </div>
         <div class="banner__columns__column">
           <div class="banner__content">
