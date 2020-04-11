@@ -25,21 +25,7 @@
            class="navbar-burger"
            aria-label="menu"
            aria-expanded="false">
-          <dropdown class="navbar-item">
-            <a class="dropdown-trigger animatable"
-               slot="trigger">
-              {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
-            </a>
-
-            <a v-for="(language, index) in languages"
-               :key="index"
-               @click="didClickLanguage(language.id)"
-               slot="options"
-               class="dropdown-item">
-              {{ language.name }}
-            </a>
-
-          </dropdown>
+          <LanguageDropdown @selectedLanguage="didClickLanguage($event)" />
         </a>
 
         <a @click="modalActive=true"
@@ -64,21 +50,7 @@
             {{ item.title }}
           </router-link>
 
-          <dropdown class="navbar-item">
-            <a class="dropdown-trigger animatable"
-               slot="trigger">
-              {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
-            </a>
-
-            <a v-for="(language, index) in languages"
-               :key="index"
-               @click="didClickLanguage(language.id)"
-               slot="options"
-               class="dropdown-item">
-              {{ language.name }}
-            </a>
-
-          </dropdown>
+          <LanguageDropdown @selectedLanguage="didClickLanguage($event)" />
         </div>
       </div>
     </nav>
@@ -87,13 +59,13 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
-import Dropdown from '@/components/Dropdown';
+import LanguageDropdown from '@/components/LanguageDropdown';
 import Modal from '@/components/Modal';
 
 export default {
     name: 'Navbar',
     components: {
-      Dropdown,
+      LanguageDropdown,
       Modal,
     },
     data() {
@@ -182,7 +154,7 @@ export default {
     font-size: 25px;
   }
 
-  &-item, .dropdown-trigger {
+  &-item, /deep/ .dropdown-trigger {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     color: white;
@@ -193,7 +165,7 @@ export default {
     align-content: center;
   }
 
-  &-item:hover, &-burger:hover, .dropdown-trigger:hover {
+  &-item:hover, &-burger:hover, /deep/ .dropdown-trigger:hover {
     background-color: transparent;
     color: white;
   }
