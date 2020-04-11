@@ -3,57 +3,60 @@
   <div class="home">
     <Chat :is-open.sync="isOpen" />
     <Hero id="home" />
-    <div>
-      <text-section id="how"
-                    class="home__section"
-                    :class="{'home__section__open': isOpen }">
-        <h2 slot="title">
-          {{ $t('about.title') }}
-        </h2>
-        <div slot="text">
-          <p>
-            {{ $t('about.about_1') }}
-            <br>
-            <br>
-            {{ $t('about.about_2') }}
-            <br>
-          </p>
-          <p>
-            <strong>{{ $t('about.about_3.emphasis_1') }}</strong> {{ $t('about.about_3.text_1') }}
-          </p>
-          <p>
-            <strong>{{ $t('about.about_3.emphasis_2') }}</strong> {{ $t('about.about_3.text_2') }}
-          </p>
-          <p>
-            <strong>{{ $t('about.about_3.emphasis_3') }}</strong> {{ $t('about.about_3.text_3') }}
-          </p>
-        </div>
-      </text-section>
-
-      <text-section id="about"
-                    class="home__section"
-                    :class="{ 'home__section__open': isOpen }">
-        <h2 slot="title">
-          {{ $t('features.title') }}
-        </h2>
-        <FeatureList :list="features"
-                     slot="content"
-                     class="home__section"/>
-      </text-section>
-
-      <div id="info"
-           class="home__section__wrapper">
-        <text-section class="home__section">
-          <h2 slot="title">
-            {{ $t('videos.title') }}
-          </h2>
-          <InfoVideoList
-            slot="content"
-            :urls="videoUrls"
-          />
-          <FeatureList :list="features"/>
-        </text-section>
+    <text-section id="how"
+                  class="home__section"
+                  :class="{'home__section__open': isOpen }">
+      <h2 slot="title">
+        {{ $t('about.title') }}
+      </h2>
+      <div slot="text">
+        <p>
+          {{ $t('about.about_1') }}
+          <br>
+          <br>
+          {{ $t('about.about_2') }}
+          <br>
+        </p>
+        <p>
+          <strong>{{ $t('about.about_3.emphasis_1') }}</strong> {{ $t('about.about_3.text_1') }}
+        </p>
+        <p>
+          <strong>{{ $t('about.about_3.emphasis_2') }}</strong> {{ $t('about.about_3.text_2') }}
+        </p>
+        <p>
+          <strong>{{ $t('about.about_3.emphasis_3') }}</strong> {{ $t('about.about_3.text_3') }}
+        </p>
       </div>
+    </text-section>
+
+    <text-section id="about"
+                  class="home__section"
+                  :class="{ 'home__section__open': isOpen }">
+      <h2 slot="title">
+        {{ $t('features.title') }}
+      </h2>
+      <div slot="text">
+        <p>
+          {{ $t('features.text') }}
+        </p>
+      </div>
+      <FeatureList :list="features"
+                   slot="content"
+                   class="home__section"/>
+    </text-section>
+
+    <div id="info"
+         class="home__section__wrapper">
+      <text-section class="home__section">
+        <h2 slot="title">
+          {{ $t('videos.title') }}
+        </h2>
+        <InfoVideoList
+          slot="content"
+          :urls="videoUrls"
+        />
+        <FeatureList :list="features"/>
+      </text-section>
     </div>
   </div>
 </template>
@@ -129,10 +132,6 @@ export default {
     max-width: 1140px;
     padding: 20px 20px;
     margin: 0 auto;
-
-    &:first-child {
-      padding-top: 60px;
-    }
 
     &__open {
       max-width: 60%;
