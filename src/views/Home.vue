@@ -5,14 +5,14 @@
       :is-open.sync="isOpen"
     />
     <Hero id="home" />
-    <text-section 
-      id="how" 
+    <text-section
+      id="how"
       :class="['home__section', isOpen ? 'home__section__open' : '']"
     >
       <p slot="title">
         {{ $t('about.title') }}
       </p>
-      <div slot="text"> 
+      <div slot="text">
         <p>
           {{ $t('about.about_1') }}
           <br>
@@ -46,7 +46,7 @@
       />
     </text-section>
 
-    <div 
+    <div
       id="info"
       class="home__section__wrapper"
     >
@@ -55,7 +55,7 @@
           {{ $t('videos.title') }}
         </p>
         <InfoVideoList
-          slot="content" 
+          slot="content"
           :urls="videoUrls"
         />
         <FeatureList :list="features" />
@@ -126,39 +126,35 @@ export default {
 
 <style lang="scss" scoped>
 
-  $home-margin: 74px;
-    .home {
-      margin: $home-margin 0 0;
-
-      &__section {
-
-        @media only screen and (max-width: 1150px) {
-          max-width: 720px;
-        }
-
-        max-width: 1140px;
-        padding: 60px 0;
-        margin: 0 auto;
-
-        &__open {
-          max-width: 60%;
-          margin: 1.5rem;
-        }
-
-        &__wrapper {
-          width: 100%;
-          background-color: #f2f5fa;
-        }
-
-        &__title {
-          margin: 11vh 0 2vh 0;
-          font-size: 38px;
-          font-weight: 500;
-          line-height: 56px;
-          color: #1CABE2;
-          font-family: "Poppins", sans-serif;
-        }
-      }
+.home {
+  &__section {
+    @media only screen and (max-width: 1150px) {
+      max-width: 720px;
     }
+
+    max-width: 1140px;
+    padding: 60px 20px;
+    margin: 0 auto;
+
+    &__open {
+      max-width: 60%;
+      margin: 1.5rem;
+    }
+
+    &__wrapper {
+      width: 100%;
+      background-color: #f2f5fa;
+    }
+
+    &__title {
+      margin: 11vh 0 2vh 0;
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 56px;
+      color: #1CABE2;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}
 
 </style>

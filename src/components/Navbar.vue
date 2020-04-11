@@ -151,6 +151,18 @@ export default {
     font-size: 25px;
   }
 
+  &-item {
+    &:focus {
+      background-color: inherit;
+      color: white;
+    }
+    &.router-link-active {
+      font-weight: bold;
+    }
+  }
+
+
+
   &-item, /deep/ .dropdown-trigger {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
