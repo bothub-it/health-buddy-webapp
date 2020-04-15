@@ -37,18 +37,18 @@ export default {
     },
     methods: {
       isMobile() {
-          try{ 
-            document.createEvent("TouchEvent"); 
-            return true; 
-          } catch(e){ 
-            return false; 
+          try{
+            document.createEvent("TouchEvent");
+            return true;
+          } catch(e){
+            return false;
           }
       },
       sendInitial() {
         WebChat.send(this.initialPayload);
       },
       updateOpenStatus() {
-        setTimeout(() => {  
+        setTimeout(() => {
           if (WebChat.isOpen() === this.isOpen) return;
           this.$emit('update:isOpen', WebChat.isOpen());
         }, 100);
@@ -88,7 +88,7 @@ export default {
 .conversation-container .title.with-avatar {
   color: white;
 }
-  
+
 .launcher {
 	-webkit-box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
 	-moz-box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
@@ -159,7 +159,7 @@ export default {
 }
 
 .hide-sm {
-   display: none;
+   display: none !important;
 }
 
 .quickReplies-container {
