@@ -84,6 +84,9 @@ export default {
     @media (max-width: 1150px) {
       flex-direction: column;
       justify-content: center;
+      &__columng {
+        text-align: center;
+      }
     }
   }
 
