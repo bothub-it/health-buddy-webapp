@@ -4,12 +4,16 @@
       <div class="footer__info-images">
       </div>
       <div class="footer__links">
-        <a href="https://bothub.it/">
-          {{ $t('footer.bothub') }}
-        </a>
-        <router-link :to="'privacy'">
-          {{ $t('footer.policy') }}
-        </router-link>
+        <div>
+          <router-link :to="'privacy'">
+            {{ $t('footer.policy') }}
+          </router-link>
+        </div>
+        <div>
+          <a href="https://bothub.it/">
+            {{ $t('footer.bothub') }}
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -43,8 +47,7 @@ export default {
         padding: 0;
 
     &__links {
-        margin: 3vh;
-        display: flex;
+        margin: 1.5vh;
         flex-wrap: wrap;
         column-gap: 1rem;
         justify-content: flex-start;
