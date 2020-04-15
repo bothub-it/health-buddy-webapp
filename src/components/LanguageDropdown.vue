@@ -39,7 +39,11 @@ export default {
         {
           id: 'ru',
           name: 'Russian',
-        }
+        },
+        {
+          id: 'el-GR',
+          name: 'Greek',
+        },
       ],
     }
   },
