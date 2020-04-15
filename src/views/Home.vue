@@ -47,7 +47,7 @@
 
     <div id="info"
          class="home__section__wrapper">
-      <text-section class="home__section">
+      <text-section class="home__section" :class="{ 'home__section__open': isOpen }">
         <h2 slot="title">
           {{ $t('videos.title') }}
         </h2>
