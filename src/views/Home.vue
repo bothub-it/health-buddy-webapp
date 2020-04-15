@@ -2,7 +2,7 @@
 <template>
   <div class="home">
     <Chat :is-open.sync="isOpen" />
-    <Hero id="home" />
+    <Hero id="home" :class="{'home__section__open-hero': isOpen }" />
     <text-section id="how"
                   class="home__section"
                   :class="{'home__section__open': isOpen }">
@@ -136,6 +136,13 @@ export default {
     &__open {
       max-width: 60%;
       margin: 1.5rem;
+    }
+
+    &__open-hero {
+      /deep/ .banner__columns {
+        max-width: 60%;
+        margin: 1.5rem;
+      }
     }
 
     &__wrapper {
