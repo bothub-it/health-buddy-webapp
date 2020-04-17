@@ -44,6 +44,10 @@ export default {
           id: 'el-GR',
           name: 'Greek',
         },
+        {
+          id: 'es',
+          name: 'Spanish',
+        },
       ],
     }
   },

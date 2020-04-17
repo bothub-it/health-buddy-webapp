@@ -1,45 +1,45 @@
 {
     "navbar": {
-        "home": "Αρχική",
-        "about": "Σχετικά",
-        "videos": "Βίντεο",
-        "languages": "Γλώσσες"
+        "home": "Inicio",
+        "about": "Acerca del HealthBuddy",
+        "videos": "Vídeos",
+        "languages": "Idiomas"
     },
 
     "hero": {
-        "title": "Ο δικός σου σύμβουλος για τον COVID-19.",
-        "subtitle": "Δίπλα σου με ένα μόνο μήνυμα!"
+        "title": "Tu compañero para buscar información sobre COVID-19.",
+        "subtitle": "A tu lado, ¡por sólo un mensaje!"
     },
 
     "about": {
-        "title": "Ρώτησέ με για τον COVID-19",
-        "about_1": "Γεια σου, με λένε HealthBuddy. Στείλε μου μήνυμα στο παράθυρο συνομιλίας και θα σου δώσω πληροφορίες σχετικά με την ασθένεια του νέου κορωνοϊού (COVID-19), από τις αξιόπιστες πηγές του ΠΟΥ και της UNICEF.",
-        "about_2": "3 βήματα για να ξεκινήσεις:",
+        "title": "Pregúntame sobre el COVID-19",
+        "about_1": "Hola, soy HealthBuddy. Envíame un texto en la ventana del chat y te daré información sobre la enfermedad causada por el nuevo coronavirus (COVID-19), desde las fuentes fiables de la OMS y UNICEF.",
+        "about_2": "3 pasos para empezar: ",
         "about_3": {
-            "emphasis_1": "1. Επίλεξε τη γλώσσα σου ",
-            "emphasis_2": "2. Επίλεξε μία από τις συνήθεις ερωτήσεις ",
-            "emphasis_3": "3. Γράψε τις ερωτήσεις σου με απλά λόγια, ",
-            "text_1": "από το μενού στο πάνω μέρος της ιστοσελίδας.",
-            "text_2": "για να πάρεις γρήγορες απαντήσεις.",
-            "text_3": "όπως θα μιλούσες σε ένα φίλο."
+            "emphasis_1": "1. Elige tu idioma: ",
+            "emphasis_2": "2. Elige una de las preguntas comunes: ",
+            "emphasis_3": "3. Escribe tus preguntas en lenguaje coloquial: ",
+            "text_1": "del menú en la sección superior de esta página.",
+            "text_2": "para obtener respuestas rápidas.",
+            "text_3": "tal como hablarías a un amigo."
         }
     },
     "features": {
-        "title": "Σχετικά με το HealthBuddy",
-        "text": "Στο Διαδίκτυο και στα μέσα κοινωνικής δικτύωσης κυκλοφορούν πολλοί μύθοι και φήμες για τον ιό COVID-19. Αυτό αποτελεί μία από τις μεγαλύτερες προκλήσεις που αντιμετωπίζουμε όλοι στην καταπολέμηση αυτής της ασθένειας. Γι’ αυτό και είναι σημαντικό να παίρνουμε πληροφορίες και συμβουλές από αξιόπιστες πηγές.",
-        "feature_2_title": "Υποστήριξη γλωσσών",
-        "feature_2_text": "Το HealthBuddy ανιχνεύει τη γλώσσα του προγράμματος περιήγησης και σου μιλάει αυτόματα στη γλώσσα αυτή, εφόσον υποστηρίζεται. Μπορείς, επίσης, να επιλέξεις τη γλώσσα προτίμησής σου από το αντίστοιχο μενού.",
-        "feature_1_title": "Υποστήριξη πολλών δικτύων",
-        "feature_1_text": "Το HealthBuddy είναι διαθέσιμο σε διάφορες ονλάιν πλατφόρμες στην Ευρώπη και παρέχει στους χρήστες επιστημονικές και τεκμηριωμένες συμβουλές.",
-        "feature_3_title": "Σωστή πληροφόρηση για τον ιό COVID-19",
-        "feature_3_text": "Το HealthBuddy υποστηρίζεται από ειδικούς του ΠΟΥ και της UNICEF και παρέχει ακριβείς πληροφορίες για τον νέο κορωνοϊό.",
-        "feature_4_title": "Καταπολέμηση φημών και ψεύτικων ειδήσεων",
-        "feature_4_text": "Αν ακούσεις φήμες ή ψεύτικες ειδήσεις στην περιοχή σου, μπορείς να τις αναφέρεις εδώ. Το HealthBuddy θα τις συγκεντρώσει και θα αποκαταστήσει την αλήθεια."
+        "title": "Sobre HealthBuddy",
+        "text": "Muchos mitos y rumores sobre el virus COVID-19 están circulando en Internet y en las redes sociales, y este es uno de los mayores desafíos que enfrentamos para combatir esta enfermedad. Por eso es importante obtener información y consejos de fuentes fiables.",
+        "feature_1_title": "Servicio multi-canal",
+        "feature_1_text": "HealthBuddy está disponible en múltiples plataformas digitales en Europa, y brinda a los usuarios consejos científicos basados en evidencias.",
+        "feature_2_title": "Servicio multilingüe",
+        "feature_2_text": "HealthBuddy detecta el idioma de tu navegador y te hablará automáticamente en ese idioma, si es compatible. También, puedes seleccionar entre una amplia gama de idiomas desde el menú de idiomas.",
+        "feature_3_title": "Información precisa sobre COVID-19",
+        "feature_3_text": "HealthBuddy cuenta con el apoyo de expertos de la OMS y UNICEF y te ofrece información precisa sobre COVID-19. ",
+        "feature_4_title": "Lucha contra rumores y noticias falsas",
+        "feature_4_text": "Si eres testigo de rumores o noticias falsas en tu comunidad, puedes informarnos aquí. HealthBuddy recopilará estos rumores y dejará las cosas claras."
     },
 
     "videos": {
-        "title": "Βίντεο",
-        "text": ""
+        "title": "Vídeos",
+        "text": "HealthBuddy es una iniciativa conjunta de la Oficina Regional para Europa de la OMS y de la Oficina Regional para Europa y Asia Central de UNICEF."
     },
 
     "footer": {
