@@ -24,7 +24,7 @@
 
         <div class="navbar-burger">
           <div class="navbar-item">
-            <LanguageDropdown @selectedLanguage="didClickLanguage($event)" />
+            <LanguageDropdown />
             <a @click="modalActive=true"
                class="navbar-item"
                role="button"
@@ -49,7 +49,7 @@
             {{ item.title }}
           </router-link>
 
-          <LanguageDropdown @selectedLanguage="didClickLanguage($event)" />
+          <LanguageDropdown />
         </div>
       </div>
     </nav>
@@ -57,7 +57,6 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex';
 import LanguageDropdown from '@/components/LanguageDropdown';
 import Modal from '@/components/Modal';
 
@@ -70,26 +69,9 @@ export default {
     data() {
       return {
         modalActive: false,
-        languages: [
-          {
-            id: 'pt-BR',
-            name: 'Portuguese'
-          },
-          {
-            id: 'en',
-            name: 'English',
-          },
-          {
-            id: 'ru',
-            name: 'Russian',
-          }
-        ],
       }
     },
     computed: {
-      ...mapGetters([
-        'getLanguage',
-      ]),
       items() {
         return [
           {
@@ -107,19 +89,6 @@ export default {
         ];
       },
     },
-    watch: {
-      getLanguage() {
-        this.$i18n.locale = this.getLanguage;
-      },
-    },
-    methods: {
-      ...mapActions([
-        'setLanguage',
-      ]),
-      didClickLanguage(language) {
-        this.setLanguage(language);
-      },
-    }
 }
 </script>
 

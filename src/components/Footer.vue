@@ -2,6 +2,14 @@
   <div class="footer">
     <div class="footer__wrapper">
       <div class="footer__info-images">
+        <a href="https://www.unicef.org/eca/"><img
+          class="footer__info-images__unicef"
+          :src="unicefLogo"
+        ></a>
+        <a href="http://www.euro.who.int/en/home"><img
+          class="footer__info-images__who"
+          :src="whoLogo"
+        ></a>
       </div>
       <div class="footer__links">
         <div>

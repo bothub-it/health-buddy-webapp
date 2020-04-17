@@ -17,6 +17,11 @@
             <p class="banner__subtitle">
               {{ $t('hero.subtitle') }}
             </p>
+            <div class="banner__logos">
+              <img class="banner__img banner__img-unicef"
+                   :src="unicefLogo">
+              <img class="banner__img banner__img-who" :src="whoLogo">
+            </div>
           </div>
         </div>
       </div>
@@ -43,6 +48,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$img-doctor-width: 26vh;
 
 .banner {
   position: relative;
@@ -67,11 +73,11 @@ export default {
   }
 
   &__columns {
-    padding: 50px 10px;
-    margin: 3.5em auto .5em auto;
+    padding: 50px 10px 0;
+    margin: 3.5em auto 0 auto;
     display: flex;
     max-width: 1150px;
-    align-items: center;
+    align-items: flex-start;
     &__column {
       display: flex;
       align-items: center;
@@ -91,7 +97,7 @@ export default {
   }
 
   &__logos {
-    margin: 7vh 0 2vh;
+    padding-top: 10px;
   }
 
   &__content {
@@ -133,12 +139,12 @@ export default {
     vertical-align: middle;
 
     &-unicef {
-      width: 18vh;
+      height: 8vh;
       margin-right: 3vh;
     }
 
     &-who {
-      width: 18vh;
+      height: 8vh;
       margin-right: 3vh;
     }
 
