@@ -90,6 +90,7 @@ $img-doctor-width: 26vh;
     @media (max-width: 1150px) {
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       &__columng {
         text-align: center;
       }
@@ -103,8 +104,7 @@ $img-doctor-width: 26vh;
   &__content {
     text-align: left;
 
-    @media only screen and (max-width: 760px) {
-      max-width: 720px;
+    @media (max-width: 1150px) {
       text-align: center;
     }
   }
