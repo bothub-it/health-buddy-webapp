@@ -7,16 +7,17 @@
 
     <a v-for="(language, index) in languages"
        :key="index"
+       :class="{ selected: getLanguage === language.id }"
        @click="$emit('selectedLanguage', language.id)"
        slot="options"
        class="dropdown-item">
       {{ language.name }}
     </a>
-
   </dropdown>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import Dropdown from '@/components/Dropdown';
 
 export default {
@@ -24,8 +25,14 @@ export default {
   components: {
     Dropdown,
   },
+  computed: {
+    ...mapGetters([
+      'getLanguage',
+    ]),
+  },
   data() {
     return {
+      selectedLanguage: 'en',
       modalActive: false,
       languages: [
         {
@@ -48,9 +55,17 @@ export default {
           id: 'es',
           name: 'Spanish',
         },
+        {
+          id: 'kaz',
+          name: 'Kazakh',
+        },
       ],
     }
   },
 }
 </script>
-
+<style lang="scss" scoped>
+.dropdown-item.selected {
+  /*background-color: black;*/
+}
+</style>
