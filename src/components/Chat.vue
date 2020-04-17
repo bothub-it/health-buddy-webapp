@@ -118,7 +118,7 @@ export default {
   }
 }
 
-.conversation-container .close-button {
+#webchat .conversation-container .close-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,8 +158,8 @@ export default {
   max-height: 90vh;
 }
 
-.hide-sm {
-   display: none !important;
+#webchat .hide-sm {
+   display: none;
 }
 
 .quickReplies-container {
