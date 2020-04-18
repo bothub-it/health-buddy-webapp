@@ -60,11 +60,10 @@ export default {
       setupChat() {
         WebChat.default.init({
           selector: '#webchat',
-          initPayload: this.initalPayload,
+          initPayload: this.initialPayload,
           channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
           host: 'https://rapidpro.ilhasoft.mobi',
           title: 'HealthBuddy',
-          hideWhenNotConnected: false,
           inputTextFieldHint: "Type a question...",
           profileAvatar: require('@/assets/img/doctor-darker.png'),
           openLauncherImage: require('@/assets/img/doctor-square.png'),
@@ -72,6 +71,7 @@ export default {
           docViewer: true,
           showFullScreenButton: true,
           autoOpen: true,
+          hideWhenNotConnected: true,
           params: {
             images: {
               dims: {

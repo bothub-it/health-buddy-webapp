@@ -17,7 +17,5 @@ new Vue({
   i18n,
   store,
   router,
-}).$mount('#app')
+}).$mount('#app');
 
-
-store.dispatch('setLanguage', localStorage.getItem('language') || 'en');
