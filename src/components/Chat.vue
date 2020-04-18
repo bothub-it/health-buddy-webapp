@@ -37,18 +37,22 @@ export default {
     },
     methods: {
       isMobile() {
-          try{ 
-            document.createEvent("TouchEvent"); 
-            return true; 
-          } catch(e){ 
-            return false; 
+          try{
+            document.createEvent("TouchEvent");
+            return true;
+          } catch(e){
+            return false;
           }
       },
       sendInitial() {
         WebChat.send(this.initialPayload);
       },
-      updateOpenStatus() {
-        setTimeout(() => {  
+      openChat() {
+        if (!this.isMobile()) {
+          setTimeout(() => WebChat.open(), 150);
+        }
+      },updateOpenStatus() {
+        setTimeout(() => {
           if (WebChat.isOpen() === this.isOpen) return;
           this.$emit('update:isOpen', WebChat.isOpen());
         }, 100);
@@ -56,17 +60,18 @@ export default {
       setupChat() {
         WebChat.default.init({
           selector: '#webchat',
-          initPayload: this.initalPayload,
+          initPayload: this.initialPayload,
           channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
           host: 'https://rapidpro.ilhasoft.mobi',
           title: 'HealthBuddy',
-          hideWhenNotConnected: false,
           inputTextFieldHint: "Type a question...",
           profileAvatar: require('@/assets/img/doctor-darker.png'),
           openLauncherImage: require('@/assets/img/doctor-square.png'),
-          disableTooltips: !this.isMobile(),
+          disableTooltips: true,
           docViewer: true,
           showFullScreenButton: true,
+          autoOpen: true,
+          hideWhenNotConnected: true,
           params: {
             images: {
               dims: {
@@ -75,9 +80,11 @@ export default {
               }
             },
             storage: "session"
-          }
+          },
       });
       this.sendInitial();
+      this.openChat();
+
     }
   }
 }
@@ -88,7 +95,7 @@ export default {
 .conversation-container .title.with-avatar {
   color: white;
 }
-  
+
 .launcher {
 	-webkit-box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
 	-moz-box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
@@ -118,7 +125,7 @@ export default {
   }
 }
 
-.conversation-container .close-button {
+#webchat .conversation-container .close-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +165,7 @@ export default {
   max-height: 90vh;
 }
 
-.hide-sm {
+#webchat .hide-sm {
    display: none;
 }
 
@@ -183,13 +190,14 @@ export default {
   filter: brightness(50%);
 }
 
-.replies {
+#webchat .replies {
   justify-content: center;
 }
 
-.conversation-container .reply {
+#webchat .conversation-container .reply {
   width: 55%;
   min-width: 280px;
+  justify-content: center;
 }
 
 .avatar {

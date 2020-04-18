@@ -1,31 +1,31 @@
 <template>
   <div class="banner">
-      <div class="banner__columns animated animatedFadeInUp fadeInUp">
-        <div class="banner__columns__column">
-          <img class="banner__img-doctor"
-               src="@/assets/img/doctor-circle.png"
-               alt="">
-        </div>
-        <div class="banner__columns__column">
-          <div class="banner__content">
-            <h1 class="banner__title">
-              HealthBuddy
-            </h1>
-            <p class="banner__subtitle">
-              {{ $t('hero.title') }}
-            </p>
-            <p class="banner__subtitle">
-              {{ $t('hero.subtitle') }}
-            </p>
-          </div>
+    <div class="banner__columns animated animatedFadeInUp fadeInUp">
+      <div class="banner__columns__column">
+        <img class="banner__img-doctor"
+             src="@/assets/img/doctor-circle.png"
+             alt="">
+      </div>
+      <div class="banner__columns__column">
+        <div class="banner__content">
+          <h1 class="banner__title">
+            HealthBuddy
+          </h1>
+          <p class="banner__subtitle">
+            {{ $t('hero.title') }}
+          </p>
+          <p class="banner__subtitle">
+            {{ $t('hero.subtitle') }}
+          </p>
         </div>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-export default {
+  import { mapGetters } from 'vuex'
+  export default {
     name: 'Hero',
     computed: {
       ...mapGetters([
@@ -39,7 +39,7 @@ export default {
         return require("@/assets/img/who-logo.png");
       },
     },
-}
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -84,6 +84,9 @@ export default {
     @media (max-width: 1150px) {
       flex-direction: column;
       justify-content: center;
+      &__columng {
+        text-align: center;
+      }
     }
   }
 
@@ -146,7 +149,7 @@ export default {
   }
 }
 
-  /* Animation */
+/* Animation */
 
 @keyframes fadeInUp {
   from {
@@ -170,20 +173,20 @@ export default {
 }
 
 .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
 }
 
 .animatedFadeInUp {
-    opacity: 0
+  opacity: 0
 }
 
 .fadeInUp {
-    opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }
 
 </style>

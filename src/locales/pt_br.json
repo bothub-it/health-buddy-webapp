@@ -38,13 +38,16 @@
     },
 
     "videos": {
-        "title": "Vídeos",
-        "text": ""
+        "title": "Vídeos"
+    },
+
+    "extraInfo": {
+        "text": "Healthbuddy é uma iniciativa conjunta dos escritórios da OMS Europa e  o escritório da UNICEF Europa e Asia Central."
     },
 
     "footer": {
         "policy": "Clique aqui para ver nossa política de privacidade",
-        "bothub": "HealthBuddy é alimentado por Bothub © 2020 Todos os direitos reservados."
+        "bothub": "HealthBuddy é alimentado por Bothub e RapidPro © 2020 Todos os direitos reservados."
     },
     "policy": {
         "title": "Política de Privacidade",

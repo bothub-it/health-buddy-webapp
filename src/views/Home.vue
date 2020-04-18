@@ -2,7 +2,7 @@
 <template>
   <div class="home">
     <Chat :is-open.sync="isOpen" />
-    <Hero id="home" />
+    <Hero id="home" :class="{'home__section__open-hero': isOpen }" />
     <text-section id="how"
                   class="home__section"
                   :class="{'home__section__open': isOpen }">
@@ -45,9 +45,10 @@
                    class="home__section"/>
     </text-section>
 
-    <div id="info"
+    <div v-if="isOpenVideos"
+         id="video"
          class="home__section__wrapper">
-      <text-section class="home__section">
+      <text-section class="home__section" :class="{ 'home__section__open': isOpen }">
         <h2 slot="title">
           {{ $t('videos.title') }}
         </h2>
@@ -70,54 +71,61 @@ import Chat from '@/components/Chat'
 import { mapGetters } from 'vuex';
 
 export default {
-    name: 'Home',
-    components: {
-        Hero,
-        TextSection,
-        FeatureList,
-        InfoVideoList,
-        Chat,
-    },
-    data() {
-      return {
-        isOpen: false,
-        videoUrls: [
-          "https://www.youtube.com/embed/QYxzo3-qZRc",
-          "https://www.youtube.com/embed/JKpVMivbTfg",
-          "https://www.youtube.com/embed/ujWFj_6FaMY",
-          "https://www.youtube.com/embed/mOV1aBVYKGA",
-        ],
-      };
-    },
-    computed: {
-      ...mapGetters([
-        'getLanguage',
-      ]),
-      features(){
-        return [
-          {
-            iconName: "mdi mdi-comment-check-outline",
-            title: this.$t( 'features.feature_1_title'),
-            text: this.$t( 'features.feature_1_text'),
-          },
-          {
-            iconName: "mdi mdi-earth",
-            title: this.$t( 'features.feature_2_title'),
-            text: this.$t( 'features.feature_2_text'),
-          },
-          {
-            iconName: "mdi mdi-vector-intersection",
-            title: this.$t( 'features.feature_3_title'),
-            text: this.$t( 'features.feature_3_text'),
-          },
-          {
-            iconName: "mdi mdi-book-open-variant",
-            title: this.$t( 'features.feature_4_title'),
-            text: this.$t( 'features.feature_4_text'),
-          },
-        ];
+  name: 'Home',
+  components: {
+      Hero,
+      TextSection,
+      FeatureList,
+      InfoVideoList,
+      Chat,
+  },
+  data() {
+    return {
+      isOpenVideos: true,
+      isOpen: false,
+      videoUrls: [
+        "https://www.youtube.com/embed/QYxzo3-qZRc",
+        "https://www.youtube.com/embed/JKpVMivbTfg",
+        "https://www.youtube.com/embed/ujWFj_6FaMY",
+        "https://www.youtube.com/embed/mOV1aBVYKGA",
+      ],
+    };
+  },
+  watch: {
+      isOpen() {
+        this.isOpenVideos = false;
+        setTimeout(() => this.isOpenVideos = true, 0);
       },
+  },
+  computed: {
+    ...mapGetters([
+      'getLanguage',
+    ]),
+    features(){
+      return [
+        {
+          iconName: "mdi mdi-comment-check-outline",
+          title: this.$t( 'features.feature_1_title'),
+          text: this.$t( 'features.feature_1_text'),
+        },
+        {
+          iconName: "mdi mdi-earth",
+          title: this.$t( 'features.feature_2_title'),
+          text: this.$t( 'features.feature_2_text'),
+        },
+        {
+          iconName: "mdi mdi-vector-intersection",
+          title: this.$t( 'features.feature_3_title'),
+          text: this.$t( 'features.feature_3_text'),
+        },
+        {
+          iconName: "mdi mdi-book-open-variant",
+          title: this.$t( 'features.feature_4_title'),
+          text: this.$t( 'features.feature_4_text'),
+        },
+      ];
     },
+  },
 }
 </script>
 
@@ -125,17 +133,23 @@ export default {
 
 .home {
   &__section {
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 1140px;
     @media only screen and (max-width: 1150px) {
       max-width: 720px;
     }
 
-    max-width: 1140px;
-    padding: 20px 20px;
-    margin: 0 auto;
-
     &__open {
       max-width: 60%;
       margin: 1.5rem;
+    }
+
+    &__open-hero {
+      /deep/ .banner__columns {
+        max-width: 60%;
+        margin: 1.5rem;
+      }
     }
 
     &__wrapper {

@@ -1,48 +1,48 @@
 {
     "navbar": {
-        "home": "Home",
-        "about": "About",
-        "videos": "Videos",
-        "languages": "Languages"
+        "home": "Inicio",
+        "about": "Acerca del HealthBuddy",
+        "videos": "Vídeos",
+        "languages": "Idiomas"
     },
 
     "hero": {
-        "title": "Your very own buddy for info about COVID-19.",
-        "subtitle": "Just a text message away!"
+        "title": "Tu compañero para buscar información sobre COVID-19.",
+        "subtitle": "A tu lado, ¡por sólo un mensaje!"
     },
 
     "about": {
-        "title": "Ask me about COVID-19",
-        "about_1": "Hi, I’m your HealthBuddy. Send me a text in the chat window and I will give you information about the novel coronavirus disease (COVID-19), from the trusted sources of WHO and UNICEF.",
-        "about_2": "3 steps to get started:",
+        "title": "Pregúntame sobre el COVID-19",
+        "about_1": "Hola, soy HealthBuddy. Envíame un texto en la ventana del chat y te daré información sobre la enfermedad causada por el nuevo coronavirus (COVID-19), desde las fuentes fiables de la OMS y UNICEF.",
+        "about_2": "3 pasos para empezar: ",
         "about_3": {
-            "emphasis_1": "1. Select your language ",
-            "emphasis_2": "2. Select from the list of common questions ",
-            "emphasis_3": "3. Send me your questions in natural language: ",
-            "text_1": " from the language dropdown menu at the top of this web page.",
-            "text_2": "to get quick answers.",
-            "text_3": "as if you are talking to your friend."
+            "emphasis_1": "1. Elige tu idioma: ",
+            "emphasis_2": "2. Elige una de las preguntas comunes: ",
+            "emphasis_3": "3. Escribe tus preguntas en lenguaje coloquial: ",
+            "text_1": "del menú en la sección superior de esta página.",
+            "text_2": "para obtener respuestas rápidas.",
+            "text_3": "tal como hablarías a un amigo."
         }
     },
     "features": {
-        "title": "About HealthBuddy",
-        "text": "There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important to be careful where you look for information and advice.",
-        "feature_1_title": "Multi-channel support",
-        "feature_1_text": "HealthBuddy is available on multiple social media and instant messaging platforms in Europe to provide users with scientific and evidence-based advice.",
-        "feature_2_title": "Multi-language support",
-        "feature_2_text": "HealthBuddy detects the language of your browser and, if supported, will automatically speak in that language. You can also change the language from the languages menu. ",
-        "feature_3_title": "Accurate COVID-19 information",
-        "feature_3_text": "HealthBuddy is supported by experts from WHO and UNICEF and will provide you with accurate information on COVID-19.",
-        "feature_4_title": "Fighting rumours and fake news",
-        "feature_4_text": "If you hear any rumours or fake statements in your community or region, you can report it to us here. HealthBuddy will compile them and counter them here with scientific information."
+        "title": "Sobre HealthBuddy",
+        "text": "Muchos mitos y rumores sobre el virus COVID-19 están circulando en Internet y en las redes sociales, y este es uno de los mayores desafíos que enfrentamos para combatir esta enfermedad. Por eso es importante obtener información y consejos de fuentes fiables.",
+        "feature_1_title": "Servicio multi-canal",
+        "feature_1_text": "HealthBuddy está disponible en múltiples plataformas digitales en Europa, y brinda a los usuarios consejos científicos basados en evidencias.",
+        "feature_2_title": "Servicio multilingüe",
+        "feature_2_text": "HealthBuddy detecta el idioma de tu navegador y te hablará automáticamente en ese idioma, si es compatible. También, puedes seleccionar entre una amplia gama de idiomas desde el menú de idiomas.",
+        "feature_3_title": "Información precisa sobre COVID-19",
+        "feature_3_text": "HealthBuddy cuenta con el apoyo de expertos de la OMS y UNICEF y te ofrece información precisa sobre COVID-19. ",
+        "feature_4_title": "Lucha contra rumores y noticias falsas",
+        "feature_4_text": "Si eres testigo de rumores o noticias falsas en tu comunidad, puedes informarnos aquí. HealthBuddy recopilará estos rumores y dejará las cosas claras."
     },
 
     "videos": {
-        "title": "Videos"
+        "title": "Vídeos"
     },
 
     "extraInfo": {
-        "text": "HealthBuddy is a joint initiative of the WHO Regional Office for Europe and UNICEF’s Europe and Central Asia Regional Office."
+        "text": "HealthBuddy es una iniciativa conjunta de la Oficina Regional para Europa de la OMS y de la Oficina Regional para Europa y Asia Central de UNICEF."
     },
 
     "footer": {

@@ -30,4 +30,11 @@ html {
 button {
   cursor: pointer;
 }
+
+.group-message .message {
+  background-color: inherit;
+}
+.conversation-container .message .response {
+  height: inherit !important;
+}
 </style>
