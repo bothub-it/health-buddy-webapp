@@ -36,12 +36,12 @@ export default {
       modalActive: false,
       languages: [
         {
-          id: 'pt-BR',
-          name: 'Portuguese'
-        },
-        {
           id: 'en',
           name: 'English',
+        },
+        {
+          id: 'pt-BR',
+          name: 'Portuguese'
         },
         {
           id: 'ru',
@@ -49,15 +49,15 @@ export default {
         },
         {
           id: 'el-GR',
-          name: 'Greek',
+          name: 'Ελληνικά',
         },
         {
           id: 'es',
-          name: 'Spanish',
+          name: 'Español',
         },
         {
           id: 'kaz',
-          name: 'Kazakh',
+          name: 'Қазақ',
         },
       ],
     }

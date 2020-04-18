@@ -190,13 +190,14 @@ export default {
   filter: brightness(50%);
 }
 
-.replies {
+#webchat .replies {
   justify-content: center;
 }
 
-.conversation-container .reply {
+#webchat .conversation-container .reply {
   width: 55%;
   min-width: 280px;
+  justify-content: center;
 }
 
 .avatar {
