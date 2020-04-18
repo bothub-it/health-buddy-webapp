@@ -59,9 +59,6 @@
         <FeatureList :list="features"/>
       </text-section>
     </div>
-    <div id="info" class="info__section" :class="{ 'home__section__open': isOpen }">
-      {{ $t('extraInfo.text') }}
-    </div>
   </div>
 </template>
 
@@ -134,22 +131,14 @@ export default {
 
 <style lang="scss" scoped>
 
-
-.info__section, .home__section {
-  max-width: 1140px;
-  @media only screen and (max-width: 1150px) {
-    max-width: 720px;
-  }
-}
-
-.info__section {
-  margin: 20px auto;
-}
-
 .home {
   &__section {
     margin: 0 auto;
     padding: 20px 20px;
+    max-width: 1140px;
+    @media only screen and (max-width: 1150px) {
+      max-width: 720px;
+    }
 
     &__open {
       max-width: 60%;

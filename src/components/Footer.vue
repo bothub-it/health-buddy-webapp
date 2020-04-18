@@ -1,6 +1,9 @@
 <template>
   <div class="footer">
     <div class="footer__wrapper">
+      <div class="footer__info">
+        {{ $t('extraInfo.text') }}
+      </div>
       <div class="footer__info-images">
         <a href="https://www.unicef.org/eca/"><img
           class="footer__info-images__unicef"
@@ -47,58 +50,66 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .footer {
-        width: 100%;
-        color: #47536e;
-        font-size: 14px;
-        background: white;
-        padding: 0;
+$img-height: 9vh;
+.footer {
+  width: 100%;
+  color: #47536e;
+  font-size: 14px;
+  background: white;
+  padding: 0;
 
-    &__links {
-        margin: 1.5vh;
-        flex-wrap: wrap;
-        column-gap: 1rem;
-        justify-content: flex-start;
+  &__links {
+    margin: 1.5vh;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  &__info-images, &__info {
+    background-color: #1CABE2;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info-images {
+    padding: 2vh 3vh 3vh;
+
+    &__unicef {
+      max-width: 100%;
+      height: $img-height;
+      margin-right: 3vh;
     }
 
-    &__info-images{
-        padding: 3vh;
-        background-color: #1CABE2;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-
-        &__unicef {
-          max-width:100%;
-          height: auto;
-          width: 18vh;
-          margin-right: 3vh;
-        }
-
-        &__who {
-          max-width:100%;
-          height: auto;
-          width: 28vh;
-          margin-right: 3vh;
-        }
-      }
-
-        &__wrapper {
-            margin: 0 auto;
-            width: 100%;
-            display: flex;
-            column-gap: 50px;
-            flex-wrap: wrap;
-        }
-
-        a {
-            color: #1CABE2;
-        }
-
-        a:hover {
-            color: #7b94c9;
-        }
+    &__who {
+      max-width: 100%;
+      height: $img-height;
+      margin-right: 3vh;
     }
+  }
+
+  &__info {
+    color: white;
+    padding: 1vh 5vh;
+    text-align: center;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  a {
+    color: #1CABE2;
+  }
+
+  a:hover {
+    color: #7b94c9;
+  }
+}
 </style>
