@@ -68,7 +68,7 @@ export default {
           inputTextFieldHint: "Type a question...",
           profileAvatar: require('@/assets/img/doctor-darker.png'),
           openLauncherImage: require('@/assets/img/doctor-square.png'),
-          disableTooltips: !this.isMobile(),
+          disableTooltips: true,
           docViewer: true,
           showFullScreenButton: true,
           autoOpen: true,
