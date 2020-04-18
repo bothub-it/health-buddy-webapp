@@ -45,7 +45,8 @@
                    class="home__section"/>
     </text-section>
 
-    <div id="video"
+    <div v-if="isOpenVideos"
+         id="video"
          class="home__section__wrapper">
       <text-section class="home__section" :class="{ 'home__section__open': isOpen }">
         <h2 slot="title">
@@ -73,54 +74,61 @@ import Chat from '@/components/Chat'
 import { mapGetters } from 'vuex';
 
 export default {
-    name: 'Home',
-    components: {
-        Hero,
-        TextSection,
-        FeatureList,
-        InfoVideoList,
-        Chat,
-    },
-    data() {
-      return {
-        isOpen: false,
-        videoUrls: [
-          "https://www.youtube.com/embed/QYxzo3-qZRc",
-          "https://www.youtube.com/embed/JKpVMivbTfg",
-          "https://www.youtube.com/embed/ujWFj_6FaMY",
-          "https://www.youtube.com/embed/mOV1aBVYKGA",
-        ],
-      };
-    },
-    computed: {
-      ...mapGetters([
-        'getLanguage',
-      ]),
-      features(){
-        return [
-          {
-            iconName: "mdi mdi-comment-check-outline",
-            title: this.$t( 'features.feature_1_title'),
-            text: this.$t( 'features.feature_1_text'),
-          },
-          {
-            iconName: "mdi mdi-earth",
-            title: this.$t( 'features.feature_2_title'),
-            text: this.$t( 'features.feature_2_text'),
-          },
-          {
-            iconName: "mdi mdi-vector-intersection",
-            title: this.$t( 'features.feature_3_title'),
-            text: this.$t( 'features.feature_3_text'),
-          },
-          {
-            iconName: "mdi mdi-book-open-variant",
-            title: this.$t( 'features.feature_4_title'),
-            text: this.$t( 'features.feature_4_text'),
-          },
-        ];
+  name: 'Home',
+  components: {
+      Hero,
+      TextSection,
+      FeatureList,
+      InfoVideoList,
+      Chat,
+  },
+  data() {
+    return {
+      isOpenVideos: true,
+      isOpen: false,
+      videoUrls: [
+        "https://www.youtube.com/embed/QYxzo3-qZRc",
+        "https://www.youtube.com/embed/JKpVMivbTfg",
+        "https://www.youtube.com/embed/ujWFj_6FaMY",
+        "https://www.youtube.com/embed/mOV1aBVYKGA",
+      ],
+    };
+  },
+  watch: {
+      isOpen() {
+        this.isOpenVideos = false;
+        setTimeout(() => this.isOpenVideos = true, 0);
       },
+  },
+  computed: {
+    ...mapGetters([
+      'getLanguage',
+    ]),
+    features(){
+      return [
+        {
+          iconName: "mdi mdi-comment-check-outline",
+          title: this.$t( 'features.feature_1_title'),
+          text: this.$t( 'features.feature_1_text'),
+        },
+        {
+          iconName: "mdi mdi-earth",
+          title: this.$t( 'features.feature_2_title'),
+          text: this.$t( 'features.feature_2_text'),
+        },
+        {
+          iconName: "mdi mdi-vector-intersection",
+          title: this.$t( 'features.feature_3_title'),
+          text: this.$t( 'features.feature_3_text'),
+        },
+        {
+          iconName: "mdi mdi-book-open-variant",
+          title: this.$t( 'features.feature_4_title'),
+          text: this.$t( 'features.feature_4_text'),
+        },
+      ];
     },
+  },
 }
 </script>
 
