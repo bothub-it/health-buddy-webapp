@@ -1,36 +1,31 @@
 <template>
   <div class="banner">
-      <div class="banner__columns animated animatedFadeInUp fadeInUp">
-        <div class="banner__columns__column">
-          <img class="banner__img-doctor"
-               src="@/assets/img/doctor-circle.png"
-               alt="">
-        </div>
-        <div class="banner__columns__column">
-          <div class="banner__content">
-            <h1 class="banner__title">
-              HealthBuddy
-            </h1>
-            <p class="banner__subtitle">
-              {{ $t('hero.title') }}
-            </p>
-            <p class="banner__subtitle">
-              {{ $t('hero.subtitle') }}
-            </p>
-            <div class="banner__logos">
-              <img class="banner__img banner__img-unicef"
-                   :src="unicefLogo">
-              <img class="banner__img banner__img-who" :src="whoLogo">
-            </div>
-          </div>
+    <div class="banner__columns animated animatedFadeInUp fadeInUp">
+      <div class="banner__columns__column">
+        <img class="banner__img-doctor"
+             src="@/assets/img/doctor-circle.png"
+             alt="">
+      </div>
+      <div class="banner__columns__column">
+        <div class="banner__content">
+          <h1 class="banner__title">
+            HealthBuddy
+          </h1>
+          <p class="banner__subtitle">
+            {{ $t('hero.title') }}
+          </p>
+          <p class="banner__subtitle">
+            {{ $t('hero.subtitle') }}
+          </p>
         </div>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-export default {
+  import { mapGetters } from 'vuex'
+  export default {
     name: 'Hero',
     computed: {
       ...mapGetters([
@@ -44,11 +39,10 @@ export default {
         return require("@/assets/img/who-logo.png");
       },
     },
-}
+  }
 </script>
 
 <style lang="scss" scoped>
-$img-doctor-width: 26vh;
 
 .banner {
   position: relative;
@@ -73,11 +67,11 @@ $img-doctor-width: 26vh;
   }
 
   &__columns {
-    padding: 50px 10px 0;
-    margin: 3.5em auto 0 auto;
+    padding: 50px 10px;
+    margin: 3.5em auto .5em auto;
     display: flex;
     max-width: 1150px;
-    align-items: flex-start;
+    align-items: center;
     &__column {
       display: flex;
       align-items: center;
@@ -90,7 +84,6 @@ $img-doctor-width: 26vh;
     @media (max-width: 1150px) {
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       &__columng {
         text-align: center;
       }
@@ -98,13 +91,14 @@ $img-doctor-width: 26vh;
   }
 
   &__logos {
-    padding-top: 10px;
+    margin: 7vh 0 2vh;
   }
 
   &__content {
     text-align: left;
 
-    @media (max-width: 1150px) {
+    @media only screen and (max-width: 760px) {
+      max-width: 720px;
       text-align: center;
     }
   }
@@ -139,12 +133,12 @@ $img-doctor-width: 26vh;
     vertical-align: middle;
 
     &-unicef {
-      height: 8vh;
+      width: 18vh;
       margin-right: 3vh;
     }
 
     &-who {
-      height: 8vh;
+      width: 18vh;
       margin-right: 3vh;
     }
 
@@ -155,7 +149,7 @@ $img-doctor-width: 26vh;
   }
 }
 
-  /* Animation */
+/* Animation */
 
 @keyframes fadeInUp {
   from {
@@ -179,20 +173,20 @@ $img-doctor-width: 26vh;
 }
 
 .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
 }
 
 .animatedFadeInUp {
-    opacity: 0
+  opacity: 0
 }
 
 .fadeInUp {
-    opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }
 
 </style>

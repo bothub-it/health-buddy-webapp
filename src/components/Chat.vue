@@ -47,7 +47,11 @@ export default {
       sendInitial() {
         WebChat.send(this.initialPayload);
       },
-      updateOpenStatus() {
+      openChat() {
+        if (!this.isMobile()) {
+          setTimeout(() => WebChat.open(), 150);
+        }
+      },updateOpenStatus() {
         setTimeout(() => {
           if (WebChat.isOpen() === this.isOpen) return;
           this.$emit('update:isOpen', WebChat.isOpen());
@@ -67,6 +71,7 @@ export default {
           disableTooltips: !this.isMobile(),
           docViewer: true,
           showFullScreenButton: true,
+          autoOpen: true,
           params: {
             images: {
               dims: {
@@ -75,9 +80,11 @@ export default {
               }
             },
             storage: "session"
-          }
+          },
       });
       this.sendInitial();
+      this.openChat();
+
     }
   }
 }
