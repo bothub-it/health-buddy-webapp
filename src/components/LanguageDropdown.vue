@@ -45,7 +45,7 @@ export default {
         },
         {
           id: 'ru',
-          name: 'Russian',
+          name: 'Pусский',
         },
         {
           id: 'el-GR',

@@ -38,8 +38,11 @@
     },
 
     "videos": {
-        "title": "Videos",
-        "text": ""
+        "title": "Videos"
+    },
+
+    "extraInfo": {
+        "text": "HealthBuddy is a joint initiative of the WHO Regional Office for Europe and UNICEF’s Europe and Central Asia Regional Office."
     },
 
     "footer": {

@@ -38,7 +38,10 @@
     },
 
     "videos": {
-        "title": "Vídeos",
+        "title": "Vídeos"
+    },
+
+    "extraInfo": {
         "text": "HealthBuddy es una iniciativa conjunta de la Oficina Regional para Europa de la OMS y de la Oficina Regional para Europa y Asia Central de UNICEF."
     },
 

@@ -38,8 +38,11 @@
     },
 
     "videos": {
-        "title": "Vídeos",
-        "text": ""
+        "title": "Vídeos"
+    },
+
+    "extraInfo": {
+        "text": "Healthbuddy é uma iniciativa conjunta dos escritórios da OMS Europa e  o escritório da UNICEF Europa e Asia Central."
     },
 
     "footer": {
