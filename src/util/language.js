@@ -31,8 +31,3 @@ export const validLanguages = [
   },
 ];
 
-export function getValidBrowserLanguage() {
-  const language = validLanguages.find(l => l.browserCode === navigator.language);
-  return language ? language.id : undefined;
-}
-
