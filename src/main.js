@@ -19,3 +19,4 @@ new Vue({
   router,
 }).$mount('#app');
 
+store.dispatch('setLanguage', localStorage.getItem('language') || 'en');

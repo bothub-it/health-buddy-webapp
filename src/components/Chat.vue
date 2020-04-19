@@ -20,67 +20,77 @@ export default {
       default: false,
     },
   },
-    computed: {
-      ...mapGetters([
-        'getLanguage',
-      ]),
-      initialPayload() { return `hello ${this.getLanguage || 'en'}`; },
+  computed: {
+    ...mapGetters([
+      'getLanguage',
+    ]),
+    initialPayload() {
+      return `hello ${this.getLanguage || 'en'}`;
     },
-    watch: {
-      getLanguage() {
+  },
+  data() {
+    return {
+      initalized: false
+    };
+  },
+  watch: {
+    getLanguage() {
+      if (!this.initalized) {
+        this.initalized = true;
+        this.setupChat();
+        this.updateOpenStatus();
+      } else {
         this.sendInitial();
-      },
+      }
     },
-    mounted() {
-      this.setupChat();
-      this.updateOpenStatus();
+  },
+  methods: {
+    isMobile() {
+      try {
+        document.createEvent("TouchEvent");
+        return true;
+      } catch (e) {
+        return false;
+      }
     },
-    methods: {
-      isMobile() {
-          try{
-            document.createEvent("TouchEvent");
-            return true;
-          } catch(e){
-            return false;
-          }
-      },
-      sendInitial() {
-        WebChat.send(this.initialPayload);
-      },
-      openChat() {
-        if (!this.isMobile()) {
-          setTimeout(() => WebChat.open(), 150);
-        }
-      },updateOpenStatus() {
-        setTimeout(() => {
-          if (WebChat.isOpen() === this.isOpen) return;
-          this.$emit('update:isOpen', WebChat.isOpen());
-        }, 100);
-      },
-      setupChat() {
-        WebChat.default.init({
-          selector: '#webchat',
-          initPayload: this.initialPayload,
-          channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
-          host: 'https://rapidpro.ilhasoft.mobi',
-          title: 'HealthBuddy',
-          inputTextFieldHint: "Type a question...",
-          profileAvatar: require('@/assets/img/doctor-darker.png'),
-          openLauncherImage: require('@/assets/img/doctor-square.png'),
-          disableTooltips: true,
-          docViewer: true,
-          showFullScreenButton: true,
-          autoOpen: true,
-          hideWhenNotConnected: true,
-          params: {
-            images: {
-              dims: {
-                width: 712,
-                height: 844
-              }
-            },
-            storage: "session"
+    sendInitial() {
+      WebChat.send(this.initialPayload);
+    },
+    openChat() {
+      if (!this.isMobile()) {
+        setTimeout(() => WebChat.open(), 150);
+      }
+    },
+    updateOpenStatus() {
+      setTimeout(() => {
+        if (WebChat.isOpen() === this.isOpen) return;
+        this.$emit('update:isOpen', WebChat.isOpen());
+      }, 100);
+    },
+    setupChat() {
+      WebChat.default.init({
+        selector: '#webchat',
+        initPayload: this.initialPayload,
+        channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
+        host: 'https://rapidpro.ilhasoft.mobi',
+        title: 'HealthBuddy',
+        inputTextFieldHint: "Type a question...",
+        profileAvatar: require('@/assets/img/doctor-darker.png'),
+        openLauncherImage: require('@/assets/img/doctor-square.png'),
+        disableTooltips: true,
+        docViewer: true,
+        showFullScreenButton: true,
+        autoOpen: true,
+        hideWhenNotConnected: true,
+        params: {
+          images: {
+            dims: {
+              width: 712,
+              height: 844
+            }
           },
+          storage: "session"
+        },
       });
       this.sendInitial();
       this.openChat();
@@ -97,21 +107,21 @@ export default {
 }
 
 .launcher {
-	-webkit-box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
-	-moz-box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
-	box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(28, 171, 226, 1);
+  -moz-box-shadow: 1px 1px 5px 1px rgba(28, 171, 226, 1);
+  box-shadow: 1px 1px 5px 1px rgba(28, 171, 226, 1);
   height: 8vh;
   width: 8vh;
 }
 
 .launcher:after {
-	content: '';
-	width: 8vh;
-	height: 8vh;
-	border: 4px solid #1CABE2;
-	border-radius: 50%;
-	position: absolute;
-	animation: pulsate infinite 1.4s;
+  content: '';
+  width: 8vh;
+  height: 8vh;
+  border: 4px solid #1CABE2;
+  border-radius: 50%;
+  position: absolute;
+  animation: pulsate infinite 1.4s;
 }
 
 @-webkit-keyframes pulsate {
@@ -142,7 +152,7 @@ export default {
 }
 
 .close-button::-moz-focus-inner {
-  border:0;
+  border: 0;
 }
 
 .conversation-container .close {
@@ -166,7 +176,7 @@ export default {
 }
 
 #webchat .hide-sm {
-   display: none;
+  display: none;
 }
 
 .quickReplies-container {
@@ -178,8 +188,8 @@ export default {
   padding: 0 0 0 0;
   overflow: auto;
   max-width: 100%;
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .new-message {
