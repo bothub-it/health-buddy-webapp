@@ -8,10 +8,10 @@
 </template>
 
 <script>
-// import * as WebChat from '';
 import { mapGetters } from 'vuex';
+import { isMobile } from '@/util/browser';
 
-var WebChat = require('@/assets/js/bot.js');
+const WebChat = require('@/assets/js/bot.js');
 
 export default {
   props: {
@@ -45,19 +45,11 @@ export default {
     },
   },
   methods: {
-    isMobile() {
-      try {
-        document.createEvent("TouchEvent");
-        return true;
-      } catch (e) {
-        return false;
-      }
-    },
     sendInitial() {
       WebChat.send(this.initialPayload);
     },
     openChat() {
-      if (!this.isMobile()) {
+      if (!isMobile()) {
         setTimeout(() => WebChat.open(), 150);
       }
     },
@@ -171,8 +163,9 @@ export default {
   }
 }
 
-.conversation-container {
+#webchat .conversation-container {
   max-height: 90vh;
+  margin-bottom: 20px;
 }
 
 #webchat .hide-sm {
