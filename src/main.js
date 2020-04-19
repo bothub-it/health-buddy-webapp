@@ -6,6 +6,7 @@ import VueI18n from 'vue-i18n';
 import i18n from './util/i18n';
 import VueRouter from 'vue-router';
 import router from './router';
+import { getValidBrowserLanguage } from '@/util/language';
 
 Vue.config.productionTip = false;
 Vue.use(Vuex);
@@ -19,4 +20,4 @@ new Vue({
   router,
 }).$mount('#app');
 
-store.dispatch('setLanguage', localStorage.getItem('language') || 'en');
+store.dispatch('setLanguage', localStorage.getItem('language') || getValidBrowserLanguage() || 'en');

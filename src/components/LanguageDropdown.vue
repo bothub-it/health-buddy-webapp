@@ -19,6 +19,7 @@
 <script>
 import { mapGetters, mapActions } from 'vuex';
 import Dropdown from '@/components/Dropdown';
+import { validLanguages } from '@/util/language';
 
 export default {
   name: 'DropdownLanguage',
@@ -28,38 +29,13 @@ export default {
   computed: {
     ...mapGetters([
       'getLanguage',
-    ]),
+    ])
   },
   data() {
     return {
       selectedLanguage: 'en',
       modalActive: false,
-      languages: [
-        {
-          id: 'en',
-          name: 'English',
-        },
-        {
-          id: 'pt-BR',
-          name: 'Portuguese'
-        },
-        {
-          id: 'ru',
-          name: 'Pусский',
-        },
-        {
-          id: 'el-GR',
-          name: 'Ελληνικά',
-        },
-        {
-          id: 'es',
-          name: 'Español',
-        },
-        {
-          id: 'kaz',
-          name: 'Қазақ',
-        },
-      ],
+      languages: validLanguages,
     }
   },
   watch: {

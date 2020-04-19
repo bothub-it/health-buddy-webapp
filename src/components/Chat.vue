@@ -81,7 +81,7 @@ export default {
         docViewer: true,
         showFullScreenButton: true,
         autoOpen: true,
-        hideWhenNotConnected: true,
+        hideWhenNotConnected: false,
         params: {
           images: {
             dims: {
