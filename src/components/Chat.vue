@@ -163,9 +163,9 @@ export default {
   }
 }
 
-.conversation-container {
-  max-height: 90vh;
-}
+/*.conversation-container {*/
+/*  max-height: 90vh;*/
+/*}*/
 
 #webchat .hide-sm {
   display: none;
