@@ -2,10 +2,10 @@
 <template>
   <div class="home">
     <Chat :is-open.sync="isOpen" />
-    <Hero id="home" :class="{'home__section__open-hero': isOpen }" />
+    <Hero id="home" :class="{'home__section__open-hero': withMargin }" />
     <text-section id="how"
                   class="home__section"
-                  :class="{'home__section__open': isOpen }">
+                  :class="{'home__section__open': withMargin }">
       <h2 slot="title">
         {{ $t('about.title') }}
       </h2>
@@ -31,7 +31,7 @@
 
     <text-section id="about"
                   class="home__section"
-                  :class="{ 'home__section__open': isOpen }">
+                  :class="{ 'home__section__open': withMargin }">
       <h2 slot="title">
         {{ $t('features.title') }}
       </h2>
@@ -48,7 +48,7 @@
     <div v-if="isOpenVideos"
          id="video"
          class="home__section__wrapper">
-      <text-section class="home__section" :class="{ 'home__section__open': isOpen }">
+      <text-section class="home__section" :class="{ 'home__section__open': withMargin }">
         <h2 slot="title">
           {{ $t('videos.title') }}
         </h2>
@@ -69,6 +69,7 @@ import FeatureList from '@/components/FeatureList';
 import InfoVideoList from '@/components/InfoVideoList';
 import Chat from '@/components/Chat'
 import { mapGetters } from 'vuex';
+import { isMobile } from '@/util/browser';
 
 export default {
   name: 'Home',
@@ -101,7 +102,10 @@ export default {
     ...mapGetters([
       'getLanguage',
     ]),
-    features(){
+    withMargin() {
+      return this.isOpen && !isMobile();
+    },
+    features() {
       return [
         {
           iconName: "mdi mdi-comment-check-outline",
