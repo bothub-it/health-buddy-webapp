@@ -9,7 +9,7 @@
       <div class="banner__columns__column">
         <div class="banner__content">
           <h1 class="banner__title">
-            HealthBuddy Europe
+            HealthBuddy
           </h1>
           <p class="banner__subtitle">
             {{ $t('hero.title') }}
