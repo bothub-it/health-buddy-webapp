@@ -94,7 +94,13 @@ export default {
 
 <style lang="css">
 
-.conversation-container .title.with-avatar {
+
+#webchat .widget-container.full-screen .conversation-container {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+#webchat .conversation-container .title.with-avatar {
   color: white;
 }
 
