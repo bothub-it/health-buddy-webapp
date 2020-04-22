@@ -83,7 +83,7 @@ export default {
             title: this.$t('navbar.about'),
           },
           {
-            id: "info",
+            id: "video",
             title: this.$t('navbar.videos'),
           },
         ];
