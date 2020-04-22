@@ -205,4 +205,18 @@ export default {
 .avatar {
   min-width: 17px;
 }
+
+
+#webchat .widget-container:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1vh;
+  left: -2vh;
+  height: 5vh;
+  width: 5vh;
+  background-image: url(../assets/img/tooltip-chat.svg);
+  background-repeat: no-repeat;
+}
+
 </style>
