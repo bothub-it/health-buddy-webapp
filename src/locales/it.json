@@ -7,13 +7,13 @@
     },
 
     "hero": {
-        "title": "Il tuo amico personale per ricevere informazioni su COVID-19.",
+        "title": "Il tuo amico personale per ricevere informazioni su COVID-19 in Europa e Asia Centrale.",
         "subtitle": "Basta un semplice messaggio!"
     },
 
     "about": {
         "title": "Chiedimi di COVID",
-        "about_1": "Ciao, sono il tuo Amico della salute. Inviami un messaggio nella casella di dialogo così potrò darti delle informazioni sul coronavirus (COVID-19) tratte da fonti attendibili dell'OMS e dell'UNICEF.",
+        "about_1": "Ciao, sono il tuo Amico della salute. Inviami un messaggio nella casella di dialogo così potrò darti delle informazioni sul coronavirus (COVID-19) tratte da fonti attendibili di WHO/Europe e di UNICEF/ECARO.",
         "about_2": "3 steps to get started: ",
         "about_3": {
             "emphasis_1": "1. Seleziona la tua lingua ",
@@ -26,13 +26,13 @@
     },
     "features": {
         "title": "Su di Healthbuddy",
-        "text": "Molti miti e false informazione sul COVID-19 circolano su Internet, sui social media, e questa è una delle sfide più grandi che tutti noi affrontiamo nella lotta contro questa malattia. Ecco perché è importante ottenere informazioni e consigli da fonti attendibili.",
-        "feature_1_title": "Supporto multimediatico",
+        "text": "Molti miti e false informazione sul nuovo coronavirus (COVID-19) circolano su Internet, sui social media, e questa è una delle sfide più grandi che tutti noi affrontiamo nella lotta contro questa malattia. Ecco perché è importante ottenere informazioni e consigli da fonti attendibili.",
+        "feature_1_title": "Supporto multipiattaforma",
         "feature_1_text": "HealthBuddy è disponibile su più piattaforme online presenti in Europa, fornendo agli utenti consulenza scientifica e basata sull'evidenza.",
         "feature_2_title": "Supporto multilingue",
         "feature_2_text": "HealthBuddy rileva la lingua del tuo browser e, se supportato, ti parlerà automaticamente in quella lingua. Puoi anche selezionare un'intera gamma di lingue dal nostro menu delle lingue.",
         "feature_3_title": "Informazioni accurate su COVID-19",
-        "feature_3_text": "HealthBuddy è supportato da esperti dell'OMS e dell'UNICEF e fornisce informazioni accurate sul COVID-19.",
+        "feature_3_text": "HealthBuddy è supportato da esperti di WHO/Europe e di UNICEF ECARO e fornisce informazioni accurate sul COVID-19.",
         "feature_4_title": "Combattere voci e notizie false",
         "feature_4_text": "Se senti voci o notizie false nella tua community, puoi segnalarcelo qui. HealthBuddy compilerà queste voci e stabilirà il giusto record."
     },
@@ -42,7 +42,7 @@
     },
 
     "extraInfo": {
-        "text": "HealthBuddy è un'iniziativa congiunta dell'Ufficio Regionale per l'Europa dell'OMS e dell'Ufficio Regionale Europa e Asia Centrale dell'UNICEF."
+        "text": "HealthBuddy è un'iniziativa congiunta dell'Ufficio Regionale Europa e Asia Centrale dell'UNICEF e dell'Ufficio Regionale per l'Europa dell'OMS."
     },
 
     "footer": {

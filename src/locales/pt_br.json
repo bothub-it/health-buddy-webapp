@@ -7,13 +7,13 @@
     },
 
     "hero": {
-        "title": "Seu amigo para obter informações sobre COVID-19.",
+        "title": "Seu amigo para obter informações sobre COVID-19 na Europa e Ásia Central.",
         "subtitle": "A apenas uma mensagem de texto de distância!"
     },
 
     "about": {
         "title": "Pergunte-me sobre COVID-19",
-        "about_1": "Olá, sou HealthBuddy. Basta entrar em contato comigo pela janela de bate-papo e eu darei informações sobre a nova doença de coronavírus (COVID-19). Pergunte qualquer coisa sobre o vírus, a doença e a pandemia, e encontrarei as informações para você, de fontes confiáveis da OMS e da UNICEF. Antes de começar, aqui estão as diferentes opções que você tem para falar comigo:",
+        "about_1": "Olá, sou HealthBuddy. Basta entrar em contato comigo pela janela de bate-papo e eu darei informações sobre a nova doença de coronavírus (COVID-19). Pergunte qualquer coisa sobre o vírus, a doença e a pandemia, e encontrarei as informações para você, de fontes confiáveis da OMS/Europa e da UNICEF EACER. Antes de começar, aqui estão as diferentes opções que você tem para falar comigo:",
         "about_2": "3 passos pra começar: ",
         "about_3": {
             "emphasis_1": "1. Selecione seu idioma: ",
@@ -32,7 +32,7 @@
         "feature_2_title": "Suporte multilíngue",
         "feature_2_text": "O HealthBuddy detectará automaticamente o idioma do seu navegador e, se houver suporte, falará automaticamente nesse idioma.",
         "feature_3_title": "Informação precisa sobre o COVID-19",
-        "feature_3_text": "O seu consultor de saúde virtual, HealthBuddy, apoiado por especialistas da OMS e UNICEF, fornecerá informações úteis e precisas sobre o COVID-19: por exemplo, dicas sobre como se proteger e a outras pessoas, e como reduzir o risco de infecção. Encontre respostas para suas perguntas aqui e compartilhe com seus amigos, colegas e familiares.",
+        "feature_3_text": "O seu consultor de saúde virtual, HealthBuddy, apoiado por especialistas da OMS/Europa e UNICEF EACER, fornecerá informações úteis e precisas sobre o COVID-19: por exemplo, dicas sobre como se proteger e a outras pessoas, e como reduzir o risco de infecção. Encontre respostas para suas perguntas aqui e compartilhe com seus amigos, colegas e familiares.",
         "feature_4_title": "Combate a boatos e notícias falsas",
         "feature_4_text": "Você pode fazer sua parte no combate ao vírus, denunciando notícias e boatos falsos. Se você ouvir rumores ou declarações falsas em sua comunidade ou região, poderá denunciá-lo aqui. O HealthBuddy irá compilá-los e combatê-los aqui com informações científicas."
     },
@@ -42,7 +42,7 @@
     },
 
     "extraInfo": {
-        "text": "Healthbuddy é uma iniciativa conjunta dos escritórios da OMS Europa e  o escritório da UNICEF Europa e Asia Central."
+        "text": "Healthbuddy é uma iniciativa conjunta dos escritórios da OMS/Europa e  o escritório da UNICEF Europa e Asia Central."
     },
 
     "footer": {
