@@ -5,9 +5,9 @@ export const validLanguages = [
     browserCode: 'en',
   },
   {
-    id: 'pt-BR',
-    name: 'Português',
-    browserCode: 'pt-BR',
+    id: 'es',
+    name: 'Español',
+    browserCode: 'es',
   },
   {
     id: 'ru',
@@ -15,14 +15,19 @@ export const validLanguages = [
     browserCode: 'ru',
   },
   {
+    id: 'pt-BR',
+    name: 'Português',
+    browserCode: 'pt-BR',
+  },
+  {
+    id: 'it',
+    name: 'Italiano',
+    browserCode: 'it',
+  },
+  {
     id: 'el-GR',
     name: 'Ελληνικά',
     browserCode: 'el',
-  },
-  {
-    id: 'es',
-    name: 'Español',
-    browserCode: 'es',
   },
   {
     id: 'kaz',
