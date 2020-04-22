@@ -1,14 +1,5 @@
 <template>
   <div class="navbar__wrapper">
-    <modal :active.sync="modalActive">
-      <router-link v-for="item in items"
-                   :key="item.id"
-                   :to="`index#${item.id}`"
-                   @click="modalActive=false"
-                   class="modal-item">
-              {{ item.title }}
-      </router-link>
-    </modal>
     <nav class="navbar"
          role="navigation"
          aria-label="dropdown navigation">
@@ -22,10 +13,10 @@
           <h1 class="navbar__title"> HealthBuddy </h1>
         </a>
 
-        <div class="navbar-burger">
+        <div class="navbar-burger" :class="{ 'is-active': modalActive }">
           <div class="navbar-item">
             <LanguageDropdown />
-            <a @click="modalActive=true"
+            <a @click="modalActive=!modalActive"
                class="navbar-item"
                role="button"
                aria-label="menu"
@@ -39,7 +30,8 @@
       </div>
 
 
-      <div class="navbar-menu">
+      <div class="navbar-menu"
+           :class="{ 'is-active': modalActive }">
         <div class="navbar-end">
           <router-link v-for="item in items"
                        :key="item.id"
@@ -49,7 +41,7 @@
             {{ item.title }}
           </router-link>
 
-          <LanguageDropdown />
+          <LanguageDropdown v-if="!modalActive"/>
         </div>
       </div>
     </nav>
@@ -58,13 +50,11 @@
 
 <script>
 import LanguageDropdown from '@/components/LanguageDropdown';
-import Modal from '@/components/Modal';
 
 export default {
     name: 'Navbar',
     components: {
       LanguageDropdown,
-      Modal,
     },
     data() {
       return {
@@ -132,8 +122,6 @@ export default {
     }
   }
 
-
-
   &-item, /deep/ .dropdown-trigger {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -194,6 +182,16 @@ export default {
     @media (max-width: 350px) {
       max-height: 40px;
     }
+  }
+}
+
+.navbar-menu.is-active {
+  .navbar-item {
+    color: #2D2926;
+  }
+
+  .animatable:hover {
+    transform: scale(1);
   }
 }
 </style>
