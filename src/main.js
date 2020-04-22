@@ -22,7 +22,12 @@ new Vue({
 
 store.dispatch('setLanguage', localStorage.getItem('language') || getValidBrowserLanguage() || 'en');
 
+function updatePageDimension() {
+  document.documentElement.style.setProperty('--pageHeight', `${window.innerHeight}px`);
+}
+
 window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+  updatePageDimension();
 });
+updatePageDimension();
