@@ -7,18 +7,18 @@
     },
 
     "hero": {
-        "title": "Your very own buddy for info about COVID-19.",
+        "title": "Your very own buddy for info about COVID-19 in Europe and Central Asia.",
         "subtitle": "Just a text message away!"
     },
 
     "about": {
         "title": "Ask me about COVID-19",
-        "about_1": "Hi, I’m your HealthBuddy. Send me a text in the chat window and I will give you information about the novel coronavirus disease (COVID-19), from the trusted sources of WHO and UNICEF.",
+        "about_1": "Hi, I’m your HealthBuddy. Send me a text in the chat window and I will give you information about the novel coronavirus disease (COVID-19), from the trusted sources of WHO/Europe and UNICEF ECARO.",
         "about_2": "3 steps to get started:",
         "about_3": {
             "emphasis_1": "1. Select your language ",
             "emphasis_2": "2. Select from the list of common questions ",
-            "emphasis_3": "3. Send me your questions in natural language: ",
+            "emphasis_3": "3. Send me your questions in natural language ",
             "text_1": " from the language dropdown menu at the top of this web page.",
             "text_2": "to get quick answers.",
             "text_3": "as if you are talking to your friend."
@@ -26,15 +26,15 @@
     },
     "features": {
         "title": "About HealthBuddy",
-        "text": "There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important to be careful where you look for information and advice.",
-        "feature_1_title": "Multi-channel support",
-        "feature_1_text": "HealthBuddy is available on multiple social media and instant messaging platforms in Europe to provide users with scientific and evidence-based advice.",
+        "text": "There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important get your information and advice from trusted sources.",
+        "feature_1_title": "Multi-platform support",
+        "feature_1_text": "HealthBuddy is available on multiple online platforms in Europe to provide users with scientific and evidence-based advice.",
         "feature_2_title": "Multi-language support",
         "feature_2_text": "HealthBuddy detects the language of your browser and, if supported, will automatically speak in that language. You can also change the language from the languages menu. ",
         "feature_3_title": "Accurate COVID-19 information",
-        "feature_3_text": "HealthBuddy is supported by experts from WHO and UNICEF and will provide you with accurate information on COVID-19.",
+        "feature_3_text": "HealthBuddy is supported by experts from WHO/Europe and UNICEF ECARO and will provide you with accurate information on COVID-19.",
         "feature_4_title": "Fighting rumours and fake news",
-        "feature_4_text": "If you hear any rumours or fake statements in your community or region, you can report it to us here. HealthBuddy will compile them and counter them here with scientific information."
+        "feature_4_text": "If you hear any rumours or fake statements in your community or region, you can report it to us here. HealthBuddy will compile them and set the record straight."
     },
 
     "videos": {
@@ -42,7 +42,7 @@
     },
 
     "extraInfo": {
-        "text": "HealthBuddy is a joint initiative of the WHO Regional Office for Europe and UNICEF’s Europe and Central Asia Regional Office."
+        "text": "HealthBuddy is a joint initiative of the UNICEF Europe and Central Asia Regional Office and WHO Regional Office for Europe."
     },
 
     "footer": {
