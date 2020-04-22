@@ -207,7 +207,7 @@ export default {
 }
 
 
-#webchat .widget-container:after {
+#webchat .widget-container:not(.chat-open):after {
   content: '';
   display: block;
   position: absolute;
