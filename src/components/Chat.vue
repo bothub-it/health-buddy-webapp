@@ -97,7 +97,7 @@ export default {
 
 #webchat .widget-container.full-screen .conversation-container {
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: var(--pageHeight, 100%);
 }
 
 #webchat .conversation-container .title.with-avatar {
