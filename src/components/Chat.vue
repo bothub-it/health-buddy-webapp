@@ -54,6 +54,12 @@ export default {
       }
     },
     updateOpenStatus() {
+      if (!WebChat.isOpen() && isMobile()) {
+        setTimeout(() => {
+          document.querySelectorAll('.sender .new-message')[0].blur();
+        }, 0);
+      }
+
       setTimeout(() => {
         if (WebChat.isOpen() === this.isOpen) return;
         this.$emit('update:isOpen', WebChat.isOpen());
@@ -92,12 +98,25 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
 
+body.mobile #webchat .widget-container.chat-open {
+  top: 0px;
+  bottom: 0;
+  .messages-container {
+    position: fixed;
+    top: 55px;
+    height: calc(100% - 100px);
+  }
+  .sender {
+    position: fixed;
+    bottom: 0;
+  }
 
-#webchat .widget-container.full-screen .conversation-container {
-  height: 100vh;
-  height: var(--pageHeight, 100%);
+  .messages-container, .sender {
+    right: 0;
+    left: 0;
+  }
 }
 
 #webchat .conversation-container .title.with-avatar {
