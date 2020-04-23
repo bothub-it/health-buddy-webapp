@@ -94,6 +94,10 @@ export default {
   },
   watch: {
       isOpen() {
+        document.body.classList.toggle('opened')
+        if (isMobile()) {
+          document.body.classList.toggle('mobile')
+        }
         this.isOpenVideos = false;
         setTimeout(() => this.isOpenVideos = true, 0);
       },

@@ -27,6 +27,15 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+html, body {
+  height: 100%;
+}
+body.opened.mobile {
+  overflow: hidden;
+  #webchat .widget-container {
+    overflow: hidden;
+  }
+}
 button {
   cursor: pointer;
 }
