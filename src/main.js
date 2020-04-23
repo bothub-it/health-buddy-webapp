@@ -21,13 +21,3 @@ new Vue({
 }).$mount('#app');
 
 store.dispatch('setLanguage', localStorage.getItem('language') || getValidBrowserLanguage() || 'en');
-
-function updatePageDimension() {
-  document.documentElement.style.setProperty('--pageHeight', `${window.innerHeight}px`);
-}
-
-window.addEventListener('resize', () => {
-
-  updatePageDimension();
-});
-updatePageDimension();
