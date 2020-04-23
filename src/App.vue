@@ -35,8 +35,8 @@ body.opened.mobile {
   #webchat .widget-container {
     overflow: hidden;
     .conversation-container {
-      height: 100vh;
-      height: var(--pageHeight, 100%);
+      overflow: hidden;
+      height: 100%;
     }
   }
 }

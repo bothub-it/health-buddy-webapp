@@ -106,11 +106,14 @@ body.mobile #webchat .widget-container.chat-open {
   .messages-container {
     position: fixed;
     top: 55px;
-    height: calc(100% - 100px);
+    bottom: 50px;
+    height: initial;
   }
   .sender {
     position: fixed;
     bottom: 0;
+    height: 45px;
+    overflow: hidden;
   }
 
   .messages-container, .sender {
