@@ -27,17 +27,9 @@ export default {
 html {
   scroll-behavior: smooth;
 }
-html, body {
-  height: 100%;
-}
 body.opened.mobile {
-  overflow: hidden;
-  #webchat .widget-container {
-    overflow: hidden;
-    .conversation-container {
-      overflow: hidden;
-      height: 100%;
-    }
+  #home, #how, #about, #video {
+    display: none;
   }
 }
 button {
