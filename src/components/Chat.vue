@@ -99,26 +99,13 @@ export default {
 </script>
 
 <style lang="scss">
+$header-height: 55px;
+$sender-height: 45px;
 
 body.mobile #webchat .widget-container.chat-open {
-  top: 0px;
-  bottom: 0;
   .messages-container {
-    position: fixed;
-    top: 55px;
-    bottom: 50px;
-    height: initial;
-  }
-  .sender {
-    position: fixed;
-    bottom: 0;
-    height: 45px;
-    overflow: hidden;
-  }
-
-  .messages-container, .sender {
-    right: 0;
-    left: 0;
+    height: calc(100% - #{$header-height} - #{$sender-height});
+    min-height: inherit;
   }
 }
 
