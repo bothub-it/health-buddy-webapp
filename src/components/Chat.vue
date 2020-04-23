@@ -54,6 +54,12 @@ export default {
       }
     },
     updateOpenStatus() {
+      if (!WebChat.isOpen() && isMobile()) {
+        setTimeout(() => {
+          document.querySelectorAll('.sender .new-message')[0].blur();
+        }, 0);
+      }
+
       setTimeout(() => {
         if (WebChat.isOpen() === this.isOpen) return;
         this.$emit('update:isOpen', WebChat.isOpen());
@@ -63,7 +69,7 @@ export default {
       WebChat.default.init({
         selector: '#webchat',
         initPayload: this.initialPayload,
-        channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
+        channelUuid: '0e004b79-bd8b-4145-9279-3ee8cece2f87',
         host: 'https://rapidpro.ilhasoft.mobi',
         title: 'HealthBuddy',
         inputTextFieldHint: "Type a question...",
@@ -92,9 +98,18 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
+$header-height: 55px;
+$sender-height: 45px;
 
-.conversation-container .title.with-avatar {
+body.mobile #webchat .widget-container.chat-open {
+  .messages-container {
+    height: calc(100% - #{$header-height} - #{$sender-height});
+    min-height: inherit;
+  }
+}
+
+#webchat .conversation-container .title.with-avatar {
   color: white;
 }
 
