@@ -27,6 +27,11 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+body.opened.mobile {
+  #home, #how, #about, #video {
+    display: none;
+  }
+}
 button {
   cursor: pointer;
 }
