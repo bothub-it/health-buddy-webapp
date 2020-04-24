@@ -117,11 +117,11 @@
   }
 
   &__subtitle {
-    color: #777779;
+    color: #2D2926;
     font-size: 18px;
     margin-bottom: .5rem;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.5;
 
     @media (max-width: 768px) {
       font-size: 20px;

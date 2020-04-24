@@ -43,9 +43,9 @@ export default {
             font-size: 20px;
             font-weight: 700;
             margin: 5px 0 10px 60px;
-            color: #777779;
+            color: #2D2926;
             font-family: "Raleway", sans-serif;
-            line-height: 1.2;
+            line-height: 1.5;
         }
 
         &__text {
