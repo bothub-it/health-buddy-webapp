@@ -52,7 +52,7 @@ $img-height: 9vh;
 .footer {
   width: 100%;
   color: #47536e;
-  font-size: 14px;
+  font-size: 1em;
   background: white;
   padding: 0;
 

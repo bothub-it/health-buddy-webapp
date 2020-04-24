@@ -1,6 +1,7 @@
 <template>
   <div class="feature-item column is-half">
-    <i :class="['feature-item__icon', iconName]" />
+    <i :class="['feature-item__icon', iconName]"
+       aria-hidden="true"/>
     <h4 class="feature-item__title">
       {{ title }}
     </h4>
