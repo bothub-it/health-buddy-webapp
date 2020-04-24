@@ -1,6 +1,7 @@
 <template>
   <dropdown class="navbar-item">
-    <a class="dropdown-trigger animatable"
+    <a :title="$t('navbar.languages')"
+       class="dropdown-trigger animatable"
        slot="trigger">
       {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
     </a>
@@ -8,6 +9,7 @@
     <a v-for="(language, index) in languages"
        :key="index"
        :class="{ selected: getLanguage === language.id }"
+       :title="language.name"
        @click="setLanguage(language.id)"
        slot="options"
        class="dropdown-item">

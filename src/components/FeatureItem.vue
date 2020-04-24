@@ -36,7 +36,7 @@ export default {
         &__icon {
             font-size: 48px;
             float: left;
-            color: #1CABE2;
+            color: #007BFF;
         }
 
         &__title {

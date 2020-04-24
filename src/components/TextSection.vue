@@ -28,7 +28,7 @@ export default {
     font-weight: 400;
     margin-bottom: 20px;
     padding-bottom: 0;
-    color: #1CABE2;
+    color: #007BFF;
     font-family: "Poppins", sans-serif;
 
     p, h2 {

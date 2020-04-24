@@ -9,7 +9,8 @@
              alt="HealthBuddy logo">
 
         <a class="navbar-item"
-           href="https://healthbuddy.info/index.html">
+           href="https://healthbuddy.info/"
+           title="HealthBuddy">
           <h1 class="navbar__title"> HealthBuddy </h1>
         </a>
 
@@ -75,6 +76,10 @@ export default {
           {
             id: "video",
             title: this.$t('navbar.videos'),
+          },
+          {
+            id: "webchat",
+            title: this.$t('navbar.bot'),
           },
         ];
       },
