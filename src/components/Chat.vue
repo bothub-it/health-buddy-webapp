@@ -40,7 +40,8 @@ export default {
         this.setupChat();
         this.updateOpenStatus();
       } else {
-        this.sendInitial();
+        WebChat.dropMessages();
+        this.sendInitial()
       }
     },
   },

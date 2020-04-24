@@ -5079,7 +5079,7 @@
      "use strict";
      Object.defineProperty(t, "__esModule", {
        value: !0
-     }), t.send = t.isVisible = t.isOpen = t.hide = t.show = t.close = t.open = t.toggle = t.Widget = t.default = void 0;
+     }), t.dropMessages = t.send = t.isVisible = t.isOpen = t.hide = t.show = t.close = t.open = t.toggle = t.Widget = t.default = void 0;
      var r = a(n(0)),
        o = a(n(13)),
        i = n(47);
@@ -5130,7 +5130,7 @@
          }), document.querySelector(e.selector))
        }
      };
-     t.default = u, t.Widget = i.Widget, t.toggle = i.toggleChat, t.open = i.openChat, t.close = i.closeChat, t.show = i.showChat, t.hide = i.hideChat, t.isOpen = i.isOpen, t.isVisible = i.isVisible, t.send = i.send
+     t.default = u, t.Widget = i.Widget, t.toggle = i.toggleChat, t.open = i.openChat, t.close = i.closeChat, t.show = i.showChat, t.hide = i.hideChat, t.isOpen = i.isOpen, t.isVisible = i.isVisible, t.send = i.send, t.dropMessages=i.dropMessages
    }, function(e, t, n) {
      "use strict";
      /** @license React v16.12.0
