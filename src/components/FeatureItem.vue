@@ -1,6 +1,7 @@
 <template>
   <div class="feature-item column is-half">
-    <i :class="['feature-item__icon', iconName]" />
+    <i :class="['feature-item__icon', iconName]"
+       aria-hidden="true"/>
     <h4 class="feature-item__title">
       {{ title }}
     </h4>
@@ -36,16 +37,16 @@ export default {
         &__icon {
             font-size: 48px;
             float: left;
-            color: #1CABE2;
+            color: #007BFF;
         }
 
         &__title {
             font-size: 20px;
             font-weight: 700;
             margin: 5px 0 10px 60px;
-            color: #777779;
+            color: #2D2926;
             font-family: "Raleway", sans-serif;
-            line-height: 1.2;
+            line-height: 1.5;
         }
 
         &__text {

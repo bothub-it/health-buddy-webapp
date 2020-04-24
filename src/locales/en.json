@@ -3,7 +3,8 @@
         "home": "Home",
         "about": "About",
         "videos": "Videos",
-        "languages": "Languages"
+        "languages": "Languages",
+        "bot": "Bot"
     },
 
     "hero": {

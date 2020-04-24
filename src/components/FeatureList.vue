@@ -1,6 +1,6 @@
 <template>
   <div class="feature-list columns is-multiline">
-    <FeatureItem 
+    <FeatureItem
       v-for="(feature, index) in list"
       :key="index"
       :icon-name="feature.iconName"

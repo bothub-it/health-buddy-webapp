@@ -24,11 +24,11 @@ export default {
 .section {
     padding: 60px 0;
     overflow: hidden;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 400;
     margin-bottom: 20px;
     padding-bottom: 0;
-    color: #1CABE2;
+    color: #007BFF;
     font-family: "Poppins", sans-serif;
 
     p, h2 {
@@ -47,7 +47,7 @@ export default {
 
     &__text {
         margin-bottom: 0;
-        color: #777779;
+        color: #2D2926;
     }
 }
 </style>

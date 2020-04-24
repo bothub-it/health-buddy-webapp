@@ -44,13 +44,18 @@ export default {
         this.sendInitial()
       }
     },
+    $route (to){
+      if (to.hash.indexOf('webchat') !== -1 && !WebChat.isOpen()) {
+        WebChat.open()
+      }
+    },
   },
   methods: {
     sendInitial() {
       WebChat.send(this.initialPayload);
     },
     openChat() {
-      if (!isMobile()) {
+      if (!isMobile() || this.$router.currentRoute.hash.indexOf('webchat') !== -1) {
         setTimeout(() => WebChat.open(), 150);
       }
     },
@@ -70,7 +75,7 @@ export default {
       WebChat.default.init({
         selector: '#webchat',
         initPayload: this.initialPayload,
-        channelUuid: '0e004b79-bd8b-4145-9279-3ee8cece2f87',
+        channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
         host: 'https://rapidpro.ilhasoft.mobi',
         title: 'HealthBuddy',
         inputTextFieldHint: "Type a question...",
@@ -81,6 +86,14 @@ export default {
         showFullScreenButton: true,
         autoOpen: true,
         hideWhenNotConnected: false,
+        onWidgetEvent: {
+          onChatOpen: () => {
+            this.$router.push('index#webchat');
+          },
+          onChatClose: () => {
+            this.$router.push('index');
+          },
+        },
         params: {
           images: {
             dims: {
@@ -126,7 +139,7 @@ body.mobile #webchat .widget-container.chat-open {
   content: '';
   width: 8vh;
   height: 8vh;
-  border: 4px solid #1CABE2;
+  border: 4px solid #007BFF;
   border-radius: 50%;
   position: absolute;
   animation: pulsate infinite 1.4s;
@@ -149,7 +162,7 @@ body.mobile #webchat .widget-container.chat-open {
   align-items: center;
 
   display: inline-block;
-  background-color: #1CABE2;
+  background-color: #007BFF;
   border: 0;
   width: 40px;
   cursor: pointer;
