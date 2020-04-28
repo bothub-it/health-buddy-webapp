@@ -64,7 +64,7 @@ $img-height: 9vh;
   }
 
   &__info-images, &__info {
-    background-color: #007BFF;
+    background-color: #374EA2;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

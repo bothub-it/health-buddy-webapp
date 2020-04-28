@@ -51,7 +51,7 @@ export default {
 
         &__text {
             font-size: 15px;
-            color: #979aa1;
+            color: #2d2926e3;
             margin-left: 60px;
             margin-top: 0;
             margin-bottom: 1rem;
