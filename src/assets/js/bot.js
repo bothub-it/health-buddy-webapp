@@ -12235,7 +12235,8 @@
              }), a.default.createElement("div", {
                className: "response"
              }, a.default.createElement("div", {
-               id: "wave"
+               id: "wave",
+               "aria-live": ""
              }, a.default.createElement("p", {
                className: "customText"
              }, "..."), a.default.createElement("span", {
