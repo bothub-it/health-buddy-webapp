@@ -3,7 +3,7 @@
     <a :title="$t('navbar.languages')"
        class="dropdown-trigger animatable"
        slot="trigger">
-      {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" />
+      {{ $t('navbar.languages') }} <i class="mdi mdi-menu-down" aria-hidden="true"/>
     </a>
 
     <a v-for="(language, index) in languages"
