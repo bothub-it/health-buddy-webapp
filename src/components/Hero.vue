@@ -4,7 +4,7 @@
       <div class="banner__columns__column">
         <img class="banner__img-doctor"
              src="@/assets/img/doctor-circle.png"
-             alt="">
+             alt="HealthBuddy logo">
       </div>
       <div class="banner__columns__column">
         <div class="banner__content">
@@ -109,7 +109,7 @@
     font-size: 48px;
     font-weight: 500;
     line-height: 56px;
-    color: #1CABE2;
+    color: #007BFF;
 
     @media (max-width: 768px) {
       font-size: 30px;
@@ -117,11 +117,11 @@
   }
 
   &__subtitle {
-    color: #777779;
+    color: #2D2926;
     font-size: 18px;
     margin-bottom: .5rem;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.5;
 
     @media (max-width: 768px) {
       font-size: 20px;

@@ -5,23 +5,21 @@
         {{ $t('extraInfo.text') }}
       </div>
       <div class="footer__info-images">
-        <a href="https://www.unicef.org/eca/"><img
-          class="footer__info-images__unicef"
-          :src="unicefLogo"
-        ></a>
-        <a href="http://www.euro.who.int/en/home"><img
-          class="footer__info-images__who"
-          :src="whoLogo"
-        ></a>
+        <a href="https://www.unicef.org/eca/" title="UNICEF ECARO">
+          <img class="footer__info-images__unicef" :src="unicefLogo" alt="UNICEF ECARO">
+        </a>
+        <a href="http://www.euro.who.int/en/home" title="WHO/Europe">
+          <img class="footer__info-images__who" :src="whoLogo" alt="WHO/Europe">
+        </a>
       </div>
       <div class="footer__links">
         <div>
-          <router-link :to="'privacy'">
+          <router-link :to="'privacy'" :title="$t('footer.policy')">
             {{ $t('footer.policy') }}
           </router-link>
         </div>
         <div>
-          <a href="https://bothub.it/">
+          <a href="https://bothub.it/" :title="$t('footer.bothub')">
             {{ $t('footer.bothub') }}
           </a>
         </div>
@@ -54,7 +52,7 @@ $img-height: 9vh;
 .footer {
   width: 100%;
   color: #47536e;
-  font-size: 14px;
+  font-size: 1em;
   background: white;
   padding: 0;
 
@@ -66,7 +64,7 @@ $img-height: 9vh;
   }
 
   &__info-images, &__info {
-    background-color: #1CABE2;
+    background-color: #374EA2;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +103,7 @@ $img-height: 9vh;
   }
 
   a {
-    color: #1CABE2;
+    color: #007BFF;
   }
 
   a:hover {

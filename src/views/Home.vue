@@ -170,7 +170,7 @@ export default {
       font-size: 38px;
       font-weight: 500;
       line-height: 56px;
-      color: #1CABE2;
+      color: #007BFF;
       font-family: "Poppins", sans-serif;
     }
   }

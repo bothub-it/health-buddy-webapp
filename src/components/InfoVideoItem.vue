@@ -27,8 +27,8 @@ export default {
 <style lang="scss" scoped>
   .info-video-item {
 
-    margin-left: 22.5%;
-    max-width: 55%;
+    margin: auto;
+    max-width: 70%;
 
     &__wrapper {
       display: flex;
@@ -65,6 +65,15 @@ export default {
       width: 100%;
       height: 100%;
       border: 0;
+    }
+
+    @media (max-width: 900px) {
+      max-width: 100%;
+    }
+    @media (max-width: 500px) {
+      &__wrapper {
+        padding: 10px;
+      }
     }
   }
 

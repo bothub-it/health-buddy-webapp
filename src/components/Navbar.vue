@@ -9,7 +9,8 @@
              alt="HealthBuddy logo">
 
         <a class="navbar-item"
-           href="https://healthbuddy.info/index.html">
+           href="https://healthbuddy.info/"
+           title="HealthBuddy">
           <h1 class="navbar__title"> HealthBuddy </h1>
         </a>
 
@@ -76,6 +77,10 @@ export default {
             id: "video",
             title: this.$t('navbar.videos'),
           },
+          {
+            id: "webchat",
+            title: this.$t('navbar.bot'),
+          },
         ];
       },
     },
@@ -124,7 +129,7 @@ export default {
 
   &-item, /deep/ .dropdown-trigger {
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 1em;
     color: white;
     font-weight: 400;
     line-height: 1.5;
@@ -139,6 +144,7 @@ export default {
   }
 
   &-burger {
+    height: inherit;
     color: white;
     width: inherit;
     > .navbar-item {
@@ -159,7 +165,7 @@ export default {
     color: white;
     text-decoration: none;
     font-size: 30px;
-    line-height: 1;
+    line-height: 1.5;
     font-weight: 400;
     letter-spacing: 2px;
     font-family: "Raleway", sans-serif;
