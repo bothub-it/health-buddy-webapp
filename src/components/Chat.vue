@@ -123,6 +123,13 @@ body.mobile #webchat .widget-container.chat-open {
   }
 }
 
+@media (min-width: 801px) and (min-height: 361px) {
+  #webchat .widget-container:not(.full-screen) {
+    z-index: 28; // nav tem 29
+  }
+
+}
+
 #webchat .conversation-container .title.with-avatar {
   color: white;
 }
@@ -182,8 +189,10 @@ body.mobile #webchat .widget-container.chat-open {
   height: 20px;
 }
 
-.messages-container {
-  min-height: 75vh;
+@media (min-height: 735px) {
+  .messages-container {
+    min-height: 75vh;
+  }
 }
 
 @media only screen and (max-height: 500px) {
