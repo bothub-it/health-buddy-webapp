@@ -4,7 +4,8 @@
       <div class="info-video-item__content">
         <iframe
           class="info-video-item__item"
-          :src="url"
+          :title="video.title"
+          :src="video.url"
           allowfullscreen
         />
       </div>
@@ -16,8 +17,8 @@
 export default {
     name: 'InfoVideoItem',
     props: {
-        url: {
-            type: String,
+        video: {
+            type: Object,
             required: true,
         },
     }
