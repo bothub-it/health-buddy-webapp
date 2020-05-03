@@ -1,7 +1,7 @@
 <template>
   <div class="info-video-list">
     <carousel :items="1"
-              :nav="true">
+              :nav="false">
       <InfoVideoItem v-for="(video, index) in videos"
                      :key="index"
                      :video="video"/>
