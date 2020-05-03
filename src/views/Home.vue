@@ -47,14 +47,15 @@
 
     <div v-if="isOpenVideos"
          id="video"
-         class="home__section__wrapper">
+         class="home__section__wrapper"
+         aria-labelledby="carouselheading">
       <text-section class="home__section" :class="{ 'home__section__open': withMargin }">
-        <h2 slot="title">
+        <h2 id="carouselheading" slot="title">
           {{ $t('videos.title') }}
         </h2>
         <InfoVideoList
           slot="content"
-          :urls="videoUrls"
+          :videos="videos"
         />
         <FeatureList :list="features"/>
       </text-section>
@@ -84,11 +85,23 @@ export default {
     return {
       isOpenVideos: true,
       isOpen: false,
-      videoUrls: [
-        "https://www.youtube.com/embed/QYxzo3-qZRc",
-        "https://www.youtube.com/embed/JKpVMivbTfg",
-        "https://www.youtube.com/embed/ujWFj_6FaMY",
-        "https://www.youtube.com/embed/mOV1aBVYKGA",
+      videos: [
+        {
+          url: "https://www.youtube.com/embed/QYxzo3-qZRc",
+          title: "Protecting Your Family from Coronavirus",
+        },
+        {
+          url: "https://www.youtube.com/embed/JKpVMivbTfg",
+          title: "COVID-19 (Coronavirus Disease 19) March Update- causes, symptoms, diagnosis, treatment, pathology\n",
+        },
+        {
+          url: "https://www.youtube.com/embed/ujWFj_6FaMY",
+          title: "Coronavirus outbreak... | UNICEF",
+        },
+        {
+          url: "https://www.youtube.com/embed/mOV1aBVYKGA",
+          title: "Novel coronavirus (2019-nCoV)",
+        },
       ],
     };
   },

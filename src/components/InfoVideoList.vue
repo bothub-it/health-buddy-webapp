@@ -1,10 +1,10 @@
 <template>
   <div class="info-video-list">
     <carousel :items="1"
-              :nav="false">
-      <InfoVideoItem v-for="(url, index) in urls"
+              :nav="true">
+      <InfoVideoItem v-for="(video, index) in videos"
                      :key="index"
-                     :url="url"/>
+                     :video="video"/>
     </carousel>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
         carousel,
     },
     props: {
-        urls: {
+        videos: {
             type: Array,
         },
     },
