@@ -1,6 +1,7 @@
 /* eslint-disable vue/valid-template-root */
 <template>
   <div class="home">
+    <Chat :is-open.sync="isOpen" />
     <Hero id="home" :class="{'home__section__open-hero': withMargin }" />
     <text-section id="how"
                   class="home__section"
@@ -25,7 +26,6 @@
         <p>
           <strong>{{ $t('about.about_3.emphasis_3') }}</strong> {{ $t('about.about_3.text_3') }}
         </p>
-        <Chat :is-open.sync="isOpen" />
       </div>
     </text-section>
 
