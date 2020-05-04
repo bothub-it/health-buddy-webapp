@@ -7,6 +7,7 @@ RUN apk update && apk add git yarn
 
 COPY package.json .
 COPY yarn.lock .
+COPY vue-owl-carousel-2.0.3.tgz .
 
 RUN yarn install --network-timeout 1000000
 
