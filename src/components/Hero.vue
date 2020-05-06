@@ -4,12 +4,12 @@
       <div class="banner__columns__column">
         <img class="banner__img-doctor"
              src="@/assets/img/doctor-circle.png"
-             alt="HealthBuddy logo">
+             alt="Healthaworker Buddy logo">
       </div>
       <div class="banner__columns__column">
         <div class="banner__content">
           <h1 class="banner__title">
-            HealthBuddy
+            Healthaworker Buddy
           </h1>
           <p class="banner__subtitle">
             {{ $t('hero.title') }}

@@ -77,7 +77,7 @@ export default {
         initPayload: this.initialPayload,
         channelUuid: '0e004b79-bd8b-4145-9279-3ee8cece2f87',
         host: 'https://rapidpro.ilhasoft.mobi',
-        title: 'HealthBuddy',
+        title: 'Healthaworker Buddy',
         inputTextFieldHint: "Type a question...",
         profileAvatar: require('@/assets/img/doctor-darker.png'),
         openLauncherImage: require('@/assets/img/doctor-square.png'),

@@ -6,12 +6,12 @@
       <div class="navbar-brand">
         <img class="navbar-item navbar__logo"
              src="@/assets/img/doctor-square.png"
-             alt="HealthBuddy logo">
+             alt="Healthaworker Buddy logo">
 
         <a class="navbar-item"
            href="https://healthbuddy.info/"
-           title="HealthBuddy">
-          <h1 class="navbar__title"> HealthBuddy </h1>
+           title="Healthaworker Buddy">
+          <h1 class="navbar__title"> Healthaworker Buddy </h1>
         </a>
 
         <div class="navbar-burger" :class="{ 'is-active': modalActive }">

@@ -8,13 +8,13 @@
     },
 
     "hero": {
-        "title": "Your very own buddy for info about COVID-19 in Europe and Central Asia.",
+        "title": "Your very own buddy for specialized info about COVID-19 for healthworkers in Europe and Central Asia.",
         "subtitle": "Just a text message away!"
     },
 
     "about": {
         "title": "Ask me about COVID-19",
-        "about_1": "Hi, I’m your HealthBuddy. Send me a text in the chat window and I will give you information about the novel coronavirus disease (COVID-19), from the trusted sources of WHO/Europe and UNICEF ECARO.",
+        "about_1": "Hi, I’m your Healthaworker Buddy. Send me a text in the chat window and I will give you information about the novel coronavirus disease (COVID-19), from the trusted sources of UNICEF.",
         "about_2": "3 steps to get started:",
         "about_3": {
             "emphasis_1": "1. Select your language ",
@@ -22,20 +22,20 @@
             "emphasis_3": "3. Send me your questions in natural language ",
             "text_1": " from the language dropdown menu at the top of this web page.",
             "text_2": "to get quick answers.",
-            "text_3": "as if you are talking to your friend."
+            "text_3": "as if you are talking to a specialist."
         }
     },
     "features": {
-        "title": "About HealthBuddy",
+        "title": "About Healthaworker Buddy",
         "text": "There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important get your information and advice from trusted sources.",
         "feature_1_title": "Multi-platform support",
-        "feature_1_text": "HealthBuddy is available on multiple online platforms in Europe to provide users with scientific and evidence-based advice.",
+        "feature_1_text": "Healthaworker Buddy is available on multiple online platforms in Europe to provide users with scientific and evidence-based advice.",
         "feature_2_title": "Multi-language support",
-        "feature_2_text": "HealthBuddy detects the language of your browser and, if supported, will automatically speak in that language. You can also change the language from the languages menu. ",
+        "feature_2_text": "Healthaworker Buddy detects the language of your browser and, if supported, will automatically speak in that language. You can also change the language from the languages menu. ",
         "feature_3_title": "Accurate COVID-19 information",
-        "feature_3_text": "HealthBuddy is supported by experts from WHO/Europe and UNICEF ECARO and will provide you with accurate information on COVID-19.",
+        "feature_3_text": "Healthaworker Buddy is supported by experts and will provide you with accurate information on COVID-19.",
         "feature_4_title": "Fighting rumours and fake news",
-        "feature_4_text": "If you hear any rumours or fake statements in your community or region, you can report it to us here. HealthBuddy will compile them and set the record straight."
+        "feature_4_text": "If you hear any rumours or fake statements in your community or region, you can report it to us here. Healthaworker Buddy will compile them and set the record straight."
     },
 
     "videos": {
@@ -43,12 +43,12 @@
     },
 
     "extraInfo": {
-        "text": "HealthBuddy is a joint initiative of the UNICEF Regional Office for Europe and Central Asia and WHO Regional Office for Europe."
+        "text": "This website is for demonstration purposes only and is not a solution available to the public yet."
     },
 
     "footer": {
         "policy": "Click here to see our privacy policy",
-        "bothub": "HealthBuddy is powered by Bothub and RapidPro © 2020 All rights reserved."
+        "bothub": "Healthaworker Buddy is powered by Bothub and RapidPro © 2020 All rights reserved."
     },
 
     "policy": {

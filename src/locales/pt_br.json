@@ -13,7 +13,7 @@
 
     "about": {
         "title": "Pergunte-me sobre COVID-19",
-        "about_1": "Olá, sou HealthBuddy. Basta entrar em contato comigo pela janela de bate-papo e eu darei informações sobre a nova doença de coronavírus (COVID-19). Pergunte qualquer coisa sobre o vírus, a doença e a pandemia, e encontrarei as informações para você, de fontes confiáveis da OMS/Europa e da UNICEF EACER. Antes de começar, aqui estão as diferentes opções que você tem para falar comigo:",
+        "about_1": "Olá, sou Healthaworker Buddy. Basta entrar em contato comigo pela janela de bate-papo e eu darei informações sobre a nova doença de coronavírus (COVID-19). Pergunte qualquer coisa sobre o vírus, a doença e a pandemia, e encontrarei as informações para você, de fontes confiáveis da OMS/Europa e da UNICEF EACER. Antes de começar, aqui estão as diferentes opções que você tem para falar comigo:",
         "about_2": "3 passos pra começar: ",
         "about_3": {
             "emphasis_1": "1. Selecione seu idioma: ",
@@ -25,16 +25,16 @@
         }
     },
     "features": {
-        "title": "O que é HealthBuddy",
+        "title": "O que é Healthaworker Buddy",
         "text": "Há muitas informações equivocadas e mitos sobre o novo coronavírus (COVID-19) circulando pela internet e pelas redes sociais. A falta de informação é um dos maiores desfaios na luta contra o COVID-19. Por isso é importante ter cuidado com onde se procura informações e conselhos.",
         "feature_1_title": "Suporte multicanal",
-        "feature_1_text": "HealthBuddy está disponível em vários canais de redes sociais e plataformas de mensagens para dar aos usuários conselhos cientificos e baseados em fatos.",
+        "feature_1_text": "Healthaworker Buddy está disponível em vários canais de redes sociais e plataformas de mensagens para dar aos usuários conselhos cientificos e baseados em fatos.",
         "feature_2_title": "Suporte multilíngue",
-        "feature_2_text": "O HealthBuddy detectará automaticamente o idioma do seu navegador e, se houver suporte, falará automaticamente nesse idioma.",
+        "feature_2_text": "O Healthaworker Buddy detectará automaticamente o idioma do seu navegador e, se houver suporte, falará automaticamente nesse idioma.",
         "feature_3_title": "Informação precisa sobre o COVID-19",
-        "feature_3_text": "O seu consultor de saúde virtual, HealthBuddy, apoiado por especialistas da OMS/Europa e UNICEF EACER, fornecerá informações úteis e precisas sobre o COVID-19: por exemplo, dicas sobre como se proteger e a outras pessoas, e como reduzir o risco de infecção. Encontre respostas para suas perguntas aqui e compartilhe com seus amigos, colegas e familiares.",
+        "feature_3_text": "O seu consultor de saúde virtual, Healthaworker Buddy, apoiado por especialistas da OMS/Europa e UNICEF EACER, fornecerá informações úteis e precisas sobre o COVID-19: por exemplo, dicas sobre como se proteger e a outras pessoas, e como reduzir o risco de infecção. Encontre respostas para suas perguntas aqui e compartilhe com seus amigos, colegas e familiares.",
         "feature_4_title": "Combate a boatos e notícias falsas",
-        "feature_4_text": "Você pode fazer sua parte no combate ao vírus, denunciando notícias e boatos falsos. Se você ouvir rumores ou declarações falsas em sua comunidade ou região, poderá denunciá-lo aqui. O HealthBuddy irá compilá-los e combatê-los aqui com informações científicas."
+        "feature_4_text": "Você pode fazer sua parte no combate ao vírus, denunciando notícias e boatos falsos. Se você ouvir rumores ou declarações falsas em sua comunidade ou região, poderá denunciá-lo aqui. O Healthaworker Buddy irá compilá-los e combatê-los aqui com informações científicas."
     },
 
     "videos": {
@@ -42,12 +42,12 @@
     },
 
     "extraInfo": {
-        "text": "Healthbuddy é uma iniciativa conjunta dos escritórios da OMS/Europa e  o escritório da UNICEF Europa e Asia Central."
+        "text": "Healthaworker Buddy é uma iniciativa conjunta dos escritórios da OMS/Europa e  o escritório da UNICEF Europa e Asia Central."
     },
 
     "footer": {
         "policy": "Clique aqui para ver nossa política de privacidade",
-        "bothub": "HealthBuddy é alimentado por Bothub e RapidPro © 2020 Todos os direitos reservados."
+        "bothub": "Healthaworker Buddy é alimentado por Bothub e RapidPro © 2020 Todos os direitos reservados."
     },
     "policy": {
         "title": "Política de Privacidade",

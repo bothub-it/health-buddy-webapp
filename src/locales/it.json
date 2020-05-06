@@ -1,7 +1,7 @@
 {
     "navbar": {
         "home": "Home",
-        "about": "Su di Healthbuddy",
+        "about": "Su di Healthaworker Buddy",
         "videos": "Video",
         "languages": "Lingue"
     },
@@ -25,16 +25,16 @@
         }
     },
     "features": {
-        "title": "Su di Healthbuddy",
+        "title": "Su di Healthaworker Buddy",
         "text": "Molti miti e false informazione sul nuovo coronavirus (COVID-19) circolano su Internet, sui social media, e questa è una delle sfide più grandi che tutti noi affrontiamo nella lotta contro questa malattia. Ecco perché è importante ottenere informazioni e consigli da fonti attendibili.",
         "feature_1_title": "Supporto multipiattaforma",
-        "feature_1_text": "HealthBuddy è disponibile su più piattaforme online presenti in Europa, fornendo agli utenti consulenza scientifica e basata sull'evidenza.",
+        "feature_1_text": "Healthaworker Buddy è disponibile su più piattaforme online presenti in Europa, fornendo agli utenti consulenza scientifica e basata sull'evidenza.",
         "feature_2_title": "Supporto multilingue",
-        "feature_2_text": "HealthBuddy rileva la lingua del tuo browser e, se supportato, ti parlerà automaticamente in quella lingua. Puoi anche selezionare un'intera gamma di lingue dal nostro menu delle lingue.",
+        "feature_2_text": "Healthaworker Buddy rileva la lingua del tuo browser e, se supportato, ti parlerà automaticamente in quella lingua. Puoi anche selezionare un'intera gamma di lingue dal nostro menu delle lingue.",
         "feature_3_title": "Informazioni accurate su COVID-19",
-        "feature_3_text": "HealthBuddy è supportato da esperti di WHO/Europe e di UNICEF ECARO e fornisce informazioni accurate sul COVID-19.",
+        "feature_3_text": "Healthaworker Buddy è supportato da esperti di WHO/Europe e di UNICEF ECARO e fornisce informazioni accurate sul COVID-19.",
         "feature_4_title": "Combattere voci e notizie false",
-        "feature_4_text": "Se senti voci o notizie false nella tua community, puoi segnalarcelo qui. HealthBuddy compilerà queste voci e stabilirà il giusto record."
+        "feature_4_text": "Se senti voci o notizie false nella tua community, puoi segnalarcelo qui. Healthaworker Buddy compilerà queste voci e stabilirà il giusto record."
     },
 
     "videos": {
@@ -42,12 +42,12 @@
     },
 
     "extraInfo": {
-        "text": "HealthBuddy è un'iniziativa congiunta dell'Ufficio Regionale Europa e Asia Centrale dell'UNICEF e dell'Ufficio Regionale per l'Europa dell'OMS."
+        "text": "Healthaworker Buddy è un'iniziativa congiunta dell'Ufficio Regionale Europa e Asia Centrale dell'UNICEF e dell'Ufficio Regionale per l'Europa dell'OMS."
     },
 
     "footer": {
         "policy": "Clique aqui para ver nossa política de privacidade",
-        "bothub": "HealthBuddy é alimentado por Bothub e RapidPro © 2020 Todos os direitos reservados."
+        "bothub": "Healthaworker Buddy é alimentado por Bothub e RapidPro © 2020 Todos os direitos reservados."
     },
     "policy": {
         "title": "Informativa sulla privacy",

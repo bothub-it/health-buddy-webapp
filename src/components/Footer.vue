@@ -8,9 +8,6 @@
         <a href="https://www.unicef.org/eca/" title="UNICEF ECARO">
           <img class="footer__info-images__unicef" :src="unicefLogo" alt="UNICEF ECARO">
         </a>
-        <a href="http://www.euro.who.int/en/home" title="WHO/Europe">
-          <img class="footer__info-images__who" :src="whoLogo" alt="WHO/Europe">
-        </a>
       </div>
       <div class="footer__links">
         <div>
@@ -38,10 +35,7 @@ export default {
       ]),
       unicefLogo() {
         return require(this.getLanguage !== 'ru' ?
-          "@/assets/img/unicef-eu-asia.png" : "@/assets/img/unicef-russian-white.png");
-      },
-      whoLogo() {
-        return require("@/assets/img/who-europe-white.png");
+          "@/assets/img/unicef-modified.png" : "@/assets/img/unicef-russian-white.png");
       },
     },
 }
