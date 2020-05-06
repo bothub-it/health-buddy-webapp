@@ -75,7 +75,7 @@ export default {
       WebChat.default.init({
         selector: '#webchat',
         initPayload: this.initialPayload,
-        channelUuid: '0e004b79-bd8b-4145-9279-3ee8cece2f87',
+        channelUuid: '1df17d99-d72f-44ea-bda8-5671bc0ab5f1',
         host: 'https://rapidpro.ilhasoft.mobi',
         title: 'Healthaworker Buddy',
         inputTextFieldHint: "Type a question...",
