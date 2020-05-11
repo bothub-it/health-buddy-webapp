@@ -189,6 +189,18 @@ body.mobile #webchat .widget-container.chat-open {
   height: 20px;
 }
 
+@media (min-height: 500px) {
+  .messages-container {
+    min-height: 62vh;
+  }
+}
+
+@media (min-height: 610px) {
+  .messages-container {
+    min-height: 70vh;
+  }
+}
+
 @media (min-height: 735px) {
   .messages-container {
     min-height: 75vh;
@@ -197,13 +209,13 @@ body.mobile #webchat .widget-container.chat-open {
 
 @media only screen and (max-height: 500px) {
   .messages-container {
-    min-height: 20vh;
+    /*min-height: 50vh;*/
   }
 }
 
-/*.conversation-container {*/
-/*  max-height: 90vh;*/
-/*}*/
+.conversation-container {
+  max-height: 90vh;
+}
 
 #webchat .hide-sm {
   display: none;
