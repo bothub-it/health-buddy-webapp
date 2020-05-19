@@ -1,44 +1,50 @@
 {
     "navbar": {
         "home": "Home",
-        "about": "Su di Healthbuddy",
+        "about": "A proposito di Healthbuddy",
         "videos": "Video",
         "languages": "Lingue"
     },
 
     "hero": {
-        "title": "Il tuo amico personale per ricevere informazioni su COVID-19 in Europa e Asia Centrale.",
-        "subtitle": "Basta un semplice messaggio!"
+        "title": "Il tuo amico fidato per ricevere informazioni sul COVID-19 in Europa e Asia Centrale.",
+        "subtitle": "Basta un messaggio!"
     },
 
     "about": {
-        "title": "Chiedimi di COVID",
-        "about_1": "Ciao, sono il tuo Amico della salute. Inviami un messaggio nella casella di dialogo così potrò darti delle informazioni sul coronavirus (COVID-19) tratte da fonti attendibili di WHO/Europe e di UNICEF/ECARO.",
-        "about_2": "3 steps to get started: ",
+        "title": "Fammi le tue domande sul COVID-19",
+        "about_1": "Ciao, sono HealthBuddy, l’amico per la tua salute. Inviami un messaggio nella casella di dialogo per ricevere informazioni sul coronavirus (COVID-19) tratte da fonti attendibili dell’OMS/Europa e di UNICEF/ECARO.",
+        "about_2": "3 passaggi per iniziare:",
         "about_3": {
             "emphasis_1": "1. Seleziona la tua lingua ",
-            "emphasis_2": "2. Seleziona dall'elenco delle domande frequenti ",
-            "emphasis_3": "3. Scrivi le tue domande in un linguaggio spontaneo ",
-            "text_1": "dal menu situato in alto di questa pagina web.",
-            "text_2": "per poter avere delle risposte rapide.",
-            "text_3": "3.come se stessi parlando con un tuo amico."
+            "emphasis_2": "2. Sfoglia l'elenco delle domande frequenti ",
+            "emphasis_3": "3. Scrivi le tue domande in un linguaggio spontaneo, ",
+            "text_1": "dal menu in alto su questa pagina web.",
+            "text_2": "per avere delle risposte rapide.",
+            "text_3": "come se stessi parlando con un tuo amico."
         }
     },
     "features": {
-        "title": "Su di Healthbuddy",
-        "text": "Molti miti e false informazione sul nuovo coronavirus (COVID-19) circolano su Internet, sui social media, e questa è una delle sfide più grandi che tutti noi affrontiamo nella lotta contro questa malattia. Ecco perché è importante ottenere informazioni e consigli da fonti attendibili.",
+        "title": "A proposito di Healthbuddy",
+        "text": "Su Internet e sui social media circolano molti miti e false informazioni sul nuovo coronavirus (COVID-19). La disinformazione è una delle più grandi sfide nella lotta contro questa malattia. Ecco perché è importante ottenere informazioni e consigli da fonti attendibili.",
         "feature_1_title": "Supporto multipiattaforma",
-        "feature_1_text": "HealthBuddy è disponibile su più piattaforme online presenti in Europa, fornendo agli utenti consulenza scientifica e basata sull'evidenza.",
+        "feature_1_text": "HealthBuddy è disponibile su diverse piattaforme online in Europa e fornisce agli utenti consigli basati su dati scientifici e riscontri concreti.",
         "feature_2_title": "Supporto multilingue",
-        "feature_2_text": "HealthBuddy rileva la lingua del tuo browser e, se supportato, ti parlerà automaticamente in quella lingua. Puoi anche selezionare un'intera gamma di lingue dal nostro menu delle lingue.",
+        "feature_2_text": "HealthBuddy rileva la lingua del tuo browser e ti parlerà automaticamente in quella lingua, a condizione che sia supportata. Puoi anche selezionare un'ampia gamma di lingue dal nostro menù.",
         "feature_3_title": "Informazioni accurate su COVID-19",
-        "feature_3_text": "HealthBuddy è supportato da esperti di WHO/Europe e di UNICEF ECARO e fornisce informazioni accurate sul COVID-19.",
+        "feature_3_text": "HealthBuddy è supportato da esperti dell’OMS/Europa e di UNICEF ECARO e fornisce informazioni accurate sul COVID-19.",
         "feature_4_title": "Combattere voci e notizie false",
-        "feature_4_text": "Se senti voci o notizie false nella tua community, puoi segnalarcelo qui. HealthBuddy compilerà queste voci e stabilirà il giusto record."
+        "feature_4_text": "Se senti voci o notizie false nella tua community o nella tua regione, puoi segnalarcelo qui. HealthBuddy tratterà e rettificherà l’informazione per mettere le cose in chiaro."
     },
 
     "videos": {
-        "title": "Video"
+        "title": "Video",
+        "video_1_title": "#coronavirus. Cosa posso fare se ho febbre, tosse, mal di gola o difficoltà respiratorie?",
+        "video_1_url": "https://www.youtube.com/embed/qROEiTtHCLc",
+        "video_2_title": "Dieci comportamenti da seguire, video",
+        "video_2_url": "https://www.youtube.com/embed/O8Q04sHB-Og",
+        "video_3_title": "#coronavirus #COVID19 Οδηγίες στη νοηματική",
+        "video_3_url": "https://www.youtube.com/embed/9Fvl5d389-8"
     },
 
     "extraInfo": {
@@ -46,23 +52,23 @@
     },
 
     "footer": {
-        "policy": "Clique aqui para ver nossa política de privacidade",
-        "bothub": "HealthBuddy é alimentado por Bothub e RapidPro © 2020 Todos os direitos reservados."
+        "policy": "Policy sulla privacy",
+        "bothub": "HealthBuddy utilizza Bothub e RapidPro © 2020 Tutti i diritti riservati."
     },
     "policy": {
         "title": "Informativa sulla privacy",
         "section_1_title": "Quali informazioni raccogliamo?",
-        "section_1_text": "Raccogliamo informazioni solo quando desideri segnalare voci, inviare commenti o porre domande tramite la finestra di chat. Tali informazioni possono includere informazioni impersonali sull'utilizzo del sito Web. Non acquisiamo nessuna informazione personale su di te quando accedi a questo sito Web o al chatbot.",
+        "section_1_text": "Raccogliamo le tue informazioni solo quando desideri segnalare voci, inviare commenti o porre domande tramite la finestra di chat. Tali informazioni possono includere informazioni impersonali sull'utilizzo del sito Web. Non acquisiamo nessuna informazione personale su di te quando accedi a questo sito Web o alla chat.",
         "section_2_title": "Come proteggiamo le tue informazioni?",
-        "section_2_text": "Implementiamo una varietà di misure di sicurezza per mantenere la sicurezza delle tue informazioni personali quando inserisci, invii o accedi alle tue informazioni personali. Offriamo l'uso di un server sicuro. Tutte le informazioni fornite vengono trasmesse tramite la tecnologia Secure Socket Layer (SSL).",
+        "section_2_text": "Implementiamo una serie di procedure per garantire la sicurezza delle tue informazioni personali quando le inserisci, le invii oppure accedi ad esse. Offriamo l'uso di un server sicuro. Tutte le informazioni fornite vengono trasmesse tramite la tecnologia Secure Socket Layer (SSL).",
         "section_3_title": "Utilizziamo i cookie?",
-        "section_3_text": "Sì. I cookie sono dei piccoli file che un sito o il suo fornitore di servizi trasferisce sul disco rigido del computer attraverso il browser Web (se lo consente). Consentono ai siti o ai sistemi del fornitore di servizi di riconoscere il browser dell'utente, acquisire e ricordare determinate informazioni. Utilizziamo i cookie per comprendere e salvare le tue preferenze per le visite future e compilare dati aggregati sul traffico del sito e sull'interazione del sito in modo da poter offrire migliori esperienze e strumenti del sito in futuro. Possiamo stipulare contratti con fornitori di servizi di terze parti per aiutarci a comprendere meglio i visitatori del nostro sito. Questi fornitori di servizi non sono autorizzati a utilizzare le informazioni raccolte per nostro conto se non per aiutarci a condurre e migliorare la nostra attività.",
+        "section_3_text": "Sì. I cookie sono dei piccoli file che un sito o il suo fornitore di servizi trasferisce sul disco rigido del computer attraverso il browser Web (se tu lo permetti). Tali file consentono ai siti o ai sistemi del fornitore di servizi di riconoscere il browser dell'utente e acquisire e ricordare determinate informazioni. Utilizziamo i cookie per comprendere e salvare le tue preferenze per visite future e per raccogliere dati aggregati sul traffico e sull'interazione del sito, in modo da poter offrire una migliore fruizione e migliori funzionalità in futuro. Possiamo stipulare contratti con terze parti per la fornitura di servizi che ci aiutino a comprendere meglio i visitatori del nostro sito. Tali fornitori di servizi non sono autorizzati a utilizzare le informazioni raccolte per nostro conto, se non per aiutarci a orientare e migliorare la nostra attività.",
         "section_4_title": "Chi ha accesso ai tuoi messaggi?",
-        "section_4_text": "Le informazioni trasmesse o archiviate su RapidPro o Bothub sono disponibili solo per aiutare a mantenere le tracce delle voci e migliorare il chatbot in base al tuo riscontro. Si noti che tutti i messaggi trasmessi attraverso i canali dei social media possono essere accessibili da determinate organizzazioni di terze parti, come i fornitori di servizi cellulari utilizzati per trasmettere i messaggi. Queste organizzazioni possono avere le proprie regole, politiche e misure di sicurezza che controllano l'accesso ai messaggi trasmessi attraverso i loro servizi.",
+        "section_4_text": "Le informazioni trasmesse o archiviate su RapidPro o Bothub sono disponibili solo per aiutare a mantenere traccia delle false informazioni e migliorare la chat in base al tuo riscontro. Nota bene: tutti i messaggi trasmessi attraverso i canali dei social media possono essere accessibili da determinate organizzazioni esterne, come ad esempio i fornitori di servizi di telefonia mobile utilizzati per trasmettere i messaggi. Queste organizzazioni possono avere regole, politiche e misure di sicurezza proprie per controllare chi abbia accesso ai messaggi trasmessi attraverso i loro servizi.",
         "section_5_title": "Divulghiamo informazioni a terzi?",
-        "section_5_text": "Non vendiamo, scambiamo o trasferiamo a terzi le tue informazioni personali. Ciò non include terze parti che possono essere considerate sicure le quali ci assistono nel funzionamento del nostro sito Web, nella conduzione della nostra attività o nella manutenzione dell'utente, purché tali parti concordino di mantenere riservate tali informazioni. Potremmo anche rilasciare le tue informazioni quando riteniamo che il rilascio sia appropriato per rispettare la legge, far rispettare le politiche del nostro sito o proteggere i nostri diritti, proprietà o sicurezza dei nostri o di altri. Tuttavia, le informazioni di visitatori non personalmente identificabili possono essere fornite ad altre parti per scopi di marketing, pubblicità o altri usi.",
-        "section_6_title": "Utilizziamo collegamenti di terze parti?",
-        "section_6_text": "Occasionalmente, a nostra discrezione, possiamo includere o offrire prodotti o servizi di terzi sul nostro sito Web. Questi siti di terze parti hanno politiche sulla privacy separate e indipendenti. Pertanto non abbiamo alcuna responsabilità per il contenuto e le attività di questi siti collegati. Tuttavia, cerchiamo di proteggere l'integrità del nostro sito e di accogliere eventuali feedback su questi siti.",
+        "section_5_text": "Non vendiamo, scambiamo o trasferiamo a terzi le tue informazioni personali. Ciò non include parti terze di fiducia che ci assistono nella gestione del nostro sito web, nella conduzione della nostra attività o nel servizio di assistenza, a condizione che tali parti si impegnino a mantenere riservate queste informazioni. Possiamo anche divulgare le informazioni dell'utente quando riteniamo che la divulgazione sia appropriata per conformarsi alle disposizioni di legge, per applicare le politiche del nostro sito o per proteggere i diritti, la proprietà o la sicurezza nostri o altrui. Tuttavia, informazioni sui visitatori non personalmente identificabili possono essere fornite a terzi per scopi di marketing, pubblicità o altri usi.",
+        "section_6_title": "Utilizziamo link di terzi?",
+        "section_6_text": "Occasionalmente, a nostra discrezione, possiamo includere o offrire prodotti o servizi di terzi sul nostro sito Web. I siti di tali soggetti terzi applicano politiche sulla privacy separate e indipendenti. Decliniamo pertanto ogni responsabilità in merito al contenuto e alle attività di detti siti collegati. Ciononostante, intendiamo proteggere l'integrità del nostro sito e accogliamo con favore qualsiasi feedback riguardante questi siti.",
         "section_7_title": "Il tuo consenso",
         "section_7_text": "Utilizzando il nostro sito, acconsenti alla nostra politica sulla privacy online.",
         "section_8_title": "Changes to our privacy policy",
