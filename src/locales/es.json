@@ -38,7 +38,13 @@
     },
 
     "videos": {
-        "title": "Vídeos"
+        "title": "Vídeos",
+        "video_1_title": "COVID19 | Recomendaciones coronavirus",
+        "video_1_url": "https://www.youtube.com/embed/auEuKIfQJto",
+        "video_2_title": "CORONAVIRUS | Así me lavo bien las manos",
+        "video_2_url": "https://www.youtube.com/embed/jPqlHzfrl8k",
+        "video_3_title": "#coronavirus #COVID19 Οδηγίες στη νοηματική",
+        "video_3_url": "https://www.youtube.com/embed/9Fvl5d389-8"
     },
 
     "extraInfo": {
