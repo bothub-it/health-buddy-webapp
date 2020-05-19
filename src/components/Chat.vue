@@ -207,16 +207,6 @@ body.mobile #webchat .widget-container.chat-open {
   }
 }
 
-@media only screen and (max-height: 500px) {
-  .messages-container {
-    /*min-height: 50vh;*/
-  }
-}
-
-.conversation-container {
-  max-height: 90vh;
-}
-
 #webchat .hide-sm {
   display: none;
 }
