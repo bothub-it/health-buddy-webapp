@@ -39,11 +39,19 @@
     },
 
     "videos": {
-        "title": "Videos"
+        "title": "Videos",
+        "video_1_title": "Protecting Your Family from Coronavirus",
+        "video_1_url": "https://www.youtube.com/embed/QYxzo3-qZRc",
+        "video_2_title": "COVID-19 (Coronavirus Disease 19) March Update- causes, symptoms, diagnosis, treatment, pathology",
+        "video_2_url": "https://www.youtube.com/embed/JKpVMivbTfg",
+        "video_3_title": "Coronavirus outbreak... | UNICEF",
+        "video_3_url": "https://www.youtube.com/embed/ujWFj_6FaMY",
+        "video_4_title": "Novel coronavirus (2019-nCoV)",
+        "video_4_url": "https://www.youtube.com/embed/mOV1aBVYKGA"
     },
 
     "extraInfo": {
-        "text": "HealthBuddy is a joint initiative of the UNICEF Regional Office for Europe and Central Asia and WHO Regional Office for Europe."
+        "text": "HealthBuddy is a joint initiative of UNICEF’s Europe and Central Asia Regional Office and the WHO Regional Office for Europe."
     },
 
     "footer": {

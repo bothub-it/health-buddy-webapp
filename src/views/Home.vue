@@ -47,14 +47,15 @@
 
     <div v-if="isOpenVideos"
          id="video"
-         class="home__section__wrapper">
+         class="home__section__wrapper"
+         aria-labelledby="carouselheading">
       <text-section class="home__section" :class="{ 'home__section__open': withMargin }">
-        <h2 slot="title">
+        <h2 id="carouselheading" slot="title">
           {{ $t('videos.title') }}
         </h2>
         <InfoVideoList
           slot="content"
-          :urls="videoUrls"
+          :videos="videos"
         />
         <FeatureList :list="features"/>
       </text-section>
@@ -84,22 +85,47 @@ export default {
     return {
       isOpenVideos: true,
       isOpen: false,
-      videoUrls: [
-        "https://www.youtube.com/embed/QYxzo3-qZRc",
-        "https://www.youtube.com/embed/JKpVMivbTfg",
-        "https://www.youtube.com/embed/ujWFj_6FaMY",
-        "https://www.youtube.com/embed/mOV1aBVYKGA",
-      ],
+      videos: [],
     };
   },
+  methods: {
+    initVideos() {
+      this.videos = [
+        {
+          url: this.$t('videos.video_1_url'),
+          title: this.$t('videos.video_1_title'),
+        },
+        {
+          url: this.$t('videos.video_2_url'),
+          title: this.$t('videos.video_2_title'),
+        },
+        {
+          url: this.$t('videos.video_3_url'),
+          title: this.$t('videos.video_3_title'),
+        },
+        {
+          url: this.$t('videos.video_4_url'),
+          title: this.$t('videos.video_4_title'),
+        },
+      ];
+    },
+    resetVideos() {
+      this.isOpenVideos = false;
+      setTimeout(() => this.isOpenVideos = true, 0);
+    }
+  },
   watch: {
+      // eslint-disable-next-line
+      '$i18n.locale'() {
+        this.resetVideos();
+        this.initVideos();
+      },
       isOpen() {
         document.body.classList.toggle('opened')
         if (isMobile()) {
           document.body.classList.toggle('mobile')
         }
-        this.isOpenVideos = false;
-        setTimeout(() => this.isOpenVideos = true, 0);
+        this.resetVideos();
       },
   },
   computed: {
