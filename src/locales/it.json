@@ -38,7 +38,13 @@
     },
 
     "videos": {
-        "title": "Video"
+        "title": "Video",
+        "video_1_title": "#coronavirus. Cosa posso fare se ho febbre, tosse, mal di gola o difficoltà respiratorie?",
+        "video_1_url": "https://www.youtube.com/embed/qROEiTtHCLc",
+        "video_2_title": "Dieci comportamenti da seguire, video",
+        "video_2_url": "https://www.youtube.com/embed/O8Q04sHB-Og",
+        "video_3_title": "#coronavirus #COVID19 Οδηγίες στη νοηματική",
+        "video_3_url": "https://www.youtube.com/embed/9Fvl5d389-8"
     },
 
     "extraInfo": {

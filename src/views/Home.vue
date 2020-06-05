@@ -85,34 +85,47 @@ export default {
     return {
       isOpenVideos: true,
       isOpen: false,
-      videos: [
-        {
-          url: "https://www.youtube.com/embed/QYxzo3-qZRc",
-          title: "Protecting Your Family from Coronavirus",
-        },
-        {
-          url: "https://www.youtube.com/embed/JKpVMivbTfg",
-          title: "COVID-19 (Coronavirus Disease 19) March Update- causes, symptoms, diagnosis, treatment, pathology\n",
-        },
-        {
-          url: "https://www.youtube.com/embed/ujWFj_6FaMY",
-          title: "Coronavirus outbreak... | UNICEF",
-        },
-        {
-          url: "https://www.youtube.com/embed/mOV1aBVYKGA",
-          title: "Novel coronavirus (2019-nCoV)",
-        },
-      ],
+      videos: [],
     };
   },
+  methods: {
+    initVideos() {
+      this.videos = [
+        {
+          url: this.$t('videos.video_1_url'),
+          title: this.$t('videos.video_1_title'),
+        },
+        {
+          url: this.$t('videos.video_2_url'),
+          title: this.$t('videos.video_2_title'),
+        },
+        {
+          url: this.$t('videos.video_3_url'),
+          title: this.$t('videos.video_3_title'),
+        },
+        {
+          url: this.$t('videos.video_4_url'),
+          title: this.$t('videos.video_4_title'),
+        },
+      ];
+    },
+    resetVideos() {
+      this.isOpenVideos = false;
+      setTimeout(() => this.isOpenVideos = true, 0);
+    }
+  },
   watch: {
+      // eslint-disable-next-line
+      '$i18n.locale'() {
+        this.resetVideos();
+        this.initVideos();
+      },
       isOpen() {
         document.body.classList.toggle('opened')
         if (isMobile()) {
           document.body.classList.toggle('mobile')
         }
-        this.isOpenVideos = false;
-        setTimeout(() => this.isOpenVideos = true, 0);
+        this.resetVideos();
       },
   },
   computed: {
