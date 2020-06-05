@@ -34,5 +34,10 @@ export const validLanguages = [
     name: 'Қазақ',
     browserCode: 'kk',
   },
+  {
+    id: 'mk',
+    name: 'Macedonian',
+    browserCode: 'mk',
+  },
 ];
 
