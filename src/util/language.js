@@ -36,7 +36,7 @@ export const validLanguages = [
   },
   {
     id: 'mk',
-    name: 'Macedonian',
+    name: 'Северен македонски',
     browserCode: 'mk',
   },
 ];
