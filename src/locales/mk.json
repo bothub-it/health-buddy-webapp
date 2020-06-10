@@ -1,9 +1,9 @@
 {
     "navbar": {
-        "home": "Home",
-        "about": "About",
-        "videos": "Videos",
-        "languages": "Languages",
+        "home": "Дома",
+        "about": "За",
+        "videos": "Видеа",
+        "languages": "Јазици",
         "bot": "Bot"
     },
 
@@ -55,8 +55,8 @@
     },
 
     "footer": {
-        "policy": "Click here to see our privacy policy",
-        "bothub": "HealthBuddy is powered by Bothub and RapidPro © 2020 All rights reserved."
+        "policy": "Кликнете овде за да ја видите нашата политика за приватност",
+        "bothub": "HealthBuddy е овозможен со помош на Bothub и RapidPro © 2020 Сите права се задржани."
     },
 
     "policy": {
