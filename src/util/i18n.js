@@ -8,6 +8,7 @@ import elgr from '../locales/el_GR.json';
 import es from '../locales/es.json';
 import kaz from '../locales/kaz.json';
 import it from '../locales/it.json';
+import mk from '../locales/mk.json';
 
 Vue.use(VueI18n);
 
@@ -19,6 +20,7 @@ const languages = {
   'es': es,
   'kaz': kaz,
   'it': it,
+  'mk': mk,
 
 };
 
