@@ -41,7 +41,7 @@ export const validLanguages = [
   },
   {
     id: 'tr',
-    name: 'Turkish',
+    name: 'Türk',
     browserCode: 'tr',
   },
 ];
