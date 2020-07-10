@@ -1,0 +1,82 @@
+{
+    "navbar": {
+        "home": "Acasă",
+        "about": "Despre HealthBuddy",
+        "videos": "Videoclipuri",
+        "languages": "Limba selectată",
+        "bot": "Bot"
+    },
+
+    "hero": {
+        "title": "Prietenul vostru cu informații despre COVID-19 în Europa și Asia Centrală.",
+        "subtitle": "Suntem la un mesaj distanță"
+    },
+
+    "about": {
+        "title": "Întrebați-mă despre COVID-19",
+        "about_1": "Bună, eu sunt HealthBuddy, prietenul vostru cu informații despre sănătate. Trimiteți-mi un mesaj în fereastra de chat și vă voi oferi informații despre boala provocată de noul coronavirus (COVID-19). Informațiile vin din sursele de încredere ale Biroului Regional OMS pentru Europa și ale Biroului Regional UNICEF pentru Europa și Asia Centrală (ECARO).",
+        "about_2": "Pentru a începe, urmați acești 3 pași:",
+        "about_3": {
+            "emphasis_1": "1.",
+            "emphasis_2": "2.",
+            "emphasis_3": "3.",
+            "text_1": "Selectați limba din meniul vertical „limba selectată” din partea de sus a acestei pagini.",
+            "text_2": "Alegeți o întrebare din lista de întrebări frecvente pentru a obține răspunsuri rapide.",
+            "text_3": "Puneți întrebările folosind un limbaj obișnuit, de parcă ați vorbi cu un prieten."
+        }
+    },
+    "features": {
+        "title": "Despre HealthBuddy",
+        "text": "Pe internet și pe rețelele de socializare circulă o mulțime de informații greșite și mituri despre noul coronavirus (virusul COVID-19). Una dintre cele mai mari provocări în lupta împotriva COVID-19 este dezinformarea. Tocmai din acest motiv este important să vă bazați doar pe informații și recomandări din surse de încredere.",
+        "feature_1_title": "Acces pe mai multe platforme",
+        "feature_1_text": "HealthBuddy este disponibil pe mai multe platforme online din Europa, pentru a vă oferi recomandări și sfaturi științifice și bazate pe dovezi.",
+        "feature_2_title": "Suport pentru mai multe limbi",
+        "feature_2_text": "HealthBuddy identifică limba browser-ului vostru. Dacă HealthBuddy are conținutul și în limba respectivă, va folosi automat acea limbă. Dar, puteți și să modificați limba din meniul „limba aleasă”.",
+        "feature_3_title": "Informații exacte despre COVID-19",
+        "feature_3_text": "HealthBuddy este sprijinit de experți din partea Biroului Regional OMS pentru Europa și Biroul Regional UNICEF pentru Europa și Asia Centrală (ECARO). Astfel, vă va oferi informații exacte și precise despre COVID-19.",
+        "feature_4_title": "Combaterea zvonurilor și a știrilor false",
+        "feature_4_text": "Dacă întâlniți orice zvonuri sau știri false în comunitatea sau regiunea voastră, le puteți raporta aici. HealthBuddy le va înregistra în baza de date și le va corecta cu informații corecte."
+    },
+
+    "videos": {
+        "title": "Videoclipuri",
+        "video_1_title": "Protecting Your Family from Coronavirus",
+        "video_1_url": "https://www.youtube.com/embed/QYxzo3-qZRc",
+        "video_2_title": "COVID-19 (Coronavirus Disease 19) March Update- causes, symptoms, diagnosis, treatment, pathology",
+        "video_2_url": "https://www.youtube.com/embed/JKpVMivbTfg",
+        "video_3_title": "Coronavirus outbreak... | UNICEF",
+        "video_3_url": "https://www.youtube.com/embed/ujWFj_6FaMY",
+        "video_4_title": "Novel coronavirus (2019-nCoV)",
+        "video_4_url": "https://www.youtube.com/embed/mOV1aBVYKGA"
+    },
+
+    "extraInfo": {
+        "text": "HealthBuddy este o inițiativă comună a Biroului Regional UNICEF pentru Europa și Asia Centrală și a Biroului Regional al OMS pentru Europa."
+    },
+
+    "footer": {
+        "policy": "Apăsați aici pentru a vedea politica noastră de confidențialitate",
+        "bothub": "HealthBuddy este creat de Bothub și RapidPro © 2020 Toate drepturile rezervate."
+    },
+
+    "policy": {
+        "title": "Politica de confidențialitate",
+        "section_1_title": "Ce informații colectăm?",
+        "section_1_text": "Colectăm informațiile dumneavoastră numai atunci când doriți să raportați zvonuri, să ne transmiteți un feedback sau când ne adresați întrebări prin intermediul chat-ului. Printre aceste informații ar putea fi date impersonale despre cum utilizați această pagină de internet. Nu colectăm niciun fel de informații personale despre dumneavoastră atunci când accesați acest site sau chat-ul.",
+        "section_2_title": "Cum vă protejăm informațiile?",
+        "section_2_text": "Am implementat mai multe măsuri de securitate pentru a asigura siguranța informațiilor dumneavoastră personale atunci când introduceți, trimiteți sau accesați informațiile dumneavoastră personale.\nPentru acest site folosim un server securizat. Toate informațiile pe care ni le furnizați sunt transmise prin tehnologie Secure Socket Layer (SSL).",
+        "section_3_title": "Folosim cookie-uri?",
+        "section_3_text": "Da. Cookie-urile sunt fișiere mici pe care un site sau furnizorul său le transferă pe hard disk-ul computerului dumneavoastră prin intermediul browserului (dacă permiteți acest lucru). Aceste cookie-uri permit site-urilor sau sistemelor furnizorului să recunoască browser-ul și să afle și să memoreze anumite informații. \nFolosim cookie-urile pentru a înțelege și a salva preferințele voastre pentru accesări viitoare, și pentru a aduna date agregate despre traficul de pe site și interacțiunea cu acest site, astfel încât pe viitor să putem oferi experiențe și instrumente ale site-ului mai bune. Este posibil să încheiem contracte cu părți terțe (furnizori), pentru a ne ajuta să înțelegem mai bine utilizatorii site-ului nostru. Singurul scop pentru care acești furnizori de servicii au permisiunea de a utiliza informațiile colectate în numele nostru, este de a ne ajuta să ne desfășurăm activitatea și să o îmbunătățim. Utilizarea în alte scopuri nu este permisă.",
+        "section_4_title": "Cine are acces la mesajele dumneavoastră?",
+        "section_4_text": "Informațiile care sunt transmise către RapidPro sau Bothub sau care sunt stocate de acestea sunt disponibile numai pentru a contribui la identifica zvonurilor și pentru a îmbunătăți chatbot-ul, pe baza feedback-ului dumneavoastră.\nTrebuie remarcat faptul că orice mesaje transmise prin intermediul rețelelor de socializare ar putea fi accesate de anumite organizații terțe, cum ar fi furnizorii de servicii mobile, folosiți pentru transmiterea mesajelor. S-ar putea ca aceste organizații să aibă propriile reguli, politici și măsuri de securitate, care controlează cine are acces la mesajele transmise prin intermediul serviciilor lor.",
+        "section_5_title": "Comunicăm vreo informație către vreo altă parte?",
+        "section_5_text": "Noi nu vindem, tranzacționăm sau transferăm în orice alt mod informațiile dumneavoastră de identificare personală către alte părți terțe neimplicate. Printre aceasta nu se numără părțile terțe de încredere, care contribuie la funcționarea site-ului nostru, la desfășurarea activității noastre, sau în vederea asistenței către dumneavoastră. în măsura în care aceste părți sunt de acord să păstreze confidențialitatea acestor informații. De asemenea, este posibil să facem publice informațiile dumneavoastră, doar atunci când considerăm că este nevoie de aceasta pentru a respecta legea, pentru a consolida politicile site-ului nostru sau pentru a proteja drepturile, proprietatea sau siguranța noastră sau a altora. Cu toate acestea, informațiile utilizatorilor, care nu pot duce la identificarea personală, pot fi furnizate către alte părți pentru scopuri de promovare, publicitate sau alte utilizări.",
+        "section_6_title": "Folosim linkuri către părți terțe?",
+        "section_6_text": "Este posibil ca ocazional, la discreția noastră, să includem sau să oferim produse sau servicii ale unor părți terțe pe site-ul nostru. Aceste site-uri terțe au politici de confidențialitate diferite și independente. Așadar, nu avem nicio responsabilitate sau răspundere pentru conținutul și activitățile acestor site-uri. Cu toate acestea, încercăm să protejăm integritatea site-ului nostru și suntem deschiși la orice feedback despre respectivele site-uri.",
+        "section_7_title": "Consimțământul dumneavoastră",
+        "section_7_text": "Prin utilizarea site-ului nostru, sunteți de acord cu politica noastră de confidențialitate online.",
+        "section_8_title": "Changes to our privacy policy",
+        "section_8_text": "If we decide to change our privacy policy, we will post those changes on this page, and/or update the privacy policy modification date below.",
+        "updated": "This privacy policy was last updated on 23 March 2020."
+    }
+}

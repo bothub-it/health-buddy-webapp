@@ -49,5 +49,10 @@ export const validLanguages = [
     name: 'български',
     browserCode: 'bg',
   },
+  {
+    id: 'ro',
+    name: 'Română',
+    browserCode: 'ro',
+  },
 ];
 
