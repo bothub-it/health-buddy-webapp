@@ -1,7 +1,6 @@
 /* eslint-disable vue/valid-template-root */
 <template>
   <div class="home">
-    <Chat :is-open.sync="isOpen" />
     <Hero id="home" :class="{'home__section__open-hero': withMargin }" />
     <text-section id="how"
                   class="home__section"
@@ -75,13 +74,12 @@
 </template>
 
 <script>
-import Hero from '@/components/Hero';
-import TextSection from '@/components/TextSection';
-import FeatureList from '@/components/FeatureList';
-import InfoVideoList from '@/components/InfoVideoList';
-import Chat from '@/components/Chat'
 import { mapGetters } from 'vuex';
-import { isMobile } from '@/util/browser';
+import Hero from '../components/Hero.vue';
+import TextSection from '../components/TextSection.vue';
+import FeatureList from '../components/FeatureList.vue';
+import InfoVideoList from '../components/InfoVideoList.vue';
+import { isMobile } from '../util/browser';
 
 export default {
   name: 'Home',
@@ -90,12 +88,10 @@ export default {
       TextSection,
       FeatureList,
       InfoVideoList,
-      Chat,
   },
   data() {
     return {
       isOpenVideos: true,
-      isOpen: false,
       videos: [],
     };
   },
@@ -178,27 +174,9 @@ export default {
 
 .home {
   &__section {
-    margin: 0 auto;
-    padding: 20px 20px;
-    max-width: 1140px;
-    @media only screen and (max-width: 1150px) {
-      max-width: 900px;
-    }
-
-    &__open {
-      max-width: 60%;
-      margin: 1.5rem;
-    }
-
-    &__open-hero {
-      /deep/ .banner__columns {
-        max-width: 60%;
-        margin: 1.5rem;
-      }
-    }
+    padding: 1em;
 
     &__wrapper {
-      width: 100%;
       background-color: #f2f5fa;
     }
 

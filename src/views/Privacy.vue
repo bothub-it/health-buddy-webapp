@@ -44,22 +44,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss" scoped>
-    .privacy {
-        margin: 74px 0 0;
-
-        @media only screen and (max-width: 1150px) {
-          max-width: 900px;
-        }
-
-        &__open {
-          max-width: 60%;
-          margin: 1.5rem;
-        }
-
-        max-width: 1140px;
-        padding: 60px 0;
-        margin: 0 auto;
-    }
-</style>

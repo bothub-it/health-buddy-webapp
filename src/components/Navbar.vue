@@ -4,13 +4,16 @@
          role="navigation"
          aria-label="dropdown navigation">
       <div class="navbar-brand">
-        <img class="navbar-item navbar__logo"
-             src="@/assets/img/bms/bms-nav-logo.svg"
-             alt="HealthBuddy logo">
+        <a href="/"
+           title="Baby Feeding Codifier">
+          <img class="navbar-item navbar__logo"
+               src="@/assets/img/bms/bms-nav-logo.svg"
+               alt="Baby Feeding Codifier logo">
+        </a>
 
         <a class="navbar-item"
-           href="https://healthbuddy.info/"
-           title="HealthBuddy">
+           href="/"
+           title="BBaby Feeding Codifier">
           <h1 class="navbar__title"> Baby Feeding Codifier </h1>
         </a>
 
@@ -108,10 +111,8 @@ export default {
 }
 
 .navbar {
-
-  max-width: 1140px;
   margin: 0 auto;
-  background-color: #047afb;
+  background-color: transparent;
 
   &__icon {
     font-size: 25px;
@@ -157,8 +158,8 @@ export default {
     position: fixed;
     right: 0;
     z-index: 29;
-    background-color: #047afb;
     top: 0;
+    background-color: #047afb;
   }
 
   &__title {
@@ -173,11 +174,8 @@ export default {
     @media (max-width: 768px) {
       font-size: 20px;
     }
-    @media (max-width: 350px) {
-      font-size: 15px;
-    }
-    @media (max-width: 310px) {
-      font-size: 12px;
+    @media (max-width: 500px) {
+      display: none;
     }
   }
 
@@ -185,9 +183,6 @@ export default {
     max-height: 50px;
     padding: 2px;
     border-style: none;
-    @media (max-width: 350px) {
-      max-height: 40px;
-    }
   }
 }
 

@@ -4,7 +4,7 @@
       <div class="footer__info">
         {{ $t('extraInfo.text') }}
       </div>
-      <div class="footer__info-images">
+      <div v-if="false" class="footer__info-images">
         <a href="https://www.unicef.org/eca/" title="UNICEF ECARO">
           <img class="footer__info-images__unicef" :src="unicefLogo" alt="UNICEF ECARO">
         </a>

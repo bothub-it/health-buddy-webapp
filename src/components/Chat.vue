@@ -77,7 +77,7 @@ export default {
         initPayload: this.initialPayload,
         channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
         host: 'https://rapidpro.ilhasoft.mobi',
-        title: 'HealthBuddy',
+        title: 'Baby Feeding Codifier',
         inputTextFieldHint: "Type a question...",
         profileAvatar: require('@/assets/img/bms/bms-chat-logo.svg'),
         openLauncherImage: require('@/assets/img/bms/bms-chat-logo.svg'),

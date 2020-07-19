@@ -1,20 +1,30 @@
 <template>
   <div id="app">
-    <Navbar />
-    <router-view />
+    <Chat :is-open.sync="isOpen" />
+    <Navbar/>
+    <div class="content-container">
+      <router-view />
+    </div>
     <Footer />
   </div>
 </template>
 
 <script>
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
+import Footer from './components/Footer.vue'
+import Navbar from './components/Navbar.vue'
+import Chat from './components/Chat.vue';
 
 export default {
   name: 'App',
   components: {
+    Chat,
     Navbar,
     Footer,
+  },
+  data() {
+    return {
+      isOpen: false,
+    };
   },
 }
 </script>
@@ -26,6 +36,7 @@ export default {
 
 html {
   scroll-behavior: smooth;
+  background-image: linear-gradient(to bottom, #bdd9e4, #FFF 20%);
 }
 body.opened.mobile {
   #home, #how, #about, #video {
@@ -41,5 +52,13 @@ button {
 }
 .conversation-container .message .response {
   height: inherit !important;
+}
+
+.navbar__wrapper, .content-container {
+  > * {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
 }
 </style>
