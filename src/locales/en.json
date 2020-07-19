@@ -8,34 +8,38 @@
     },
 
     "hero": {
-        "title": "Your very own buddy for info about COVID-19 in Europe and Central Asia.",
-        "subtitle": "Just a text message away!"
+        "title": "Access reliable information about exclusive breastfeeding and safeguarding the rights of IYC to optimum feeding.",
+        "subtitle": "You are only a click away!"
     },
 
     "about": {
-        "title": "Ask me about COVID-19",
-        "about_1": "Hi, I’m your HealthBuddy. Send me a text in the chat window and I will give you information about the novel coronavirus disease (COVID-19), from the trusted sources of WHO/Europe and UNICEF ECARO.",
-        "about_2": "3 steps to get started:",
+        "title": "Ask me about Baby Feeding Codifier",
+        "about_1": "Send me a text in the chat window and I will give you information about the importance of exclusive breastfeeding as well as how you can actively participate in safeguarding the right to optimum Infant and Young Child Feeding (IYCF).",
+        "about_2": "4 Follow the steps to do your part:",
         "about_3": {
-            "emphasis_1": "1. Select your language ",
-            "emphasis_2": "2. Select from the list of common questions ",
-            "emphasis_3": "3. Send me your questions in natural language ",
-            "text_1": " from the language dropdown menu at the top of this web page.",
-            "text_2": "to get quick answers.",
-            "text_3": "as if you are talking to your friend."
+            "emphasis_1": "1.",
+            "emphasis_2": "2.",
+            "emphasis_3": "3.",
+            "emphasis_4": "4.",
+            "text_1": "Select your language from the language dropdown menu at the top of this web page.",
+            "text_2": "Select from the list of common questions to get quick answers.",
+            "text_3": "Submit your questions if you wish to learn more about exclusive breastfeeding and or the national and international code of marketing of BMS.",
+            "text_4": "From the comfort of your home, enforce the implementation of the international code for marketing BMS. "
         }
     },
     "features": {
-        "title": "About HealthBuddy",
-        "text": "There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important get your information and advice from trusted sources.",
-        "feature_1_title": "Multi-platform support",
-        "feature_1_text": "HealthBuddy is available on multiple online platforms in Europe to provide users with scientific and evidence-based advice.",
-        "feature_2_title": "Multi-language support",
-        "feature_2_text": "HealthBuddy detects the language of your browser and, if supported, will automatically speak in that language. You can also change the language from the languages menu. ",
-        "feature_3_title": "Accurate COVID-19 information",
-        "feature_3_text": "HealthBuddy is supported by experts from WHO/Europe and UNICEF ECARO and will provide you with accurate information on COVID-19.",
-        "feature_4_title": "Fighting rumours and fake news",
-        "feature_4_text": "If you hear any rumours or fake statements in your community or region, you can report it to us here. HealthBuddy will compile them and set the record straight."
+        "title": "About Baby Feeding Codifier",
+        "text_1": "Breast milk provides antibodies that give babies everywhere a healthy boost and protect them against many infections. Antibodies and bioactive factors in breast milk may fight against COVID-19 infection if the baby is exposed. In addition, the corona virus has not been found in breast milk, and transmission via breastfeeding has not been demonstrated.",
+        "text_2": "Based on global WHO/UNICEF guidelines and nationally recommended feeding practices, it is important to:",
+        "feature_1_title": "",
+        "feature_1_text": " Initiate breastfeeding within 1 hour of birth. Maintain skin-to-skin contact with your baby, which will keep your baby warm and breathing well, help him or she reach the breast easily, and help you and your baby feel close.",
+        "feature_2_title": "",
+        "feature_2_text": "Close contact and early, exclusive breastfeeding for the first 6 months helps a baby to thrive, and the unparalleled benefits of breastfeeding outweigh any potential risk of transmission. Breast Milk is the best healthy first food for your baby and is sufficient to support your child’s healthy growth and development.",
+        "feature_3_title": "",
+        "feature_3_text": " Introduce age-appropriate, adequate, safe and properly fed complementary foods starting from 6 months up to 2 years of age (see examples and guidance in complementary feeding section)",
+        "feature_4_title": "",
+        "feature_4_text": "Continue breastfeeding for up to 2 years of age or beyond.",
+        "text_3": "In view of the vulnerability of infants in the early months of life and the risks involved in inappropriate feeding practices, including unnecessary and improper use of breast milk substitutes, the marketing of breast milk substitutes requires special treatment, which makes usual marketing practices unsuitable for these products."
     },
 
     "videos": {

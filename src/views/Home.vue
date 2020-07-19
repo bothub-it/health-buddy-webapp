@@ -26,6 +26,9 @@
         <p>
           <strong>{{ $t('about.about_3.emphasis_3') }}</strong> {{ $t('about.about_3.text_3') }}
         </p>
+        <p>
+          <strong>{{ $t('about.about_3.emphasis_4') }}</strong> {{ $t('about.about_3.text_4') }}
+        </p>
       </div>
     </text-section>
 
@@ -37,12 +40,20 @@
       </h2>
       <div slot="text">
         <p>
-          {{ $t('features.text') }}
+          {{ $t('features.text_1') }}
+        </p>
+        <p>
+          {{ $t('features.text_2') }}
         </p>
       </div>
       <FeatureList :list="features"
                    slot="content"
                    class="home__section"/>
+      <div slot="after-content">
+        <p>
+          {{ $t('features.text_3') }}
+        </p>
+      </div>
     </text-section>
 
     <div v-if="isOpenVideos"
@@ -138,22 +149,22 @@ export default {
     features() {
       return [
         {
-          iconName: "mdi mdi-comment-check-outline",
+          iconName: "mdi mdi-chevron-right",
           title: this.$t( 'features.feature_1_title'),
           text: this.$t( 'features.feature_1_text'),
         },
         {
-          iconName: "mdi mdi-earth",
+          iconName: "mdi mdi-chevron-right",
           title: this.$t( 'features.feature_2_title'),
           text: this.$t( 'features.feature_2_text'),
         },
         {
-          iconName: "mdi mdi-vector-intersection",
+          iconName: "mdi mdi-chevron-right",
           title: this.$t( 'features.feature_3_title'),
           text: this.$t( 'features.feature_3_text'),
         },
         {
-          iconName: "mdi mdi-book-open-variant",
+          iconName: "mdi mdi-chevron-right",
           title: this.$t( 'features.feature_4_title'),
           text: this.$t( 'features.feature_4_text'),
         },
@@ -171,7 +182,7 @@ export default {
     padding: 20px 20px;
     max-width: 1140px;
     @media only screen and (max-width: 1150px) {
-      max-width: 720px;
+      max-width: 900px;
     }
 
     &__open {
@@ -196,7 +207,7 @@ export default {
       font-size: 38px;
       font-weight: 500;
       line-height: 56px;
-      color: #007BFF;
+      color: #2089fb;
       font-family: "Poppins", sans-serif;
     }
   }

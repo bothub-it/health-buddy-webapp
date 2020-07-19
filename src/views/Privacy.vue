@@ -1,5 +1,5 @@
 <template>
-  <div 
+  <div
     :class="['privacy', isOpen ? 'privacy__open' : '']"
   >
     <Chat
@@ -50,9 +50,9 @@ export default {
         margin: 74px 0 0;
 
         @media only screen and (max-width: 1150px) {
-          max-width: 720px;
+          max-width: 900px;
         }
-        
+
         &__open {
           max-width: 60%;
           margin: 1.5rem;

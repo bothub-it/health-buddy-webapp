@@ -5,13 +5,13 @@
          aria-label="dropdown navigation">
       <div class="navbar-brand">
         <img class="navbar-item navbar__logo"
-             src="@/assets/img/doctor-square.png"
+             src="@/assets/img/bms/bms-nav-logo.svg"
              alt="HealthBuddy logo">
 
         <a class="navbar-item"
            href="https://healthbuddy.info/"
            title="HealthBuddy">
-          <h1 class="navbar__title"> HealthBuddy </h1>
+          <h1 class="navbar__title"> Baby Feeding Codifier </h1>
         </a>
 
         <div class="navbar-burger" :class="{ 'is-active': modalActive }">
@@ -111,7 +111,7 @@ export default {
 
   max-width: 1140px;
   margin: 0 auto;
-  background-color: #374EA2;
+  background-color: #047afb;
 
   &__icon {
     font-size: 25px;
@@ -157,7 +157,7 @@ export default {
     position: fixed;
     right: 0;
     z-index: 29;
-    background-color: #374EA2;
+    background-color: #047afb;
     top: 0;
   }
 

@@ -3,13 +3,13 @@
     <div class="banner__columns animated animatedFadeInUp fadeInUp">
       <div class="banner__columns__column">
         <img class="banner__img-doctor"
-             src="@/assets/img/doctor-circle.png"
+             src="@/assets/img/bms/bms-header-logo.svg"
              alt="HealthBuddy logo">
       </div>
       <div class="banner__columns__column">
         <div class="banner__content">
           <h1 class="banner__title">
-            HealthBuddy
+            Baby Feeding Codifier
           </h1>
           <p class="banner__subtitle">
             {{ $t('hero.title') }}
@@ -98,7 +98,7 @@
     text-align: left;
 
     @media only screen and (max-width: 760px) {
-      max-width: 720px;
+      max-width: 900px;
       text-align: center;
     }
   }
@@ -109,7 +109,7 @@
     font-size: 48px;
     font-weight: 500;
     line-height: 56px;
-    color: #007BFF;
+    color: #2089fb;
 
     @media (max-width: 768px) {
       font-size: 30px;

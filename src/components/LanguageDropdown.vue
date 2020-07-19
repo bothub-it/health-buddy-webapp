@@ -54,7 +54,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .dropdown-item.selected {
-  background-color: #374EA2;
+  background-color: #047afb;
   color: white;
 }
 </style>

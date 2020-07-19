@@ -11,6 +11,10 @@
     <div class="section__content">
       <slot name="content" />
     </div>
+
+    <div class="section__text">
+      <slot name="after-content" />
+    </div>
   </div>
 </template>
 
@@ -28,7 +32,7 @@ export default {
     font-weight: 400;
     margin-bottom: 20px;
     padding-bottom: 0;
-    color: #007BFF;
+    color: #2089fb;
     font-family: "Poppins", sans-serif;
 
     p, h2 {

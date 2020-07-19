@@ -35,9 +35,10 @@ export default {
     .feature-item {
 
         &__icon {
-            font-size: 48px;
+          margin-top: -10px;
+          font-size: 48px;
             float: left;
-            color: #007BFF;
+            color: #2089fb;
         }
 
         &__title {
