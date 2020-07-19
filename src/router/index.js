@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '@/views/Home';
-import Privacy from '@/views/Privacy';
-import Violation from '@/views/Violation';
+import Home from '../views/Home';
+import Privacy from '../views/Privacy';
+import Violation from '../views/Violation';
+import Map from '../views/Map';
 
 
 Vue.use(Router);
@@ -38,6 +39,11 @@ export default new Router({
       path: '/what-is-violation',
       name: 'violation',
       component: Violation,
+    },
+    {
+      path: '/map',
+      name: 'map',
+      component: Map,
     },
   ],
 });

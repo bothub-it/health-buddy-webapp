@@ -39,7 +39,7 @@
         <div class="navbar-end">
           <router-link v-for="item in items"
                        :key="item.id"
-                       :to="`index#${item.id}`"
+                       :to="item.to"
                        :title="item.title"
                        class="navbar-item animatable">
             {{ item.title }}
@@ -71,18 +71,27 @@ export default {
           {
             id: "home",
             title: this.$t('navbar.home'),
+            to: `index#home`,
           },
           {
             id: "about",
             title: this.$t('navbar.about'),
+            to: `index#about`,
+          },
+          {
+            id: "map",
+            title: this.$t('navbar.map'),
+            to: { name: 'map' },
           },
           {
             id: "video",
             title: this.$t('navbar.videos'),
+            to: `index#video`,
           },
           {
             id: "webchat",
             title: this.$t('navbar.bot'),
+            to: `index#webchat`,
           },
         ];
       },

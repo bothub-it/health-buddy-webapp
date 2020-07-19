@@ -38,6 +38,7 @@ export default {
 html {
   scroll-behavior: smooth;
   background-image: linear-gradient(to bottom, #bdd9e4, #FFF 20%);
+  background-repeat: no-repeat;
 }
 body.opened.mobile {
   #home, #how, #about, #video {

@@ -35,14 +35,14 @@ export default {
   },
   watch: {
     getLanguage() {
-      // if (!this.initalized) {
-      //   this.initalized = true;
-      //   this.setupChat();
-      //   this.updateOpenStatus();
-      // } else {
-      //   WebChat.dropMessages();
-      //   this.sendInitial()
-      // }
+      if (!this.initalized) {
+        this.initalized = true;
+        this.setupChat();
+        this.updateOpenStatus();
+      } else {
+        WebChat.dropMessages();
+        this.sendInitial()
+      }
     },
     $route (to){
       if (to.hash.indexOf('webchat') !== -1 && !WebChat.isOpen()) {
