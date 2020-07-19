@@ -46,7 +46,6 @@
 
 .banner {
   padding: 1em;
-  margin-top: 80px;
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;

@@ -44,6 +44,9 @@ body.opened.mobile {
     display: none;
   }
 }
+body {
+  padding-top: 80px;
+}
 button {
   cursor: pointer;
 }

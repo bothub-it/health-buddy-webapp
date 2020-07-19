@@ -58,7 +58,7 @@
               <div class="m-1">
                 <img src="../assets/img/bms/1-0-0.svg" />
               </div>
-              <router-link class="subtitle" to="/">
+              <router-link class="subtitle" :to="{ name: 'violation' }">
                 What is a violation?
               </router-link>
             </div>

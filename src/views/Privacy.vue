@@ -22,7 +22,7 @@
         <br>
         <p>
             {{ $t(`policy.updated`) }}
-          </p>
+        </p>
       </div>
     </text-section>
   </div>

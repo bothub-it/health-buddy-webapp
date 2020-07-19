@@ -63,6 +63,20 @@
         "bothub": "Powered by Bothub and RapidPro © 2020 All rights reserved."
     },
 
+    "violation": {
+        "title": "What is a Violation?",
+        "section_1_title": "Violation 1 Follow-up formula (Follow-on milk)",
+        "section_1_text": "A follow-up formula is marketed or otherwise represented to be suitable, with or without modification, or used as a partial or total replacement for breast milk, it is covered by the Code. In addition, where followup formula is otherwise represented in a manner that results in such product being perceived or used as a partial or total replacement for breastmilk, such product also falls within the scope of the Code.",
+        "section_2_title": "Violation 2 ii. Growing-up milk",
+        "section_2_text": "The resolution recommends breastfeeding to continue for up to 2 years or beyond. Any milk product that is marketed or represented as suitable as a partial or total replacement of the breast milk part of the young child is a breastmilk substitute and is in the scope. The words “or beyond” could be interpreted to mean young children up to 3 years as there is no upper age limit to the definition of “breastmilk substitute”.",
+        "section_3_title": "Violation 3 iii. Bottle-fed complementary foods",
+        "section_3_text": "Regardless of age indication, any product that is recommended to be fed through a feeding bottle falls under the scope of the International Code as bottle-feeding undermines breastfeeding. To determine whether the product is a bottle-fed complimentary food, ask the following questions: <ul><li>Is the product recommended to be fed by a feeding bottle?</li><li>Does the label show a feeding bottle?</li></ul>",
+        "section_4_title": "Violation 4 iv. Any food or beverage that is represented as suitable to be fed to infants less than 6 months old.",
+        "section_4_text": "Regardless of the age indication on labels, products that are recommended for use by infants when they reach a specific stage of development which normally occurs before 6 months should also be considered to be breastmilk substitutes. <br> The following questions will help to determine if a product is so represented.<ul> <li> Does the label say as of 4 months or 5 months or earlier?</li> <li> Do the instructions indicate how to feed infants younger than 6 months or show an infant obviously younger than 6 months?</li> <li> Does the label or other materials include phrases such as “from the start”, “first stage” or suggest that a child is “ready for his first food” as he reached a certain development milestone that normally appears before a child reaches 6 months? For example, “lifting his neck and head”, “putting his hand in his mouth” or “smiles back at you” are stages infants arrive at well before 6 months.</li><li> Does the label say “as of the 6th month”? Or does it say “as of 6 months?”</li></ul>",
+        "section_5_title": "Violation 5  Other kinds of Violations",
+        "section_5_text": "<ul><li>there is no impediment for products covered by the scope to be sold. The International Code is designed only to stop companies from promoting their products.</li><li>we are dealing with public health recommendations and marketing controls, not with obliging individual mothers to breastfeed.</li></ul>"
+    },
+
     "policy": {
         "title": "Privacy Policy",
         "section_1_title": "What information do we collect?",
