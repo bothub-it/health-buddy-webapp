@@ -33,6 +33,7 @@ export default {
 @import '~@mdi/font/css/materialdesignicons.css';
 @import '~@mdi/font/css/materialdesignicons.min.css';
 @import "~bulma/css/bulma.css";
+@import "assets/css/common";
 
 html {
   scroll-behavior: smooth;

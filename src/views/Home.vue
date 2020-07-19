@@ -52,6 +52,38 @@
         <p>
           {{ $t('features.text_3') }}
         </p>
+        <div class="columns  has-text-centered m-1 m-l-0 m-r-0">
+          <div class="column is-4 p-1">
+            <div class="feature-box p-1">
+              <div class="m-1">
+                <img src="../assets/img/bms/1-0-0.svg" />
+              </div>
+              <router-link class="subtitle" to="/">
+                What is a violation?
+              </router-link>
+            </div>
+          </div>
+          <div class="column is-4 p-1">
+            <div class="feature-box p-1">
+              <div class="m-1">
+                <img src="../assets/img/bms/0-1-0.svg" />
+              </div>
+              <router-link class="subtitle" to="/">
+                Would you like to report a violation?
+              </router-link>
+            </div>
+          </div>
+          <div class="column is-4 p-">
+            <div class="feature-box p-1">
+              <div class="m-1">
+                <img src="../assets/img/bms/0-0-1.svg" />
+              </div>
+              <router-link class="subtitle" to="/">
+                Would you like to get more information about the code in your city?
+              </router-link>
+            </div>
+          </div>
+        </div>
       </div>
     </text-section>
 
@@ -190,5 +222,12 @@ export default {
     }
   }
 }
-
+.feature-box {
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 9px 12px -1px rgba(0,0,0,0.47);
+  .subtitle {
+    color: #36ade1;
+  }
+}
 </style>
