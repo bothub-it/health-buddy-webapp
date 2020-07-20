@@ -1,0 +1,82 @@
+{
+    "navbar": {
+        "home": "Anasayfa",
+        "about": "Hakkında",
+        "videos": "Videolar",
+        "languages": "Diller",
+        "bot": "Bot"
+    },
+
+    "hero": {
+        "title": "Avrupa ve Orta Asya’daki COVID-19 gelişmeleri için size özel bir arkadaş.",
+        "subtitle": "Sadece bir kısa mesaj uzağınızda!"
+    },
+
+    "about": {
+        "title": "Bana KOVİD-19 hakkında soru sorun",
+        "about_1": "Merhaba ben HealthBuddy. Bana sohbet penceresinden bir mesaj gönderirseniz size DSÖ/Avrupa ve UNICEF/ECARO güvenilir kaynaklarından yeni koronavirüs hastalığı (KOVİD-19) hakkında bilgi verebilirim.",
+        "about_2": "Başlamak için sadece 3 adım gerekiyor:",
+        "about_3": {
+            "emphasis_1": "",
+            "emphasis_2": "2. ",
+            "emphasis_3": "3. ",
+            "text_1": "1. Bu sitenin tepesindeki açılır dil menüsünden dilinizi seçin.",
+            "text_2": "2. Hızlı cevaplara ulaşmak için sıkça sorulan sorulardan seçiminizi yapın.",
+            "text_3": "3. Tıpkı bir arkadaşlarınızla konuşuyormuş gibi, bana sorularınızı ana dilinizde iletebilirsiniz."
+        }
+    },
+    "features": {
+        "title": "HealthBuddy Hakkında",
+        "text": "Sosyal medya ve internette yeni koronavirüs (KOVİD-19 virüsü) hakkında çok fazla yanlış bilgi ve söylenti dolanıyor. KOVİD-19 mücadelesindeki en büyük zorluklardan bir tanesi yanlış bilgilerdir. Bu nedenle, bilgi ve önerileri güvenilir kaynaklardan almanız önemlidir.",
+        "feature_1_title": "Çoklu platform desteği",
+        "feature_1_text": "HealthBuddy, kullanıcılara bilimsel ve kanıta dayalı bilgiler sunmak için Avrupa çapında birçok çevrimiçi platformda yer almaktadır.",
+        "feature_2_title": "Çoklu dil desteği",
+        "feature_2_text": "HealthBuddy tarayıcınızın dilini algılayarak bu dil destekleniyorsa otomatik olarak bu dilde konuşacaktır. Dil menüsünden de dili değiştirebilirsiniz.",
+        "feature_3_title": "Doğru KOVİD-19 bilgileri",
+        "feature_3_text": "HealthBuddy, DSÖ/Avrupa ve UNICEF ECARO uzmanları tarafından desteklenmektedir ve KOVİD-19 hakkında size doğru bilgiler sunacaktır.",
+        "feature_4_title": "Söylenti ve yalan haberlerle mücadele",
+        "feature_4_text": "Topluluğunuzda ya da bölgenizde söylentiler ya da yalan haberler duyarsanız, buradan bize bildirebilirsiniz. HealthBuddy bunları toplayacak ve düzeltecektir."
+    },
+
+    "videos": {
+        "title": "Videolar",
+        "video_1_title": "Protecting Your Family from Coronavirus",
+        "video_1_url": "https://www.youtube.com/embed/QYxzo3-qZRc",
+        "video_2_title": "COVID-19 (Coronavirus Disease 19) March Update- causes, symptoms, diagnosis, treatment, pathology",
+        "video_2_url": "https://www.youtube.com/embed/JKpVMivbTfg",
+        "video_3_title": "Coronavirus outbreak... | UNICEF",
+        "video_3_url": "https://www.youtube.com/embed/ujWFj_6FaMY",
+        "video_4_title": "Novel coronavirus (2019-nCoV)",
+        "video_4_url": "https://www.youtube.com/embed/mOV1aBVYKGA"
+    },
+
+    "extraInfo": {
+        "text": "HealthBuddy, UNICEF Avrupa ve Orta Asya Bölge Ofisi ile DSÖ Avrupa Bölge Ofisinin ortak girişimidir. "
+    },
+
+    "footer": {
+        "policy": "Gizlilik politikamızı görmek için buraya tıklayın. ",
+        "bothub": "HealthBuddy, Bothub ve RapidPro © 2020 tarafından desteklenmektedir. Tüm hakları saklıdır."
+    },
+
+    "policy": {
+        "title": "Gizlilik Politikası",
+        "section_1_title": "Hangi bilgileri topluyoruz?",
+        "section_1_text": "Sadece söylentileri bildirmek, geri bildirimde bulunmak ya da sohbet penceresinden soru sormak istediğinizde sizden bilgi topluyoruz. Bu tür bilgiler, siteyi kullanımınıza dair kişisel olmayan bilgileri içerebilir. Siteye ya da sohbet botuna eriştiğinizde sizinle ilgili hiçbir kişisel veri toplamıyoruz.",
+        "section_2_title": "Bilgilerinizi nasıl koruyoruz?",
+        "section_2_text": "Kişisel bilgilerinizi girdiğinizde, gönderdiğinizde ya da bu bilgilere eriştiğinizde kişisel bilgilerinizin güvenliğini sağlamak için bir dizi güvenlik önlemi uyguluyoruz. Güvenli bir sunucu kullanımı sağlıyoruz. Tüm bilgiler Güvenli Giriş Katmanı (SSL) aracılığıyla sunulmaktadır.",
+        "section_3_title": "Çerezleri kullanıyor muyuz?",
+        "section_3_text": "Evet. Çerezler, bir sitenin veya servis sağlayıcısının (izin verdiğiniz takdirde) internet tarayıcınız üzerinden bilgisayarınızın sabit sürücüsüne aktardığı küçük dosyalardır. Sitelerin ya da servis sağlayıcıların, tarayıcınızı tanımasını ve bazı bilgileri toplayarak hatırlamasını sağlar. Daha sonraki ziyaretleriniz için tercihlerinizi anlamak ve kaydetmek, daha iyi bir site deneyimi ve daha iyi araçlar sunabilmek için site trafiği ve etkileşimi hakkında toplu veri elde etmek için çerezleri kullanıyoruz. Site ziyaretçilerimizi daha iyi anlamamızda yardımcı olmaları için üçüncü taraf servis sağlayıcıları ile anlaşmalar yapabiliriz. Bu servis sağlayıcılarının işimizi yürütmemize ve geliştirmemize yardımcı olmak dışında bizim adımıza topladıkları bilgileri kullanma izinleri bulunmamaktadır.",
+        "section_4_title": "Kimlerin mesajlarınıza erişimi vardır?",
+        "section_4_text": "RapidPro ya da Bothub üzerinden gönderilen ya da burada saklanan bilgiler sadece söylentileri izlemek ve geri bildiriminize dayanarak sohbet botunu geliştirmek için kullanılmaktadır. Mesajları iletmek için kullanılan hücresel servis sağlayıcıları gibi üçüncü taraf kuruluşların, sosyal medya üzerinden gönderilen herhangi bir mesaja erişimi olabileceğini unutmayın. Bu kuruluşların, kendi servisleri üzerinden iletilen mesajlara kimin erişimi olduğunu denetleyen kuralları, politikaları ve güvenlik önlemleri olabilir.",
+        "section_5_title": "Diğer taraflara herhangi bir bilgi akışı sağlıyor muyuz?",
+        "section_5_text": "Kişisel olarak tanımlanabilir bilgilerinizi satmıyor, pazarlamıyor ya da herhangi bir başka şekilde diğer taraflara iletmiyoruz. Bu durum, bilgileri gizli tutmayı kabul ettikleri sürece, sitemizi işletmemize, işlerimizi yürütmemize ve size hizmet sunmamıza yardımcı olan güvenilir üçüncü tarafları kapsamamaktadır. Bilgi vermek yasalarla, site politikalarımızla uyumlu olduğu sürece ya da bizim veya başkalarının haklarını, mülkiyetini koruyacak ya da güvenliğini sağlayacaksa bilgilerinizi verebiliriz. Bununla birlikte, kişisel olmayan ziyaretçi bilgileri; pazarlama, reklam veya diğer kullanımlar için diğer taraflara verilebilir.",
+        "section_6_title": "Üçüncü taraf bağlantılarını kullanıyor muyuz?",
+        "section_6_text": "Kendi takdir yetkimize bağlı olarak sitemizde zaman zaman üçüncü taraf ürünlerini ya da hizmetlerini sunabiliriz. Üçüncü taraf sitelerinin ayrı ve bağımsız güvenlik politikaları vardır. Dolayısıyla, bu bağlantılı sitelerin içeriği ve faaliyetleri konusunda hiçbir sorumluluğumuz ya da yükümlülüğümüz bulunmamaktadır. Bununla birlikte, sitemizin bütünlüğünü korumaya çalışıyoruz ve bu siteler hakkındaki her türlü geri bildirimden memnuniyet duyarız.",
+        "section_7_title": "Rızanız",
+        "section_7_text": "Sitemizi kullanarak çevrimiçi gizlilik politikamızı kabul etmiş sayılmaktasınız.",
+        "section_8_title": "Changes to our privacy policy",
+        "section_8_text": "If we decide to change our privacy policy, we will post those changes on this page, and/or update the privacy policy modification date below.",
+        "updated": "This privacy policy was last updated on 23 March 2020."
+    }
+}

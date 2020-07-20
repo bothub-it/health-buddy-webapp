@@ -9,6 +9,9 @@ import es from '../locales/es.json';
 import kaz from '../locales/kaz.json';
 import it from '../locales/it.json';
 import mk from '../locales/mk.json';
+import tr from '../locales/tr.json';
+import bg from '../locales/bg.json';
+import ro from '../locales/ro.json';
 
 Vue.use(VueI18n);
 
@@ -21,7 +24,9 @@ const languages = {
   'kaz': kaz,
   'it': it,
   'mk': mk,
-
+  'tr': tr,
+  'bg': bg,
+  'ro': ro,
 };
 
 const messages = Object.assign(languages);

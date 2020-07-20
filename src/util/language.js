@@ -39,5 +39,20 @@ export const validLanguages = [
     name: 'Македонски',
     browserCode: 'mk',
   },
+  {
+    id: 'tr',
+    name: 'Türk',
+    browserCode: 'tr',
+  },
+  {
+    id: 'bg',
+    name: 'български',
+    browserCode: 'bg',
+  },
+  {
+    id: 'ro',
+    name: 'Română',
+    browserCode: 'ro',
+  },
 ];
 
