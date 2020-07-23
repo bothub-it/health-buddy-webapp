@@ -1,4 +1,4 @@
-# health-buddy-webapp
+# breast-feeding-code-square
 
 ## Project setup
 ```

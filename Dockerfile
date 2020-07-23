@@ -18,4 +18,4 @@ RUN yarn build
 FROM nginx
 
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=builder /home/app/dist /usr/share/nginx/html/health-buddy
+COPY --from=builder /home/app/dist /usr/share/nginx/html/breast-feeding
