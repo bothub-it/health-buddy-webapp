@@ -54,5 +54,10 @@ export const validLanguages = [
     name: 'Română',
     browserCode: 'ro',
   },
+  {
+    id: 'hu',
+    name: 'Magyar',
+    browserCode: 'hu',
+  },
 ];
 
