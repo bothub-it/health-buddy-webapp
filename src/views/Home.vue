@@ -29,22 +29,6 @@
       </div>
     </text-section>
 
-    <text-section id="about"
-                  class="home__section"
-                  :class="{ 'home__section__open': withMargin }">
-      <h2 slot="title">
-        {{ $t('features.title') }}
-      </h2>
-      <div slot="text">
-        <p>
-          {{ $t('features.text') }}
-        </p>
-      </div>
-      <FeatureList :list="features"
-                   slot="content"
-                   class="home__section"/>
-    </text-section>
-
     <div v-if="isOpenVideos"
          id="video"
          class="home__section__wrapper"
@@ -57,7 +41,6 @@
           slot="content"
           :videos="videos"
         />
-        <FeatureList :list="features"/>
       </text-section>
     </div>
   </div>
@@ -66,7 +49,6 @@
 <script>
 import Hero from '@/components/Hero';
 import TextSection from '@/components/TextSection';
-import FeatureList from '@/components/FeatureList';
 import InfoVideoList from '@/components/InfoVideoList';
 import Chat from '@/components/Chat'
 import { mapGetters } from 'vuex';
@@ -77,7 +59,6 @@ export default {
   components: {
       Hero,
       TextSection,
-      FeatureList,
       InfoVideoList,
       Chat,
   },
@@ -135,30 +116,10 @@ export default {
     withMargin() {
       return this.isOpen && !isMobile();
     },
-    features() {
-      return [
-        {
-          iconName: "mdi mdi-comment-check-outline",
-          title: this.$t( 'features.feature_1_title'),
-          text: this.$t( 'features.feature_1_text'),
-        },
-        {
-          iconName: "mdi mdi-earth",
-          title: this.$t( 'features.feature_2_title'),
-          text: this.$t( 'features.feature_2_text'),
-        },
-        {
-          iconName: "mdi mdi-vector-intersection",
-          title: this.$t( 'features.feature_3_title'),
-          text: this.$t( 'features.feature_3_text'),
-        },
-        {
-          iconName: "mdi mdi-book-open-variant",
-          title: this.$t( 'features.feature_4_title'),
-          text: this.$t( 'features.feature_4_text'),
-        },
-      ];
-    },
+  },
+  mounted() {
+    this.initVideos();
+    this.resetVideos();
   },
 }
 </script>
