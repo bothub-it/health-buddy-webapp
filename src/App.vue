@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Chat />
     <Navbar />
     <router-view />
     <Footer />
@@ -9,10 +10,12 @@
 <script>
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import Chat from './components/Chat';
 
 export default {
   name: 'App',
   components: {
+    Chat,
     Navbar,
     Footer,
   },
@@ -23,6 +26,7 @@ export default {
 @import '~@mdi/font/css/materialdesignicons.css';
 @import '~@mdi/font/css/materialdesignicons.min.css';
 @import "~bulma/css/bulma.css";
+@import "assets/css/common";
 
 html {
   scroll-behavior: smooth;

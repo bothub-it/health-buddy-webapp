@@ -21,33 +21,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.section {
-    padding: 60px 0;
-    overflow: hidden;
-    font-size: 1em;
-    font-weight: 400;
-    margin-bottom: 20px;
-    padding-bottom: 0;
-    color: #007BFF;
-    font-family: "Poppins", sans-serif;
-
-    p, h2 {
-        margin-bottom: 20px;
-    }
-
-    strong {
-        color: inherit;
-    }
-
-    &__title {
-        font-size: 32px;
-        margin-top: 0;
-        font-family: "Poppins", sans-serif;
-    }
-
-    &__text {
-        margin-bottom: 0;
-        color: #2D2926;
-    }
-}
 </style>
