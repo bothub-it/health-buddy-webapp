@@ -1,7 +1,6 @@
 /* eslint-disable vue/valid-template-root */
 <template>
   <div class="home">
-    <Chat :is-open.sync="isOpen" />
     <Hero id="home" :class="{'home__section__open-hero': withMargin }" />
     <text-section id="how"
                   class="home__section"
@@ -50,7 +49,6 @@
 import Hero from '@/components/Hero';
 import TextSection from '@/components/TextSection';
 import InfoVideoList from '@/components/InfoVideoList';
-import Chat from '@/components/Chat'
 import { mapGetters } from 'vuex';
 import { isMobile } from '@/util/browser';
 
@@ -60,7 +58,6 @@ export default {
       Hero,
       TextSection,
       InfoVideoList,
-      Chat,
   },
   data() {
     return {
@@ -125,42 +122,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.home {
-  &__section {
-    margin: 0 auto;
-    padding: 20px 20px;
-    max-width: 1140px;
-    @media only screen and (max-width: 1150px) {
-      max-width: 720px;
-    }
-
-    &__open {
-      max-width: 60%;
-      margin: 1.5rem;
-    }
-
-    &__open-hero {
-      /deep/ .banner__columns {
-        max-width: 60%;
-        margin: 1.5rem;
-      }
-    }
-
-    &__wrapper {
-      width: 100%;
-      background-color: #f2f5fa;
-    }
-
-    &__title {
-      margin: 11vh 0 2vh 0;
-      font-size: 38px;
-      font-weight: 500;
-      line-height: 56px;
-      color: #007BFF;
-      font-family: "Poppins", sans-serif;
-    }
-  }
-}
 
 </style>

@@ -1,11 +1,7 @@
 <template>
-  <div 
-    :class="['privacy', isOpen ? 'privacy__open' : '']"
-  >
-    <Chat
-      :is-open.sync="isOpen"
-    />
-    <text-section>
+  <div class="privacy">
+    <text-section
+      class="home__section">
       <p slot="title">
         {{ $t('policy.title') }}
       </p>
@@ -30,36 +26,35 @@
 
 <script>
 import TextSection from '@/components/TextSection';
-import Chat from '@/components/Chat';
+
 export default {
-    name: 'Privacy',
-    components: {
-        TextSection,
-        Chat,
-    },
-    data() {
-        return {
-            isOpen: false,
-        }
-    }
+  name: 'Privacy',
+  components: {
+      TextSection,
+  },
+  data() {
+      return {
+          isOpen: false,
+      }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-    .privacy {
-        margin: 74px 0 0;
+.privacy {
+  margin: 74px 0 0;
 
-        @media only screen and (max-width: 1150px) {
-          max-width: 720px;
-        }
-        
-        &__open {
-          max-width: 60%;
-          margin: 1.5rem;
-        }
+  @media only screen and (max-width: 1150px) {
+    max-width: 720px;
+  }
 
-        max-width: 1140px;
-        padding: 60px 0;
-        margin: 0 auto;
-    }
+  &__open {
+    max-width: 60%;
+    margin: 1.5rem;
+  }
+
+  max-width: 1140px;
+  padding: 60px 0;
+  margin: 0 auto;
+}
 </style>
