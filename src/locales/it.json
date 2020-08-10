@@ -25,6 +25,7 @@
         }
     },
     "features": {
+        "showFeatures": "yes",
         "title": "A proposito di Healthbuddy",
         "text": "Su Internet e sui social media circolano molti miti e false informazioni sul nuovo coronavirus (COVID-19). La disinformazione è una delle più grandi sfide nella lotta contro questa malattia. Ecco perché è importante ottenere informazioni e consigli da fonti attendibili.",
         "feature_1_title": "Supporto multipiattaforma",

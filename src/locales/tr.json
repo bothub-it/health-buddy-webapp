@@ -26,6 +26,7 @@
         }
     },
     "features": {
+        "showFeatures": "yes",
         "title": "HealthBuddy Hakkında",
         "text": "Sosyal medya ve internette yeni koronavirüs (KOVİD-19 virüsü) hakkında çok fazla yanlış bilgi ve söylenti dolanıyor. KOVİD-19 mücadelesindeki en büyük zorluklardan bir tanesi yanlış bilgilerdir. Bu nedenle, bilgi ve önerileri güvenilir kaynaklardan almanız önemlidir.",
         "feature_1_title": "Çoklu platform desteği",

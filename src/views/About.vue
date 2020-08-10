@@ -5,14 +5,29 @@
       <h2 slot="title">
         {{ $t('features.title') }}
       </h2>
+
+
       <div slot="text">
-        <p>
+        <p v-if="showFeatures">
           {{ $t('features.text') }}
         </p>
+        <div v-if="!showFeatures">
+          <p>
+            {{ $t('features.text_1') }}
+          </p>
+          <p>
+            {{ $t('features.text_2') }}
+          </p>
+          <p>
+            {{ $t('features.text_3') }}
+          </p>
+        </div>
+
+        <FeatureList v-if="showFeatures"
+                     :list="features"
+                     slot="content"
+                     class="home__section"/>
       </div>
-      <FeatureList :list="features"
-                   slot="content"
-                   class="home__section"/>
     </text-section>
   </div>
 </template>
@@ -28,6 +43,9 @@ export default {
     TextSection,
   },
   computed: {
+    showFeatures() {
+      return this.$t( 'features.showFeatures') !== 'no';
+    },
     features() {
       return [
         {

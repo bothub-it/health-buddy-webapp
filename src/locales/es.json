@@ -25,6 +25,7 @@
         }
     },
     "features": {
+        "showFeatures": "yes",
         "title": "Acerca del HealthBuddy",
         "text": "Hay muchos mitos y rumores sobre el nuevo coronavirus (COVID-19) circulando en Internet y en las redes sociales, y la desinformación es uno de los mayores desafíos en la lucha contra esta enfermedad. Por eso es importante obtener información y consejos de fuentes fiables.",
         "feature_1_title": "Soporte multi-plataforma",

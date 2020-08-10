@@ -26,6 +26,7 @@
         }
     },
     "features": {
+        "showFeatures": "yes",
         "title": "A HealthBuddy-ról",
         "text": "Nagyon sok téves információ és hiedelem kering az interneten és a közösségi oldalakon az új típusú koronavírusról (COVID-19). A félrevezető információk kiszűrése a COVID-19 elleni küzdelem egyik legnagyobb kihívása. Ezért fontos, hogy biztosítsuk a megbízható forrásból származó információkat és tanácsokat mindenki számára.",
         "feature_1_title": "Számos platformon elérhető",
