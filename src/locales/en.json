@@ -26,7 +26,11 @@
         }
     },
     "features": {
+        "showFeatures": "no",
         "title": "About HealthBuddy",
+        "text_1": "HealthBuddy is a multilingual interactive chatbot which was developed by WHO/Europe and the United Nations Children’s Fund (UNICEF) Europe and Central Asia Regional Office (ECARO) to provide access to accurate information, and counter misinformation surrounding the coronavirus.",
+        "text_2": "The chatbot uses artificial intelligence to answer questions about COVID-19 and provides local information such as COVID-19 hotlines available in different countries.  Additionally, it allows users to report fake news, myths and rumours. The information received from the users will be monitored by technical team of WHO and UNICEF to update the information on the chatbot.",
+        "text_3": "In England, the chatbot was implemented with the support of the following partners",
         "text": "There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important get your information and advice from trusted sources.",
         "feature_1_title": "Multi-platform support",
         "feature_1_text": "HealthBuddy is available on multiple online platforms in Europe to provide users with scientific and evidence-based advice.",

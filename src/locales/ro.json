@@ -26,6 +26,7 @@
         }
     },
     "features": {
+        "showFeatures": "yes",
         "title": "Despre HealthBuddy",
         "text": "Pe internet și pe rețelele de socializare circulă o mulțime de informații greșite și mituri despre noul coronavirus (virusul COVID-19). Una dintre cele mai mari provocări în lupta împotriva COVID-19 este dezinformarea. Tocmai din acest motiv este important să vă bazați doar pe informații și recomandări din surse de încredere.",
         "feature_1_title": "Acces pe mai multe platforme",
