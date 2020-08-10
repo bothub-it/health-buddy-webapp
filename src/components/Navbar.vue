@@ -38,6 +38,7 @@
                        :key="item.id"
                        :to="item.to"
                        :title="item.title"
+                       :target="item.target"
                        class="navbar-item animatable">
             {{ item.title }}
           </router-link>
@@ -74,6 +75,7 @@ export default {
             id: "about",
             to: { name: 'about' },
             title: this.$t('navbar.about'),
+            target: '_blank',
           },
           {
             id: "video",

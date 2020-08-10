@@ -45,8 +45,8 @@ export default {
       }
     },
     $route (to){
-      if (to.hash.indexOf('webchat') !== -1 && !WebChat.isOpen()) {
-        WebChat.open()
+      if (to.fullPath.indexOf('about') === -1 && to.hash.indexOf('webchat') !== -1 && !WebChat.isOpen()) {
+        WebChat.open();
       }
     },
   },
@@ -55,7 +55,7 @@ export default {
       WebChat.send(this.initialPayload);
     },
     openChat() {
-      if (!isMobile() || this.$router.currentRoute.hash.indexOf('webchat') !== -1) {
+      if (this.$router.currentRoute.fullPath.indexOf('about') === -1 && (!isMobile() || this.$router.currentRoute.hash.indexOf('webchat') !== -1)) {
         setTimeout(() => WebChat.open(), 150);
       }
     },
