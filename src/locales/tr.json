@@ -12,11 +12,11 @@
         "subtitle": "Sadece bir kısa mesaj uzağınızda!"
     },
 
-    "about": {
+    "tips": {
         "title": "Bana KOVİD-19 hakkında soru sorun",
-        "about_1": "Merhaba ben HealthBuddy. Bana sohbet penceresinden bir mesaj gönderirseniz size DSÖ/Avrupa ve UNICEF/ECARO güvenilir kaynaklarından yeni koronavirüs hastalığı (KOVİD-19) hakkında bilgi verebilirim.",
-        "about_2": "Başlamak için sadece 3 adım gerekiyor:",
-        "about_3": {
+        "tip_1": "Merhaba ben HealthBuddy. Bana sohbet penceresinden bir mesaj gönderirseniz size DSÖ/Avrupa ve UNICEF/ECARO güvenilir kaynaklarından yeni koronavirüs hastalığı (KOVİD-19) hakkında bilgi verebilirim.",
+        "tip_2": "Başlamak için sadece 3 adım gerekiyor:",
+        "tip_3": {
             "emphasis_1": "1. ",
             "emphasis_2": "2. ",
             "emphasis_3": "3. ",
@@ -25,9 +25,16 @@
             "text_3": "Tıpkı bir arkadaşlarınızla konuşuyormuş gibi, bana sorularınızı ana dilinizde iletebilirsiniz."
         }
     },
-    "features": {
-        "showFeatures": "yes",
+
+    "about": {
         "title": "HealthBuddy Hakkında",
+        "text_1": null,
+        "text_2": null,
+        "text_3": null
+    },
+
+    "features": {
+        "title": null,
         "text": "Sosyal medya ve internette yeni koronavirüs (KOVİD-19 virüsü) hakkında çok fazla yanlış bilgi ve söylenti dolanıyor. KOVİD-19 mücadelesindeki en büyük zorluklardan bir tanesi yanlış bilgilerdir. Bu nedenle, bilgi ve önerileri güvenilir kaynaklardan almanız önemlidir.",
         "feature_1_title": "Çoklu platform desteği",
         "feature_1_text": "HealthBuddy, kullanıcılara bilimsel ve kanıta dayalı bilgiler sunmak için Avrupa çapında birçok çevrimiçi platformda yer almaktadır.",

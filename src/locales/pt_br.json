@@ -11,11 +11,11 @@
         "subtitle": "Apenas a uma mensagem de texto de distância!"
     },
 
-    "about": {
+    "tips": {
         "title": "Pergunte-me sobre o COVID-19",
-        "about_1": "Olá, eu sou o seu HealthBuddy. Envie-me um texto na janela de conversa e eu lhe darei informações sobre a nova doença de coronavírus (COVID-19), de fontes seguras da OMS/Europa e UNICEF ECARO.",
-        "about_2": "3 passos para começar: ",
-        "about_3": {
+        "tip_1": "Olá, eu sou o seu HealthBuddy. Envie-me um texto na janela de conversa e eu lhe darei informações sobre a nova doença de coronavírus (COVID-19), de fontes seguras da OMS/Europa e UNICEF ECARO.",
+        "tip_2": "3 passos para começar: ",
+        "tip_3": {
             "emphasis_1": "1. Selecione o seu idioma ",
             "emphasis_2": "2. Selecione na lista de perguntas comuns ",
             "emphasis_3": "3. Envie-me as suas perguntas em linguagem natural ",
@@ -24,9 +24,16 @@
             "text_3": "como se estivesse a falar com o seu amigo."
         }
     },
-    "features": {
-        "showFeatures": "yes",
+
+    "about": {
         "title": "Sobre HealthBuddy",
+        "text_1": null,
+        "text_2": null,
+        "text_3": null
+    },
+
+    "features": {
+        "title": null,
         "text": "Há muitas informações erradas e mitos sobre o novo coronavírus (vírus COVID-19) que circulam na Internet e na comunicação social. A desinformação é um dos maiores desafios no combate ao COVID-19. É por isso que é importante obter as suas informações e conselhos de fontes seguras.",
         "feature_1_title": "Suporte multiplataforma",
         "feature_1_text": "HealthBuddy está disponível em várias plataformas online na Europa para fornecer aos utilizadores conselhos científicos e baseados em factos.",

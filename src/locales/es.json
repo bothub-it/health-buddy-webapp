@@ -11,11 +11,11 @@
         "subtitle": "A tu lado, ¡por sólo un mensaje!"
     },
 
-    "about": {
+    "tips": {
         "title": "Pregúntame sobre la COVID-19",
-        "about_1": "Hola, soy HealthBuddy. Envíame un texto en la ventana del chat y te daré información sobre la enfermedad causada por el nuevo coronavirus (COVID-19), desde las fuentes fiables de OMS/Europa y UNICEF ECARO.",
-        "about_2": "Tres pasos para empezar: ",
-        "about_3": {
+        "tip_1": "Hola, soy HealthBuddy. Envíame un texto en la ventana del chat y te daré información sobre la enfermedad causada por el nuevo coronavirus (COVID-19), desde las fuentes fiables de OMS/Europa y UNICEF ECARO.",
+        "tip_2": "Tres pasos para empezar: ",
+        "tip_3": {
             "emphasis_1": "1. Elige tu idioma ",
             "emphasis_2": "2. Elige una de las preguntas comunes ",
             "emphasis_3": "3. Mándame tus preguntas en lenguaje coloquial, ",
@@ -24,9 +24,16 @@
             "text_3": "tal como hablarías a un amigo."
         }
     },
-    "features": {
-        "showFeatures": "yes",
+
+    "about": {
         "title": "Acerca del HealthBuddy",
+        "text_1": null,
+        "text_2": null,
+        "text_3": null
+    },
+
+    "features": {
+        "title": null,
         "text": "Hay muchos mitos y rumores sobre el nuevo coronavirus (COVID-19) circulando en Internet y en las redes sociales, y la desinformación es uno de los mayores desafíos en la lucha contra esta enfermedad. Por eso es importante obtener información y consejos de fuentes fiables.",
         "feature_1_title": "Soporte multi-plataforma",
         "feature_1_text": "HealthBuddy está disponible en múltiples plataformas digitales en Europa y brinda a los usuarios consejos científicos basados en la evidencia.",
