@@ -12,11 +12,11 @@
         "subtitle": "Just a text message away!"
     },
 
-    "about": {
+    "tips": {
         "title": "Ask me about COVID-19",
-        "about_1": "Hi, I’m your HealthBuddy. Send me a text in the chat window and I will give you information about the novel coronavirus disease (COVID-19), from the trusted sources of WHO/Europe and UNICEF ECARO.",
-        "about_2": "3 steps to get started:",
-        "about_3": {
+        "tip_1": "Hi, I’m your HealthBuddy. Send me a text in the chat window and I will give you information about the novel coronavirus disease (COVID-19), from the trusted sources of WHO/Europe and UNICEF ECARO.",
+        "tip_2": "3 steps to get started:",
+        "tip_3": {
             "emphasis_1": "1. Select your language ",
             "emphasis_2": "2. Select from the list of common questions ",
             "emphasis_3": "3. Send me your questions in natural language ",
@@ -25,12 +25,16 @@
             "text_3": "as if you are talking to your friend."
         }
     },
-    "features": {
-        "showFeatures": "no",
+
+    "about": {
         "title": "About HealthBuddy",
         "text_1": "HealthBuddy is a multilingual interactive chatbot which was developed by WHO/Europe and the United Nations Children’s Fund (UNICEF) Europe and Central Asia Regional Office (ECARO) to provide access to accurate information, and counter misinformation surrounding the coronavirus.",
         "text_2": "The chatbot uses artificial intelligence to answer questions about COVID-19 and provides local information such as COVID-19 hotlines available in different countries.  Additionally, it allows users to report fake news, myths and rumours. The information received from the users will be monitored by technical team of WHO and UNICEF to update the information on the chatbot.",
-        "text_3": "In England, the chatbot was implemented with the support of the following partners",
+        "text_3": "In England, the chatbot was implemented with the support of the following partners"
+    },
+
+    "features": {
+        "title": "Featured on Healthbuddy",
         "text": "There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important get your information and advice from trusted sources.",
         "feature_1_title": "Multi-platform support",
         "feature_1_text": "HealthBuddy is available on multiple online platforms in Europe to provide users with scientific and evidence-based advice.",

@@ -11,11 +11,11 @@
         "subtitle": "Basta un messaggio!"
     },
 
-    "about": {
+    "tips": {
         "title": "Fammi le tue domande sul COVID-19",
-        "about_1": "Ciao, sono HealthBuddy, l’amico per la tua salute. Inviami un messaggio nella casella di dialogo per ricevere informazioni sul coronavirus (COVID-19) tratte da fonti attendibili dell’OMS/Europa e di UNICEF/ECARO.",
-        "about_2": "3 passaggi per iniziare:",
-        "about_3": {
+        "tip_1": "Ciao, sono HealthBuddy, l’amico per la tua salute. Inviami un messaggio nella casella di dialogo per ricevere informazioni sul coronavirus (COVID-19) tratte da fonti attendibili dell’OMS/Europa e di UNICEF/ECARO.",
+        "tip_2": "3 passaggi per iniziare:",
+        "tip_3": {
             "emphasis_1": "1. Seleziona la tua lingua ",
             "emphasis_2": "2. Sfoglia l'elenco delle domande frequenti ",
             "emphasis_3": "3. Scrivi le tue domande in un linguaggio spontaneo, ",
@@ -24,9 +24,16 @@
             "text_3": "come se stessi parlando con un tuo amico."
         }
     },
-    "features": {
-        "showFeatures": "yes",
+
+    "about": {
         "title": "A proposito di Healthbuddy",
+        "text_1": null,
+        "text_2": null,
+        "text_3": null
+    },
+
+    "features": {
+        "title": null,
         "text": "Su Internet e sui social media circolano molti miti e false informazioni sul nuovo coronavirus (COVID-19). La disinformazione è una delle più grandi sfide nella lotta contro questa malattia. Ecco perché è importante ottenere informazioni e consigli da fonti attendibili.",
         "feature_1_title": "Supporto multipiattaforma",
         "feature_1_text": "HealthBuddy è disponibile su diverse piattaforme online in Europa e fornisce agli utenti consigli basati su dati scientifici e riscontri concreti.",

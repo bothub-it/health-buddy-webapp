@@ -12,11 +12,11 @@
         "subtitle": "Suntem la un mesaj distanță"
     },
 
-    "about": {
+    "tips": {
         "title": "Întrebați-mă despre COVID-19",
-        "about_1": "Bună, eu sunt HealthBuddy, prietenul vostru cu informații despre sănătate. Trimiteți-mi un mesaj în fereastra de chat și vă voi oferi informații despre boala provocată de noul coronavirus (COVID-19). Informațiile vin din sursele de încredere ale Biroului Regional OMS pentru Europa și ale Biroului Regional UNICEF pentru Europa și Asia Centrală (ECARO).",
-        "about_2": "Pentru a începe, urmați acești 3 pași:",
-        "about_3": {
+        "tip_1": "Bună, eu sunt HealthBuddy, prietenul vostru cu informații despre sănătate. Trimiteți-mi un mesaj în fereastra de chat și vă voi oferi informații despre boala provocată de noul coronavirus (COVID-19). Informațiile vin din sursele de încredere ale Biroului Regional OMS pentru Europa și ale Biroului Regional UNICEF pentru Europa și Asia Centrală (ECARO).",
+        "tip_2": "Pentru a începe, urmați acești 3 pași:",
+        "tip_3": {
             "emphasis_1": "1.",
             "emphasis_2": "2.",
             "emphasis_3": "3.",
@@ -25,9 +25,16 @@
             "text_3": "Puneți întrebările folosind un limbaj obișnuit, de parcă ați vorbi cu un prieten."
         }
     },
-    "features": {
-        "showFeatures": "yes",
+
+    "about": {
         "title": "Despre HealthBuddy",
+        "text_1": null,
+        "text_2": null,
+        "text_3": null
+    },
+
+    "features": {
+        "title": null,
         "text": "Pe internet și pe rețelele de socializare circulă o mulțime de informații greșite și mituri despre noul coronavirus (virusul COVID-19). Una dintre cele mai mari provocări în lupta împotriva COVID-19 este dezinformarea. Tocmai din acest motiv este important să vă bazați doar pe informații și recomandări din surse de încredere.",
         "feature_1_title": "Acces pe mai multe platforme",
         "feature_1_text": "HealthBuddy este disponibil pe mai multe platforme online din Europa, pentru a vă oferi recomandări și sfaturi științifice și bazate pe dovezi.",

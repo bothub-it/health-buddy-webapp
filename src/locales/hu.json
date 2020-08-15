@@ -12,11 +12,11 @@
         "subtitle": "Küldjön szöveges üzenetet, és máris válaszolok!"
     },
 
-    "about": {
+    "tips": {
         "title": "Kérdezzen a COVID-19-ről!",
-        "about_1": "Üdvözlöm! Én vagyok HealthBuddy, az Ön személyes tanácsadója. Küldje el kérdését vagy üzenetét a chat ablakban, és válaszolok! Az új típusú koronavírusra vonatkozó információim kizárólag megbízható forrásból származnak – a WHO/Europe és az UNICEF ECARO szervezetektől.",
-        "about_2": "3 egyszerű lépésben veheti fel velem a kapcsolatot:",
-        "about_3": {
+        "tip_1": "Üdvözlöm! Én vagyok HealthBuddy, az Ön személyes tanácsadója. Küldje el kérdését vagy üzenetét a chat ablakban, és válaszolok! Az új típusú koronavírusra vonatkozó információim kizárólag megbízható forrásból származnak – a WHO/Europe és az UNICEF ECARO szervezetektől.",
+        "tip_2": "3 egyszerű lépésben veheti fel velem a kapcsolatot:",
+        "tip_3": {
             "emphasis_1": "1.",
             "emphasis_2": "2.",
             "emphasis_3": "3.",
@@ -25,9 +25,16 @@
             "text_3": "A kérdését egyszerű és közvetlen stílusban megfogalmazva küldje el nekem, mintha egy barátjával beszélgetne."
         }
     },
-    "features": {
-        "showFeatures": "yes",
+
+    "about": {
         "title": "A HealthBuddy-ról",
+        "text_1": null,
+        "text_2": null,
+        "text_3": null
+    },
+
+    "features": {
+        "title": null,
         "text": "Nagyon sok téves információ és hiedelem kering az interneten és a közösségi oldalakon az új típusú koronavírusról (COVID-19). A félrevezető információk kiszűrése a COVID-19 elleni küzdelem egyik legnagyobb kihívása. Ezért fontos, hogy biztosítsuk a megbízható forrásból származó információkat és tanácsokat mindenki számára.",
         "feature_1_title": "Számos platformon elérhető",
         "feature_1_text": "A HealthBuddy Európa-szerte számos online platformon keresztül elérhető, biztosítva a felhasználók számára a tudományos és bizonyítékokon alapuló információkhoz való hozzáférést.",

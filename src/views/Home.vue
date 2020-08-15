@@ -6,25 +6,40 @@
                   class="home__section"
                   :class="{'home__section__open': withMargin }">
       <h2 slot="title">
-        {{ $t('about.title') }}
+        {{ $t('tips.title') }}
       </h2>
       <div slot="text">
         <p>
-          {{ $t('about.about_1') }}
+          {{ $t('tips.tip_1') }}
           <br>
           <br>
-          {{ $t('about.about_2') }}
+          {{ $t('tips.tip_2') }}
           <br>
         </p>
         <p>
-          <strong>{{ $t('about.about_3.emphasis_1') }}</strong> {{ $t('about.about_3.text_1') }}
+          <strong>{{ $t('tips.tip_3.emphasis_1') }}</strong> {{ $t('tips.tip_3.text_1') }}
         </p>
         <p>
-          <strong>{{ $t('about.about_3.emphasis_2') }}</strong> {{ $t('about.about_3.text_2') }}
+          <strong>{{ $t('tips.tip_3.emphasis_2') }}</strong> {{ $t('tips.tip_3.text_2') }}
         </p>
         <p>
-          <strong>{{ $t('about.about_3.emphasis_3') }}</strong> {{ $t('about.about_3.text_3') }}
+          <strong>{{ $t('tips.tip_3.emphasis_3') }}</strong> {{ $t('tips.tip_3.text_3') }}
         </p>
+      </div>
+    </text-section>
+    <text-section  class="home__section"
+                   :class="{'home__section__open': withMargin }">
+      <h2 slot="title">
+        {{ $t('features.title') }}
+      </h2>
+      <div slot="text">
+        <p>
+          {{ $t('features.text') }}
+        </p>
+
+        <FeatureList :list="features"
+                     slot="content"
+                     class="home__section"/>
       </div>
     </text-section>
 
@@ -51,6 +66,7 @@ import TextSection from '@/components/TextSection';
 import InfoVideoList from '@/components/InfoVideoList';
 import { mapGetters } from 'vuex';
 import { isMobile } from '@/util/browser';
+import FeatureList from '../components/FeatureList';
 
 export default {
   name: 'Home',
@@ -58,6 +74,7 @@ export default {
       Hero,
       TextSection,
       InfoVideoList,
+    FeatureList,
   },
   data() {
     return {
@@ -112,6 +129,30 @@ export default {
     ]),
     withMargin() {
       return this.isOpen && !isMobile();
+    },
+    features() {
+      return [
+        {
+          iconName: "mdi mdi-comment-check-outline",
+          title: this.$t( 'features.feature_1_title'),
+          text: this.$t( 'features.feature_1_text'),
+        },
+        {
+          iconName: "mdi mdi-earth",
+          title: this.$t( 'features.feature_2_title'),
+          text: this.$t( 'features.feature_2_text'),
+        },
+        {
+          iconName: "mdi mdi-vector-intersection",
+          title: this.$t( 'features.feature_3_title'),
+          text: this.$t( 'features.feature_3_text'),
+        },
+        {
+          iconName: "mdi mdi-book-open-variant",
+          title: this.$t( 'features.feature_4_title'),
+          text: this.$t( 'features.feature_4_text'),
+        },
+      ];
     },
   },
   mounted() {
