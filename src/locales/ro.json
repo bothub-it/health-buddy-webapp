@@ -28,9 +28,9 @@
 
     "about": {
         "title": "Despre HealthBuddy",
-        "text_1": null,
-        "text_2": null,
-        "text_3": null
+        "text_1": "HealthBuddy este un chatbot interactiv disponibil în mai multe limbi, dezvoltat de OMS Europa împreună cu UNICEF și ECARO (Biroul Regional pentru Asia Centrală), pentru a oferi acces la informații corecte și pentru a combate dezinformarea legată de coronavirus.",
+        "text_2": "Chatbotul folosește inteligența artificială pentru a răspunde la întrebări despre COVID-19 și oferă informații de nivel local, cum ar fi linii telefonice de tip telverde disponibile în diferite țări. În plus, acesta oferă utilizatorilor posibilitatea de a raporta știri false, mituri și zvonuri. Informațiile primite de la utilizatori vor fi monitorizate de echipele tehnice ale OMS și UNICEF, pentru a actualiza informațiile din chatbot.",
+        "text_3": "Chatbotul a fost implementar cu spijinul următorilor parteneri"
     },
 
     "features": {
