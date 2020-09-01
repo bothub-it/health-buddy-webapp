@@ -28,13 +28,13 @@
 
     "about": {
         "title": "HealthBuddy Hakkında",
-        "text_1": null,
-        "text_2": null,
-        "text_3": null
+        "text_1": "HealthBuddy, doğru bilgilere erişim sağlamak ve koronavirüs hakkındaki yanlış bilgilerin yayılmasını engellemek için DSÖ Avrupa Bölge Ofisi ve Birleşmiş Milletler Çocuk Fonu (UNICEF) Avrupa ve Orta Asya Bölge Ofisi (ECARO) tarafından geliştirilen çok dilli ve etkileşimli bir sohbet robotudur.",
+        "text_2": "Chatbot, COVID-19 hakkındaki soruları yanıtlamak için yapay zeka kullanır ve farklı ülkelerde bulunan COVID-19 yardım hatları gibi yerel bilgiler sağlar. Ek olarak, kullanıcıların sahte haberleri, şehir efsaneleri ve söylentileri bildirmelerine olanak sağlar. Kullanıcılardan alınan bilgiler, DSÖ ve UNICEF teknik ekibi tarafından takip edilerek sistemde güncellenmektedir.",
+        "text_3": "Türkiye'de HealthBuddy chatbot uygulaması aşağıdaki proje ortaklarının desteğiyle hayata geçmiştir."
     },
 
     "features": {
-        "title": null,
+        "title": "null",
         "text": "Sosyal medya ve internette yeni koronavirüs (KOVİD-19 virüsü) hakkında çok fazla yanlış bilgi ve söylenti dolanıyor. KOVİD-19 mücadelesindeki en büyük zorluklardan bir tanesi yanlış bilgilerdir. Bu nedenle, bilgi ve önerileri güvenilir kaynaklardan almanız önemlidir.",
         "feature_1_title": "Çoklu platform desteği",
         "feature_1_text": "HealthBuddy, kullanıcılara bilimsel ve kanıta dayalı bilgiler sunmak için Avrupa çapında birçok çevrimiçi platformda yer almaktadır.",
