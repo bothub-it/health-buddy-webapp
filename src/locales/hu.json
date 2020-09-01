@@ -28,13 +28,13 @@
 
     "about": {
         "title": "A HealthBuddy-ról",
-        "text_1": null,
-        "text_2": null,
-        "text_3": null
+        "text_1": "A HealthBuddy egy többnyelvű interaktív csevegőrobot, amelyet a WHO / Európa és az ENSZ Gyermekalapja (UNICEF) Európai és Közép-Ázsiai Regionális Irodája (ECARO) fejlesztett ki annak érdekében, hogy hozzáférést biztosítson a pontos információkhoz, és ellensúlyozza a koronavírus körüli tévhiteket.",
+        "text_2": "A chatbot mesterséges intelligenciával válaszol a COVID-19-re vonatkozó kérdésekre, és a különböző országokban helyi információkkal szolgál, például COVID-19 segélyvonalakról. Ezenkívül a felhasználók számára lehetővé teszi, hogy jelezzék, ha hamis híreket, mítoszokat és pletykákat hallanak a COVID-19-ről. A WHO és az UNICEF technikai csoportja figyelemmel kíséri a felhasználóktól kapott információkat és frissíti a chatboton található kérdéseket és válaszokat.",
+        "text_3": "Magyarországon a chatbot a Nemzeti Népegészségügyi Központ (NNK) támogatásával valósult meg."
     },
 
     "features": {
-        "title": null,
+        "title": "Mit nyújt a HealthBuddy",
         "text": "Nagyon sok téves információ és hiedelem kering az interneten és a közösségi oldalakon az új típusú koronavírusról (COVID-19). A félrevezető információk kiszűrése a COVID-19 elleni küzdelem egyik legnagyobb kihívása. Ezért fontos, hogy biztosítsuk a megbízható forrásból származó információkat és tanácsokat mindenki számára.",
         "feature_1_title": "Számos platformon elérhető",
         "feature_1_text": "A HealthBuddy Európa-szerte számos online platformon keresztül elérhető, biztosítva a felhasználók számára a tudományos és bizonyítékokon alapuló információkhoz való hozzáférést.",
