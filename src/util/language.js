@@ -64,5 +64,10 @@ export const validLanguages = [
     name: 'Հայաստան',
     browserCode: 'hy',
   },
+  {
+    id: 'kg',
+    name: 'Кыргызстан',
+    browserCode: 'kg',
+  },
 ];
 
