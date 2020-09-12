@@ -15,8 +15,35 @@
           {{ $t('about.text_2') }}
         </p>
         <p>
-          {{ $t('about.text_3') }}
+          {{ $t('about.text_3-1') }}
         </p>
+
+        <ul>
+          <li class="">
+            <span class="has-text-weight-bold">{{ $t('about.feature_1_title') }}</span>:
+            {{ $t('about.feature_1_text') }}
+          </li>
+          <li class="">
+            <span class="has-text-weight-bold">{{ $t('about.feature_2_title') }}</span>:
+            {{ $t('about.feature_2_text') }}
+          </li>
+          <li class="">
+            <span class="has-text-weight-bold">{{ $t('about.feature_3_title') }}</span>:
+            {{ $t('about.feature_3_text') }}
+          </li>
+        </ul>
+        <p>
+          {{ $t('about.text_4') }}
+        </p>
+
+        <h3 class="has-text-weight-bold">
+          {{ $t('about.text_title_5') }}
+        </h3>
+
+        <p>
+          {{ $t('about.text_5') }}
+        </p>
+
       </div>
     </text-section>
   </div>
@@ -49,5 +76,9 @@ export default {
     max-width: 1140px;
     padding: 60px 0;
     margin: 0 auto;
+
+  ul {
+    margin-bottom: 20px;
+  }
 }
 </style>
