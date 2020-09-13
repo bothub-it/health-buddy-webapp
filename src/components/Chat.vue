@@ -56,7 +56,10 @@ export default {
     },
     openChat() {
       if (this.$router.currentRoute.fullPath.indexOf('about') === -1 && (!isMobile() || this.$router.currentRoute.hash.indexOf('webchat') !== -1)) {
-        setTimeout(() => WebChat.open(), 150);
+        setTimeout(() => {
+          WebChat.open();
+          WebChat.dropMessages();
+        }, 150);
       }
     },
     updateOpenStatus() {
