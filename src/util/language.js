@@ -66,7 +66,7 @@ export const validLanguages = [
   },
   {
     id: 'kg',
-    name: 'Кыргызстан',
+    name: 'Кыргызча',
     browserCode: 'kg',
   },
 ];
