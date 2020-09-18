@@ -12110,7 +12110,12 @@
        },
        g = function() {
          var e = document.getElementById("messages");
-         e && (e.scrollTop = sum + 25 || e.scrollHeight);
+         // e && (e.scrollTop = sum + 25 || e.scrollHeight);
+         // manually included:
+         var messagesFromUser = document.querySelectorAll('.group-message.from-client');
+         if (document.querySelectorAll('.group-message.from-response:last-child > *').length === 1 && messagesFromUser.length > 0) {
+          e.scrollTop = messagesFromUser[messagesFromUser.length - 1].offsetTop - e.offsetHeight;
+         }
        },
        v = function(e) {
          function t() {
