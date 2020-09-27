@@ -1,0 +1,99 @@
+{
+    "navbar": {
+        "home": "Kreu",
+        "about": "Rreth",
+        "videos": "Videot",
+        "languages": "Gjuhët",
+        "bot": "Bot"
+    },
+
+    "hero": {
+        "title": "Miku yt i posaçëm për informacione në lidhje me COVID-19 në Evropë dhe Azinë Qendrore.",
+        "subtitle": "Vetëm një mesazh larg!"
+    },
+
+    "tips": {
+        "title": "Më pyet për COVID-19",
+        "tip_1": "Përshëndetje, unë jam miku yt HealthBuddy. Më dërgo një mesazh në kutinë e bisedës dhe unë do të të jap informacion në lidhje me sëmundjen e koronavirusit të ri (COVID-19), nga burime të besuara të OBSH-së/Evropë dhe ECARO UNICEF.",
+        "tip_2": "3 hapa për të filluar:",
+        "tip_3": {
+            "emphasis_1": "1.",
+            "emphasis_2": "2.",
+            "emphasis_3": "3.",
+            "text_1": "Zgjidh gjuhën tënde nga menuja e gjuhës në krye të kësaj faqeje interneti.",
+            "text_2": "Zgjidh nga lista e pyetjeve të zakonshme për të marrë përgjigje të shpejta.",
+            "text_3": "Më dërgo pyetjet e tua në gjuhë të thjeshtë sikur po flet me mikun tënd."
+        }
+    },
+
+    "about": {
+        "title": "Rreth HealthBuddy",
+        "text_1": "HealthBuddy is a multilingual interactive chatbot which was developed by WHO Regional office for Europe (WHO/Europe) and the UNICEF Regional office for Europe and Central Asia (ECARO) to provide access to accurate information, and counter misinformation surrounding the coronavirus.",
+        "text_2": "The chatbot uses artificial intelligence to answer questions about COVID-19 and provides local information such as COVID-19 hotlines available in different countries. Additionally, it allows users to report fake news, myths and rumours. The information received from the users will be monitored by technical team of WHO and UNICEF to update the information on the chatbot.",
+        "text_3-1": "A new mobile app \"HealthBuddy+\" presents several features to maximize the users’ experience and ability to find the answers they are looking for. It has three main features:",
+        "feature_1_title": "CHATBOT",
+        "feature_1_text": "Through the chatbot, users can get answers to their questions on COVID-19.",
+        "feature_2_title": "POLLS",
+        "feature_2_text": "Users can join the polls and share their thoughts on critical aspects of the COVID-19 response. Their opinion will help to provide support to tackle COVID-19.",
+        "feature_3_title": "RUMOURS",
+        "feature_3_text": "Users can use the rumour reporting tool to report rumors circulating in their communities which will help the team to check the rumor and update the app with new important information.",
+        "text_4": "Healthbuddy+ is continuously updated based on users’ needs and new scientific research.",
+        "text_title_5": "Support",
+        "text_5": "Users can send any issue by email to admin@healthbuddy.info."
+    },
+
+    "features": {
+        "title": "Veçoritë e HealthBuddy",
+        "text": "Në internet dhe në mediat sociale po qarkullojnë shumë keqinformime dhe mite rreth koronavirusit të ri (virusi COVID-19). Keqinformimi është një nga sfidat më të mëdha në luftën kundër COVID-19. Kjo është arsyeja pse është e rëndësishme të marrësh informacion dhe këshilla nga burime të besueshme.",
+        "feature_1_title": "Mbështetje në shumë platforma",
+        "feature_1_text": "HealthBuddy është i disponueshëm në shumë platforma online në Evropë për t'iu ofruar përdoruesve këshilla shkencore dhe të bazuara në prova.",
+        "feature_2_title": "Mbështetje në shumë gjuhë",
+        "feature_2_text": "HealthBuddy zbulon gjuhën e shfletuesit tënd dhe do të flasë automatikisht në atë gjuhë, nëse është e mundur. Gjithashtu, mund ta ndryshosh gjuhën me anë të menusë së gjuhëve.",
+        "feature_3_title": "Informacion i saktë për COVID-19",
+        "feature_3_text": "HealthBuddy mbështetet nga ekspertë të OBSH-së/Evropë dhe ECARO UNICEF dhe do të të ofrojë informacion të saktë për COVID-19.",
+        "feature_4_title": "Si të luftojmë thashethemet dhe lajmet e rreme",
+        "feature_4_text": "Nëse dëgjon ndonjë thashethem apo deklaratë të rremë në komunitetin ose rajonin tënd, mund ta raportosh këtu. HealthBuddy do t'i mbledhë ato dhe do të qartësojë informacionin."
+    },
+
+    "videos": {
+        "title": "Videot",
+        "video_1_title": "Protecting Your Family from Coronavirus",
+        "video_1_url": "https://www.youtube.com/embed/QYxzo3-qZRc",
+        "video_2_title": "COVID-19 (Coronavirus Disease 19) March Update- causes, symptoms, diagnosis, treatment, pathology",
+        "video_2_url": "https://www.youtube.com/embed/JKpVMivbTfg",
+        "video_3_title": "Coronavirus outbreak... | UNICEF",
+        "video_3_url": "https://www.youtube.com/embed/ujWFj_6FaMY",
+        "video_4_title": "Novel coronavirus (2019-nCoV)",
+        "video_4_url": "https://www.youtube.com/embed/mOV1aBVYKGA"
+    },
+
+    "extraInfo": {
+        "text": "HealthBuddy është një nismë e përbashkët e Zyrës Rajonale të UNICEF-it për Evropën dhe Azinë Qëndrore dhe Zyrës Rajonale të OBSH-së për Evropën."
+    },
+
+    "footer": {
+        "policy": "Kliko këtu për të parë politikën tonë të privatësisë",
+        "bothub": "HealthBuddy është mundësuar nga Bothub dhe RapidPro © 2020 Të gjitha të drejtat e rezervuara."
+    },
+
+    "policy": {
+        "title": "Politika e privatësisë",
+        "section_1_title": "Çfarë informacioni mbledhim?",
+        "section_1_text": "Ne mbledhim informacion nga ti vetëm kur dëshiron të raportosh thashetheme, të japësh ndonjë sugjerim ose të bësh pyetje përmes kutisë së bisedës. Një informacion i tillë mund të përfshijë informacione jopersonale në lidhje me përdorimin e faqes së internetit nga ti. Ne nuk marrim asnjë informacion personal në lidhje me ty kur hyn në këtë faqe interneti ose në \"chatbot\".",
+        "section_2_title": "Si e mbrojmë informacionin tënd?",
+        "section_2_text": "Ne zbatojmë një sërë masash sigurie për të ruajtur sigurinë e informacionit tënd personal kur shkruan, dërgon ose akseson informacionin tënd personal.\nOfrojmë përdorimin e një serveri të sigurt. I gjithë informacioni i dërguar transmetohet përmes teknologjisë \"Secure Socket Layer (SSL)\".",
+        "section_3_title": "A i përdorim kukit?",
+        "section_3_text": "Po. Kukit janë skedarë të vegjël që një faqe ose ofruesi i shërbimit të saj i transferon në hard diskun e kompjuterit tënd përmes shfletuesit të internetit (nëse e lejon). Ata mundësojnë që faqet ose sistemet e ofruesit të shërbimit të njohin shfletuesin tënd dhe të mbledhin e të ruajnë disa informacione të caktuara. \nNe i përdorim kukit për të kuptuar dhe për të ruajtur preferencat e tua për vizitat e ardhshme dhe përpilojmë të dhëna të përgjithshme në lidhje me trafikun e faqes dhe ndërveprimin në të, në mënyrë që të mund të ofrojmë përvoja dhe mjete më të mira për faqen në të ardhmen. Ne mund të kontraktojmë ofrues shërbimi të palëve të treta për të na ndihmuar të kuptojmë më mirë vizitorët e faqes sonë. Ofruesve të shërbimit nuk u lejohet të përdorin informacionin e mbledhur në emrin tonë, përveçse për të na ndihmuar që të drejtojmë dhe të përmirësojmë biznesin tonë.",
+        "section_4_title": "Kush ka akses në mesazhet e tua?",
+        "section_4_text": "Informacioni që transmetohet ose ruhet në RapidPro ose Bothub është i disponueshëm vetëm për të ndihmuar në gjurmimin e thashethemeve dhe përmirësimin e \"chatbot\"-it duke u bazuar në sugjerimet e tua.\nVi re se organizata të caktuara të palëve të treta, të tilla si ofruesit e shërbimeve celulare që përdoren për të transmetuar mesazhet, mund të kenë akses në mesazhet e transmetuara përmes kanaleve të mediave sociale. Këto organizata mund të kenë rregullat, politikat dhe masat e tyre të sigurisë që kontrollojnë se kush ka akses në mesazhet e transmetuara përmes shërbimeve të tyre.",
+        "section_5_title": "A u zbulojmë ndonjë informacion palëve të jashtme?",
+        "section_5_text": "Ne nuk shesim, tregtojmë, apo transferojmë te palët e jashtme informacionin tënd personal të identifikueshëm. Këtu nuk përfshihen palët e treta të besuara që na ndihmojnë me funksionimin e faqes sonë të internetit, kryerjen e biznesit tonë ose për të të shërbyer, për sa kohë që këto palë bien dakord ta mbajnë këtë informacion konfidencial. Gjithashtu, ne mund t'i japim informacionet e tua kur besojmë se kjo është e duhura për të qenë në përputhje me ligjin, për të zbatuar politikat e faqes ose për të mbrojtur të drejtat, pronën ose sigurinë tonë apo të të tjerëve. Sidoqoftë, informacioni i vizitorëve jo personalisht i identifikueshëm mund t'iu jepet palëve të tjera për qëllime marketingu, reklamimi ose përdorime të tjera.",
+        "section_6_title": "A përdorim lidhje të palëve të treta?",
+        "section_6_text": "Herë pas here, sipas gjykimit tonë, ne mund të përfshijmë ose të ofrojmë produkte ose shërbime të palëve të treta në faqen tonë të internetit. Këto faqe të palëve të treta kanë politika të veçanta dhe të pavarura të privatësisë. Prandaj, nuk kemi asnjë përgjegjësi për përmbajtjen dhe veprimtaritë e këtyre faqeve të lidhura. Sidoqoftë, ne synojmë të mbrojmë integritetin e faqes sonë dhe mirëpresim çdo sugjerim në lidhje me këto faqe.",
+        "section_7_title": "Miratimi yt",
+        "section_7_text": "Duke përdorur faqen tonë, pranon politikën tonë të privatësisë në internet.",
+        "section_8_title": "Changes to our privacy policy",
+        "section_8_text": "If we decide to change our privacy policy, we will post those changes on this page, and/or update the privacy policy modification date below.",
+        "updated": "This privacy policy was last updated on 23 March 2020."
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "navbar": {
+        "home": "Početna",
+        "about": "Više informacija",
+        "videos": "Video snimci",
+        "languages": "Jezici",
+        "bot": "Bot"
+    },
+
+    "hero": {
+        "title": "Vaš pravi drugar za informacije o bolesti COVID-19 u Evropi i Centralnoj Aziji.",
+        "subtitle": "Na samo jedan SMS od vas!"
+    },
+
+    "tips": {
+        "title": "Pitajte me nešto o bolesti COVID-19",
+        "tip_1": "Zdravo, ja sam vaš HealthBuddy. Pošaljite mi poruku u prozoru za čet i daću vam informacije o bolesti koju izaziva novi korona virus (COVID-19), koje potiču iz pouzdanih izvora SZO/Evropa i UNICEF ECARO.",
+        "tip_2": "3 početna koraka:",
+        "tip_3": {
+            "emphasis_1": "1.",
+            "emphasis_2": "2.",
+            "emphasis_3": "3.",
+            "text_1": "Izaberite svoj jezik iz padajućeg menija sa jezicima pri vrhu ove veb-stranice.",
+            "text_2": "Izaberite sa liste čestih pitanja da biste brzo dobili odgovore.",
+            "text_3": "Pošaljite mi svoja pitanja sročena najprirodnije, kao da pričate sa prijateljem."
+        }
+    },
+
+    "about": {
+        "title": "O četbotu HealthBuddy",
+        "text_1": "HealthBuddy is a multilingual interactive chatbot which was developed by WHO Regional office for Europe (WHO/Europe) and the UNICEF Regional office for Europe and Central Asia (ECARO) to provide access to accurate information, and counter misinformation surrounding the coronavirus.",
+        "text_2": "The chatbot uses artificial intelligence to answer questions about COVID-19 and provides local information such as COVID-19 hotlines available in different countries. Additionally, it allows users to report fake news, myths and rumours. The information received from the users will be monitored by technical team of WHO and UNICEF to update the information on the chatbot.",
+        "text_3-1": "A new mobile app \"HealthBuddy+\" presents several features to maximize the users’ experience and ability to find the answers they are looking for. It has three main features:",
+        "feature_1_title": "CHATBOT",
+        "feature_1_text": "Through the chatbot, users can get answers to their questions on COVID-19.",
+        "feature_2_title": "POLLS",
+        "feature_2_text": "Users can join the polls and share their thoughts on critical aspects of the COVID-19 response. Their opinion will help to provide support to tackle COVID-19.",
+        "feature_3_title": "RUMOURS",
+        "feature_3_text": "Users can use the rumour reporting tool to report rumors circulating in their communities which will help the team to check the rumor and update the app with new important information.",
+        "text_4": "Healthbuddy+ is continuously updated based on users’ needs and new scientific research.",
+        "text_title_5": "Support",
+        "text_5": "Users can send any issue by email to admin@healthbuddy.info."
+    },
+
+    "features": {
+        "title": "Funkcije četbota HealthBuddy",
+        "text": "Internetom i društvenim mrežama kruže brojne pogrešne informacije i mitovi o novom korona virusu (virus koji izaziva bolest COVID-19). Pogrešne informacije su jedan od najvećih izazova u borbi protiv bolesti COVID-19. Zato je važno da informacije i savete primate iz pouzdanih izvora.",
+        "feature_1_title": "Podrška za više platformi",
+        "feature_1_text": "HealthBuddy je dostupan na više onlajn platformi u Evropi, a korisnicima pruža naučne savete zasnovane na dokazima.",
+        "feature_2_title": "Podrška na više jezika",
+        "feature_2_text": "HealthBuddy detektuje jezik vašeg pregledača i, ako je podržan, automatski vam se obraća na tom jeziku. Pored toga, jezik možete da promenite u meniju za jezike.",
+        "feature_3_title": "Tačne informacije o bolesti COVID-19",
+        "feature_3_text": "HealthBuddy podržavaju stručnjaci iz SZO/Evropa i UNICEF ECARO-a, a pružiće vam tačne informacije o bolesti COVID-19.",
+        "feature_4_title": "Suzbijanje glasina i lažnih vesti",
+        "feature_4_text": "Ako u okviru svoje zajednice ili regiona čujete glasine ili lažne izjave, možete da nam ih prijavite ovde. HealthBuddy će ih prikupiti i objasniti šta je zaista istina."
+    },
+
+    "videos": {
+        "title": "Video snimci",
+        "video_1_title": "Protecting Your Family from Coronavirus",
+        "video_1_url": "https://www.youtube.com/embed/QYxzo3-qZRc",
+        "video_2_title": "COVID-19 (Coronavirus Disease 19) March Update- causes, symptoms, diagnosis, treatment, pathology",
+        "video_2_url": "https://www.youtube.com/embed/JKpVMivbTfg",
+        "video_3_title": "Coronavirus outbreak... | UNICEF",
+        "video_3_url": "https://www.youtube.com/embed/ujWFj_6FaMY",
+        "video_4_title": "Novel coronavirus (2019-nCoV)",
+        "video_4_url": "https://www.youtube.com/embed/mOV1aBVYKGA"
+    },
+
+    "extraInfo": {
+        "text": "HealthBuddy je zajednička inicijativa UNICEF-ove Regionalne kancelarije za Evropu i Centralnu Aziju i Regionalne kancelarije SZO za Evropu."
+    },
+
+    "footer": {
+        "policy": "Kliknite ovde da pogledate našu politiku privatnosti",
+        "bothub": "HealthBuddy omogućuju Bothub i RapidPro © 2020. Sva prava zadržana."
+    },
+
+    "policy": {
+        "title": "Politika privatnosti",
+        "section_1_title": "Koje podatke prikupljamo?",
+        "section_1_text": "Vaše podatke prikupljamo samo kada prijavljujete glasine, dajete nam povratne informacije ili postavljate pitanja kroz okvir za čet. U te podatke mogu da spadaju obezličeni podaci o vašem korišćenju veb-sajta. Ne beležimo lične podatke o vama kada pristupate ovom veb-sajtu ili četbotu.",
+        "section_2_title": "Kako štitimo vaše podatke?",
+        "section_2_text": "Primenjujemo brojne mere očuvanja bezbednosti vaših ličnih podataka kada ih unesete, pošaljete ili im pristupite.\nNudimo korišćenje zaštićenog servera. Svi dostavljeni podaci se prenose putem tehnologije SSL (Secure Socket Layer).",
+        "section_3_title": "Da li koristimo kolačiće?",
+        "section_3_text": "Da. Kolačići su male datoteke koje sajt ili njegov pružalac usluge šalje na hard disk vašeg računara putem veb-pregledača (ako to dozvolite). Oni omogućavaju sistemima sajta, odnosno pružaoca usluge, da prepoznaju vaš pregledač i zabeleže i upamte određene podatke. \nKoristimo kolačiće da bismo mogli da razumemo i sačuvamo vaša podešavanja za buduće posete i da prikupljamo objedinjene podatke o saobraćaju na sajtu i interakciji sa sajtom, a sve sa ciljem pružanja kvalitetnije upotrebe sajta i alatki u budućnosti. Možemo da sklapamo ugovore sa spoljnim pružaocima usluga da bi nam olakšali razumevanje posetilaca našeg sajta. Tim pružaocima usluga nije dozvoljeno da koriste podatke koje prikupe u naše ime na drugi način osim da nam olakšaju i poboljšaju poslovanje.",
+        "section_4_title": "Ko ima pristup vašim porukama?",
+        "section_4_text": "Podaci koji se prenose kroz RapidPro ili Bothub ili se na njima čuvaju služe samo za praćenje glasina i poboljšavanje četbota na osnovu vaših povratnih informacija.\nImajte u vidu da porukama koje se prenose putem kanala društvenih mreža mogu da pristupaju određene spoljne organizacije, poput pružalaca usluga mobilne telefonije radi prenosa poruka. Te organizacije mogu imati sopstvena pravila, smernice i mere zaštite kojima određuju ko ima pristup porukama prenetim preko njihovih usluga.",
+        "section_5_title": "Da li obelodanjujemo podatke spoljnim licima?",
+        "section_5_text": "Vaše lične identifikacione podatke ne prodajemo spoljnim licima, ne trgujemo takvim podacima sa njima niti na drugi način prenosimo takve podatke. Ovde ne spadaju pouzdana treća lica koja nam pomažu oko vođenja našeg veb-sajta, poslovanja ili pružanja usluga vama, pod uslovom da takva lica pristanu da čuvaju poverljivost pomenutih podataka. Takođe, možemo da obelodanjujemo vaše podatke kada smatramo da je takvo obelodanjivanje neophodno za poštovanje zakona, primenu smernica našeg sajt ili zaštite naših ili tuđih prava, imovine ili bezbednosti. Međutim, bezlični identifikacioni podaci o posetiocima se mogu pružati drugim licima u svrhe marketinga, reklamiranja i u druge svrhe.",
+        "section_6_title": "Da li koristimo spoljne linkove?",
+        "section_6_text": "Povremeno i po sopstvenom nahođenju možemo da postavimo ili nudimo proizvode ili usluge trećih lica na našem veb-sajtu. Ti sajtovi trećih lica imaju zasebne, nezavisne politike privatnosti. Stoga ne snosimo odgovornost za sadržaj i aktivnosti tih sajtova za koje pružamo linkove. Bez obzira na to, nastojimo da štitimo integritet našeg sajta i rado prihvatamo povratne informacije o tim sajtovima.",
+        "section_7_title": "Vaš pristanak",
+        "section_7_text": "Time što koristite naš sajt potvrđujete da pristajete na našu onlajn politiku privatnosti.",
+        "section_8_title": "Changes to our privacy policy",
+        "section_8_text": "If we decide to change our privacy policy, we will post those changes on this page, and/or update the privacy policy modification date below.",
+        "updated": "This privacy policy was last updated on 23 March 2020."
+    }
+}
