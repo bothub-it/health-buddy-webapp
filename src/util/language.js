@@ -69,5 +69,10 @@ export const validLanguages = [
     name: 'Кыргызча',
     browserCode: 'kg',
   },
+  {
+    id: 'sq',
+    name: 'Shqip',
+    browserCode: 'sq',
+  },
 ];
 
