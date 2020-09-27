@@ -263,7 +263,7 @@ export default {
 //}
 //
 //
-#webchat .push-widget-container:not(.chat-open):after {
+#webchat .push-widget-container:not(.push-chat-open):after {
   content: '';
   display: block;
   position: absolute;
