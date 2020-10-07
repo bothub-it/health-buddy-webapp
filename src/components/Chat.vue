@@ -110,6 +110,7 @@ export default {
           storage: "session"
         },
         suggestionsConfig: {
+          url: 'https://api.bothub.it/v2/repository/examples/search_repositories_examples/',
           datasets: [
             "4771b0b2-4859-49a7-a170-163ec9b34d22"
           ],
