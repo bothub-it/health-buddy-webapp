@@ -33,7 +33,8 @@ export default {
   },
   data() {
     return {
-      initalized: false
+      initalized: false,
+      botConfig: undefined,
     };
   },
   watch: {
@@ -43,8 +44,10 @@ export default {
         this.setupChat();
         this.updateOpenStatus();
       } else {
+        this.botConfig.initPayload = this.initPayload;
+        this.botConfig.suggestionsConfig.language = (this.language || '').split('-')[0];
         WebChat.clear();
-        this.sendInitial()
+        WebChat.reload();
       }
     },
     $route (to){
@@ -78,7 +81,7 @@ export default {
       }, 100);
     },
     setupChat() {
-      WebChat.default.init({
+      this.botConfig = {
         selector: '#webchat',
         initPayload: this.initialPayload,
         channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
@@ -114,10 +117,11 @@ export default {
           datasets: [
             "4771b0b2-4859-49a7-a170-163ec9b34d22"
           ],
-          language: this.language,
+          language: (this.language || '').split('-')[0],
           excludeIntents: ['bias']
         },
-      });
+      };
+      WebChat.default.init(this.botConfig);
       this.sendInitial();
       this.openChat();
 
@@ -169,19 +173,19 @@ export default {
 }
 
 @media (min-height: 500px) {
-  .push-widget-container {
+  .push-widget-container.push-chat-open {
     min-height: 72vh;
   }
 }
 
 @media (min-height: 610px) {
-  .push-widget-container {
+  .push-widget-container.push-chat-open {
     min-height: 80vh;
   }
 }
 
 @media (min-height: 735px) {
-  .push-widget-container {
+  .push-widget-container.push-chat-open {
     min-height: 85vh;
   }
 }
