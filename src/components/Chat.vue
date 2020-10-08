@@ -44,10 +44,9 @@ export default {
         this.setupChat();
         this.updateOpenStatus();
       } else {
-        this.botConfig.initPayload = this.initPayload;
         this.botConfig.suggestionsConfig.language = (this.language || '').split('-')[0];
         WebChat.clear();
-        WebChat.reload();
+        this.sendInitial();
       }
     },
     $route (to){
