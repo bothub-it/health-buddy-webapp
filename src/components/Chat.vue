@@ -33,7 +33,8 @@ export default {
   },
   data() {
     return {
-      initalized: false
+      initalized: false,
+      botConfig: undefined,
     };
   },
   watch: {
@@ -43,8 +44,9 @@ export default {
         this.setupChat();
         this.updateOpenStatus();
       } else {
+        this.botConfig.suggestionsConfig.language = (this.language || '').split('-')[0];
         WebChat.clear();
-        this.sendInitial()
+        this.sendInitial();
       }
     },
     $route (to){
@@ -78,7 +80,7 @@ export default {
       }, 100);
     },
     setupChat() {
-      WebChat.default.init({
+      this.botConfig = {
         selector: '#webchat',
         initPayload: this.initialPayload,
         channelUuid: '0e004b79-bd8b-4145-9279-3ee8cece2f87',
@@ -110,13 +112,15 @@ export default {
           storage: "session"
         },
         suggestionsConfig: {
+          url: 'https://api.bothub.it/v2/repository/examples/search_repositories_examples/',
           datasets: [
             "4771b0b2-4859-49a7-a170-163ec9b34d22"
           ],
-          language: this.language,
+          language: (this.language || '').split('-')[0],
           excludeIntents: ['bias']
         },
-      });
+      };
+      WebChat.default.init(this.botConfig);
       this.sendInitial();
       this.openChat();
 
@@ -168,19 +172,19 @@ export default {
 }
 
 @media (min-height: 500px) {
-  .push-widget-container {
+  .push-widget-container.push-chat-open {
     min-height: 72vh;
   }
 }
 
 @media (min-height: 610px) {
-  .push-widget-container {
+  .push-widget-container.push-chat-open {
     min-height: 80vh;
   }
 }
 
 @media (min-height: 735px) {
-  .push-widget-container {
+  .push-widget-container.push-chat-open {
     min-height: 85vh;
   }
 }
