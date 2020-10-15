@@ -109,7 +109,7 @@ export default {
               height: 844
             }
           },
-          storage: "session"
+          storage: "local"
         },
         suggestionsConfig: {
           // url: 'https://api.bothub.it/v2/repository/examples/search_repositories_examples/',
