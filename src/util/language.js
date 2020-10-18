@@ -41,7 +41,7 @@ export const validLanguages = [
   },
   {
     id: 'tr',
-    name: 'Türk',
+    name: 'Türkçe',
     browserCode: 'tr',
   },
   {
@@ -53,6 +53,11 @@ export const validLanguages = [
     id: 'ro',
     name: 'Română',
     browserCode: 'ro',
+  },
+  {
+    id: 'kg',
+    name: 'Кыргызча',
+    browserCode: 'kg',
   },
 ];
 
