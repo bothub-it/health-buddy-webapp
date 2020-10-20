@@ -33,6 +33,7 @@ export default {
   },
   data() {
     return {
+      messages: [],
       initalized: false,
       botConfig: undefined,
     };
@@ -56,6 +57,11 @@ export default {
     },
   },
   methods: {
+    calcDelay(message) {
+      let delay = message.length * 50;
+      if (delay < 400) delay = 1000;
+      return delay;
+    },
     sendInitial() {
       WebChat.send(this.initialPayload);
     },
@@ -103,10 +109,9 @@ export default {
           },
         },
         customMessageDelay: (message) => {
-          let delay = message.length * 30;
-          if (delay > 2 * 1000) delay = 3 * 1000;
-          if (delay < 400) delay = 1000;
-          return delay * 3;
+          this.messages.push(message);
+          return this.calcDelay(this.messages[this.messages.length - 2] || message);
+
         },
         params: {
           images: {
