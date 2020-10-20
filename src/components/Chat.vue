@@ -106,7 +106,7 @@ export default {
           let delay = message.length * 30;
           if (delay > 2 * 1000) delay = 3 * 1000;
           if (delay < 400) delay = 1000;
-          return delay;
+          return delay * 3;
         },
         params: {
           images: {
