@@ -20,15 +20,15 @@
 
         <ul>
           <li class="">
-            <span class="has-text-weight-bold">{{ $t('about.feature_1_title') }}</span>:
+            <span v-if="$t('about.feature_3_title')" class="has-text-weight-bold">{{ $t('about.feature_1_title') }}:</span>
             {{ $t('about.feature_1_text') }}
           </li>
           <li class="">
-            <span class="has-text-weight-bold">{{ $t('about.feature_2_title') }}</span>:
+            <span v-if="$t('about.feature_3_title')" class="has-text-weight-bold">{{ $t('about.feature_2_title') }}:</span>
             {{ $t('about.feature_2_text') }}
           </li>
           <li class="">
-            <span class="has-text-weight-bold">{{ $t('about.feature_3_title') }}</span>:
+            <span v-if="$t('about.feature_3_title')" class="has-text-weight-bold">{{ $t('about.feature_3_title') }}:</span>
             {{ $t('about.feature_3_text') }}
           </li>
         </ul>
