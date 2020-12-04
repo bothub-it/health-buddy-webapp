@@ -161,6 +161,12 @@ export default {
   box-shadow: 1px 1px 5px 1px var(--launcherColor);
 }
 
+@media (min-width: 800px) {
+  .push-widget-container.push-full-screen.push-chat-open {
+    height: calc(100% - 61px);
+  }
+}
+
 :not(.push-hide-sm).push-launcher:after {
     content: '';
     width: var(--launcherWidth);
