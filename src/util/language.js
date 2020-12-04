@@ -71,7 +71,7 @@ export const validLanguages = [
   },
   {
     id: 'sq',
-    name: 'Shqip',
+    name: 'Shqip (Kosova)',
     browserCode: 'sq',
   },
   {
