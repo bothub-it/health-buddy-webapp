@@ -28,9 +28,18 @@
 
     "about": {
         "title": "Rreth HealthBuddy",
-        "text_1": "HealthBuddy është një \"chatbot\" interaktiv shumëgjuhësh i cili u zhvillua nga OBSH/Evropë dhe Zyra Rajonale për Evropën dhe Azinë Qendrore (ECARO) e Fondit të Emergjencës të Kombeve të Bashkuara për Fëmijët (UNICEF) për të mundësuar qasje në informacion të saktë dhe për të luftuar keqinformimin rreth virusit korona.",
-        "text_2": "\"Chatbot\" përdor inteligjencën artificiale për t'iu përgjigjur pyetjeve në lidhje me COVID-19 dhe ofron informacione vendore siç janë linjat e emergjencës që janë në dispozicion në vende të ndryshme për COVID-19. Krahas kësaj, i lejon përdoruesit të raportojnë lajme të rrejshme, mite dhe thashetheme. Informacioni i marrë nga përdoruesit do të monitorohet nga ekipi teknik i OBSH-së dhe UNICEF-it për të përditësuar informacionin në \"chatbot\".",
-        "text_3-1": "Në Maqedoninë e Veriut, \"chatbot\" u realizua me mbështetjen e Agjencisë së Shteteve të Bashkuara për Zhvillim Ndërkombëtar (USAID)."
+        "text_1": "HealthBuddy is a multilingual interactive chatbot which was developed by WHO Regional office for Europe (WHO/Europe) and the UNICEF Regional office for Europe and Central Asia (ECARO) to provide access to accurate information, and counter misinformation surrounding the coronavirus.",
+        "text_2": "The chatbot uses artificial intelligence to answer questions about COVID-19 and provides local information such as COVID-19 hotlines available in different countries. Additionally, it allows users to report fake news, myths and rumours. The information received from the users will be monitored by technical team of WHO and UNICEF to update the information on the chatbot.",
+        "text_3-1": "A new mobile app \"HealthBuddy+\" presents several features to maximize the users’ experience and ability to find the answers they are looking for. It has three main features:",
+        "feature_1_title": "CHATBOT",
+        "feature_1_text": "Through the chatbot, users can get answers to their questions on COVID-19.",
+        "feature_2_title": "POLLS",
+        "feature_2_text": "Users can join the polls and share their thoughts on critical aspects of the COVID-19 response. Their opinion will help to provide support to tackle COVID-19.",
+        "feature_3_title": "RUMOURS",
+        "feature_3_text": "Users can use the rumour reporting tool to report rumors circulating in their communities which will help the team to check the rumor and update the app with new important information.",
+        "text_4": "Healthbuddy+ is continuously updated based on users’ needs and new scientific research.",
+        "text_title_5": "Support",
+        "text_5": "Users can send any issue by email to admin@healthbuddy.info."
     },
 
     "features": {
