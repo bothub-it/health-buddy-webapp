@@ -16,7 +16,7 @@ import hu from '../locales/hu.json';
 import hy from '../locales/hy.json';
 import kg from '../locales/kg.json';
 import sq from '../locales/sq.json';
-import mkSq from '../locales/mk_sq.json';
+// import mkSq from '../locales/mk_sq.json';
 import vo from '../locales/vo.json';
 
 Vue.use(VueI18n);
@@ -37,7 +37,7 @@ const languages = {
   'hy': hy,
   'kg': kg,
   'sq': sq,
-  'mk_sq': mkSq,
+  // 'mk_sq': mkSq,
   'vo': vo,
 };
 
