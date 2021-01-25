@@ -12,7 +12,11 @@ import mk from '../locales/mk.json';
 import tr from '../locales/tr.json';
 import bg from '../locales/bg.json';
 import ro from '../locales/ro.json';
+import hu from '../locales/hu.json';
+import hy from '../locales/hy.json';
 import kg from '../locales/kg.json';
+import sq from '../locales/sq.json';
+import vo from '../locales/vo.json';
 
 Vue.use(VueI18n);
 
@@ -28,7 +32,11 @@ const languages = {
   'tr': tr,
   'bg': bg,
   'ro': ro,
+  'hu': hu,
+  'hy': hy,
   'kg': kg,
+  'sq': sq,
+  'vo': vo,
 };
 
 const messages = Object.assign(languages);

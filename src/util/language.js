@@ -55,9 +55,29 @@ export const validLanguages = [
     browserCode: 'ro',
   },
   {
+    id: 'hu',
+    name: 'Magyar',
+    browserCode: 'hu',
+  },
+  {
+    id: 'hy',
+    name: 'Հայաստան',
+    browserCode: 'hy',
+  },
+  {
     id: 'kg',
     name: 'Кыргызча',
-    browserCode: 'kg',
+    browserCode: 'ky',
+  },
+  {
+    id: 'sq',
+    name: 'Shqip',
+    browserCode: 'sq',
+  },
+  {
+    id: 'vo',
+    name: 'Srpski',
+    browserCode: 'vo',
   },
 ];
 

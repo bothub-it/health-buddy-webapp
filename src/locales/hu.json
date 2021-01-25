@@ -1,0 +1,99 @@
+{
+    "navbar": {
+        "home": "Kezdőlap",
+        "about": "Rólunk",
+        "videos": "Videók",
+        "languages": "Nyelv",
+        "bot": "Bot"
+    },
+
+    "hero": {
+        "title": "Én vagyok az Ön személyes tanácsadója a koronavírussal kapcsolatos kérdésekben.",
+        "subtitle": "Küldjön szöveges üzenetet, és máris válaszolok!"
+    },
+
+    "tips": {
+        "title": "Kérdezzen a COVID-19-ről!",
+        "tip_1": "Üdvözlöm! Én vagyok HealthBuddy, az Ön személyes tanácsadója. Küldje el kérdését vagy üzenetét a chat ablakban, és válaszolok! Az új típusú koronavírusra vonatkozó információim kizárólag megbízható forrásból származnak – a WHO/Europe és az UNICEF ECARO szervezetektől.",
+        "tip_2": "3 egyszerű lépésben veheti fel velem a kapcsolatot:",
+        "tip_3": {
+            "emphasis_1": "1.",
+            "emphasis_2": "2.",
+            "emphasis_3": "3.",
+            "text_1": "Válasszon nyelvet a honlap felső részén található menüben a legördülő listából.",
+            "text_2": "Válasszon témát a gyakori kérdések listájáról, ha gyors választ szeretne.",
+            "text_3": "A kérdését egyszerű és közvetlen stílusban megfogalmazva küldje el nekem, mintha egy barátjával beszélgetne."
+        }
+    },
+
+    "about": {
+        "title": "A HealthBuddy-ról",
+        "text_1": "A HealthBuddy egy többnyelvű interaktív csevegőrobot, amelyet a WHO / Európa és az ENSZ Gyermekalapja (UNICEF) Európai és Közép-Ázsiai Regionális Irodája (ECARO) fejlesztett ki annak érdekében, hogy hozzáférést biztosítson a pontos információkhoz, és ellensúlyozza a koronavírus körüli tévhiteket.",
+        "text_2": "A chatbot mesterséges intelligenciával válaszol a COVID-19-re vonatkozó kérdésekre, és a különböző országokban helyi információkkal szolgál, például COVID-19 segélyvonalakról. Ezenkívül a felhasználók számára lehetővé teszi, hogy jelezzék, ha hamis híreket, mítoszokat és pletykákat hallanak a COVID-19-ről. A WHO és az UNICEF technikai csoportja figyelemmel kíséri a felhasználóktól kapott információkat és frissíti a chatboton található kérdéseket és válaszokat.",
+        "text_3-1": "Magyarországon a chatbot a Nemzeti Népegészségügyi Központ (NNK) támogatásával valósult meg.",
+        "feature_1_title": "",
+        "feature_1_text": "",
+        "feature_2_title": "",
+        "feature_2_text": "",
+        "feature_3_title": "",
+        "feature_3_text": "",
+        "text_4": "",
+        "text_title_5": "",
+        "text_5": ""
+    },
+
+    "features": {
+        "title": "Mit nyújt a HealthBuddy",
+        "text": "Nagyon sok téves információ és hiedelem kering az interneten és a közösségi oldalakon az új típusú koronavírusról (COVID-19). A félrevezető információk kiszűrése a COVID-19 elleni küzdelem egyik legnagyobb kihívása. Ezért fontos, hogy biztosítsuk a megbízható forrásból származó információkat és tanácsokat mindenki számára.",
+        "feature_1_title": "Számos platformon elérhető",
+        "feature_1_text": "A HealthBuddy Európa-szerte számos online platformon keresztül elérhető, biztosítva a felhasználók számára a tudományos és bizonyítékokon alapuló információkhoz való hozzáférést.",
+        "feature_2_title": "Többnyelvű támogatás",
+        "feature_2_text": "A HealthBuddy felismeri a használt böngésző nyelvbeállítását, és ha a nyelv támogatott, automatikusan ezen a nyelven kommunikál a felhasználóval. A nyelv a Nyelvek menüben bármikor módosítható.",
+        "feature_3_title": "Pontos COVID-19 információk",
+        "feature_3_text": "A HealthBuddy mögött a WHO/Europe és az UNICEF ECARO szakemberei állnak, akik pontos információkat tudnak nyújtani a COVID-19 vírussal kapcsolatban.",
+        "feature_4_title": "Harc a pletykák és álhírek ellen",
+        "feature_4_text": "Ha a környezetében vagy ismeretségi körében pletykákat és álhíreket hall, itt jelentheti nekünk. A HealthBuddy összegyűjti ezeket az információkat és bejelentéseket, és tiszta vizet önt a pohárba."
+    },
+
+    "videos": {
+        "title": "Videók",
+        "video_1_title": "Protecting Your Family from Coronavirus",
+        "video_1_url": "https://www.youtube.com/embed/QYxzo3-qZRc",
+        "video_2_title": "COVID-19 (Coronavirus Disease 19) March Update- causes, symptoms, diagnosis, treatment, pathology",
+        "video_2_url": "https://www.youtube.com/embed/JKpVMivbTfg",
+        "video_3_title": "Coronavirus outbreak... | UNICEF",
+        "video_3_url": "https://www.youtube.com/embed/ujWFj_6FaMY",
+        "video_4_title": "Novel coronavirus (2019-nCoV)",
+        "video_4_url": "https://www.youtube.com/embed/mOV1aBVYKGA"
+    },
+
+    "extraInfo": {
+        "text": "A HealthBuddy az UNICEF európai és közép-ázsiai regionális irodáinak, valamint a WHO európai regionális irodájának közös kezdeményezése."
+    },
+
+    "footer": {
+        "policy": "Adatkezelési szabályzatunkat ide kattintva olvashatja el.",
+        "bothub": "A HealthBuddy a Bothub és a RapidPro technológiát használja © 2020 Minden jog fenntartva."
+    },
+
+    "policy": {
+        "title": "Adatkezelési szabályzat",
+        "section_1_title": "Milyen információkat gyűjtünk?",
+        "section_1_text": "Csak akkor gyűjtünk Önről információkat, amikor álhíreket kíván bejelenteni, meglátásait kívánja velünk megosztani vagy kérdéseket szeretne feltenni a chatboxon keresztül. Ennek részeként anonim, a honlap használatával kapcsolatos információk gyűjtésére is sor kerülhet. A honlaphoz vagy a chatboxhoz történő hozzáféréskor semmilyen személyes információt nem gyűjtünk.",
+        "section_2_title": "Hogyan védjük a gyűjtött adatokat?",
+        "section_2_text": "Számos biztonsági intézkedéssel védjük személyes adatai biztonságát, amikor személyes adatokat ad meg, továbbít vagy adatait kezeli. Biztonságos szervert használunk, és minden megadott információt SSL (Secure Socket Layer) technológiával továbbítunk.",
+        "section_3_title": "Használunk-e sütiket?",
+        "section_3_text": "Igen. A süti (cookie) kisméretű fájl, amelyet a honlap vagy szolgáltatója helyez el a felhasználó számítógépének merevlemezén a böngészőn keresztül (ha a felhasználó ebbe beleegyezik). A sütik lehetővé teszik a honlap vagy szolgáltató rendszerei számára, hogy azonosítsák a böngészőt, és bizonyos információkat gyűjtsenek és tároljanak. \nMi azért használunk sütiket, hogy megismerjük és elmentsük az Ön preferenciáit a következő honlap látogatáshoz, összesített adatokat gyűjtsünk a honlap forgalmáról és a felhasználói interakciókról, hogy javítani tudjuk a felhasználói élményt a honlapon. Külső szolgáltatókat is szerződtethetünk, hogy segítsenek jobban megérteni és megismerni a holnap látogatóit. Ezek a szolgáltatók a nevünkben gyűjtött információkat kizárólag abból a célból használhatják fel, hogy segítsenek nekünk üzletmenetünk javításában.",
+        "section_4_title": "Ki fér hozzá az üzenetekhez?",
+        "section_4_text": "A RapidPro vagy Bothub útján leadott vagy továbbított adatok és információk csak arra használhatók fel, hogy a segítsenek az álhírek és pletykák lekövetésében, és a visszajelzések alapján a chatbot javításában. Felhívjuk a figyelmet arra, hogy a közösségi oldalakon keresztül küldött üzenetekhez külső szervezetek, például az üzenet továbbításához használt mobilszolgáltatók is hozzáférhetnek. Ezek a szervezetek saját előírásokkal, szabályokkal és biztonsági intézkedésekkel rendelkeznek annak szabályozására, hogy ki férhet hozzá az általuk továbbított adatokhoz.",
+        "section_5_title": "Kiadunk-e bármilyen információt külső feleknek?",
+        "section_5_text": "Személyes, az érintettek azonosítására alkalmas információkat külső fél számára nem értékesítünk és semmilyen más formában nem adunk ki. Ez alól kivételt képeznek olyan megbízható külső felek, akik honlapunk működtetésében, üzleti tevékenységünk folytatásában, felhasználóink kiszolgálásában segítenek – természetesen titoktartási megállapodás mellett. A személyes információkat kiadhatjuk továbbá abban az esetben, ha úgy ítéljük meg, hogy kiadásuk a törvényi megfelelőséghez, a honlap szabályainak betartatásához, valamint magunk vagy mások jogainak, eszközeinek vagy biztonságának védelméhez szükséges. Mindazonáltal az érintettek azonosítására nem alkalmas, nem személyes információkat kiadhatunk külső felek részére marketing, hirdetési vagy egyéb célokból.",
+        "section_6_title": "Használunk-e külső linkeket?",
+        "section_6_text": "Előfordulhat, hogy esetenként külső fél termékeire vagy szolgáltatásaira mutató linket helyezünk el honlapunkon. A külső weboldalak a sajátunktól eltérő adatkezelési szabályzattal rendelkezhetnek. Ezért a linkelt oldalak tartalmáért és működéséért semmilyen felelősséget nem vállalunk. Mindazonáltal, mivel fontos számunkra saját honlapunk megbízhatósága, a külső honlapokkal kapcsolatos visszajelzéseket szívesen fogadjuk.",
+        "section_7_title": "Az Ön hozzájárulása",
+        "section_7_text": "A honlapunk használatával Ön elfogadja adatkezelési szabályzatunkat.",
+        "section_8_title": "Changes to our privacy policy",
+        "section_8_text": "If we decide to change our privacy policy, we will post those changes on this page, and/or update the privacy policy modification date below.",
+        "updated": "This privacy policy was last updated on 23 March 2020."
+    }
+}
