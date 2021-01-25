@@ -1,9 +1,4 @@
-export const validLanguages = [
-  {
-    id: 'en',
-    name: 'English',
-    browserCode: 'en',
-  },
+const otherLanguages = [
   {
     id: 'es',
     name: 'Español',
@@ -79,5 +74,14 @@ export const validLanguages = [
     name: 'Srpski',
     browserCode: 'vo',
   },
+];
+otherLanguages.sort((a, b) => a.name.localeCompare(b.name));
+export const validLanguages = [
+  {
+    id: 'en',
+    name: 'English',
+    browserCode: 'en',
+  },
+  ...otherLanguages,
 ];
 
